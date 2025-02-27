@@ -40,20 +40,17 @@ module.exports.config = {
       /^https:\/\/cdn\.jsdelivr\.net\/npm\/[^/@]+\@[^/@]+\/[^/]+\/[^/]+$/,
     ],
     replacer: srcUrl => {
-      const url = new URL(srcUrl);
-      const allowedHosts = [
-        'npm.elemecdn.com'
-      ];
-      if (allowedHosts.includes(url.host)) {
+      if (srcUrl.startsWith('https://npm.elemecdn.com')) {
+        const url = new URL(srcUrl)
         return [
             srcUrl,
             `https://cdn.cbd.int` + url.pathname,
             `https://cdn.jsdelivr.net/npm` + url.pathname,
             `https://cdn1.tianli0.top/npm` + url.pathname,
             `https://fastly.jsdelivr.net/npm` + url.pathname
-        ];
+        ]
       } else {
-        return srcUrl;
+        return srcUrl
       }
     },
   }
