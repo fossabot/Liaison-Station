@@ -125,7 +125,8 @@ window.addEventListener("load", () => {
           let dataTags = data.tags;
           let oneImage = data.oneImage ?? "";
           const dataContent = data.content
-            ? DOMPurify.sanitize(data.content.trim())
+            ? data.content
+                .trim()
                 .replace(/<[^>]+>/g, "")
                 .toLowerCase()
             : "";
