@@ -12,6 +12,9 @@
     "version": "7.3.0"
   },
   "dependencies": {
+    "@statsig/js-client": "^3.12.2",
+    "@statsig/session-replay": "^3.12.2",
+    "@statsig/web-analytics": "^3.12.2",
     "@vercel/speed-insights": "^1.2.0",
     "hexo": "^7.3.0",
     "hexo-butterfly-envelope": "^1.0.15",
