@@ -281,15 +281,6 @@ document.addEventListener("DOMContentLoaded", function () {
       $buttonParent.classList.remove("copy-true");
     };
 
-    const escapeHtml = (unsafe) => {
-      return unsafe
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-    };
-
     const highlightShrinkFn = ele => {
       ele.classList.toggle("closed");
     };
@@ -310,7 +301,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (isShowTool) {
         const hlTools = document.createElement("div");
         hlTools.className = `highlight-tools ${highlightShrinkClass}`;
-        hlTools.innerHTML = highlightShrinkEle + escapeHtml(lang) + highlightCopyEle;
+        hlTools.innerHTML = highlightShrinkEle + lang + highlightCopyEle;
         anzhiyu.addEventListenerPjax(hlTools, "click", highlightToolsFn);
         fragment.appendChild(hlTools);
       }
