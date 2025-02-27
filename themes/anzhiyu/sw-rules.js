@@ -57,7 +57,15 @@ module.exports.config = {
 };
 
 /** 跳过处理番剧封面 */
-module.exports.skipRequest = request => request.url.startsWith('https://i0.hdslb.com');
+module.exports.skipRequest = request => {
+  try {
+    const url = new URL(request.url);
+    return url.host === 'i0.hdslb.com';
+  } catch (e) {
+    console.error('Invalid URL:', request.url);
+    return false;
+  }
+};
 
 /**
  * 缓存列表
