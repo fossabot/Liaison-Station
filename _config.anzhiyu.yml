@@ -5,20 +5,26 @@ menu:
     标签: /tags/ || anzhiyu-icon-tags
 
   服务:
-    在线工具箱: https://image.anheyu.com/
-  #   留言板: /comments/ || anzhiyu-icon-envelope
+    在线工具箱: /
+
+  留言板: /comments/ || anzhiyu-icon-envelope
 
   我的:
     音乐馆: /music/ || anzhiyu-icon-music
     友人帐: /link/ || anzhiyu-icon-link
-  #   追番页: /bangumis/ || anzhiyu-icon-bilibili
-  #   相册集: /album/ || anzhiyu-icon-images
-    # 小空调: /air-conditioner/ || anzhiyu-icon-fan
+
+  追番页: /bangumis/ || anzhiyu-icon-bilibili
+
+  相册集: /album/ || anzhiyu-icon-images
+
+  小空调: /air-conditioner/ || anzhiyu-icon-fan
 
   关于:
     关于本人: /about/ || anzhiyu-icon-paper-plane
-  #   闲言碎语: /essay/ || anzhiyu-icon-lightbulb
-  #   随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
+
+  闲言碎语: /essay/ || anzhiyu-icon-lightbulb
+
+  随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
 
 # nav相关配置
 nav:
@@ -29,13 +35,9 @@ nav:
     - title: 网页
       item:
         - name: 博客
-          link: https://blog.anheyu.com/
+          link: https://zhang-wen-tao.com/
           icon: /img/favicon.ico
-    - title: 项目
-      item:
-        - name: 安知鱼图床
-          link: https://image.anheyu.com/
-          icon: https://image.anheyu.com/favicon.ico
+
 
 # mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
 # 注意： 仅网站首页变灰，其他页面正常显示
