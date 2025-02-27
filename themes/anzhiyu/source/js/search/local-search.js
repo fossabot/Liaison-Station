@@ -1,5 +1,3 @@
-import DOMPurify from 'dompurify';
-
 window.addEventListener("load", () => {
   let loadFlag = false;
   let dataObj = [];
@@ -254,7 +252,7 @@ window.addEventListener("load", () => {
             "</div>";
         }
         str += "</div>";
-        $resultContent.innerHTML = DOMPurify.sanitize(str);
+        $resultContent.innerHTML = str;
         if (keywords[0] !== "") $loadingStatus.innerHTML = "";
         window.pjax && window.pjax.refresh($resultContent);
       });
