@@ -102,7 +102,9 @@ theme: anzhiyu
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: git@github.com:ZhangWentao-Github/ZhangWentao-Github.github.io.git
+  branch: Liaison-Station
 
 
 #envelope_comment
