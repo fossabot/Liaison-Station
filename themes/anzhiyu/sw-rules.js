@@ -95,10 +95,12 @@ module.exports.cacheRules = {
  * @return {{list: string[], timeout: number}} 返回 null 或不返回表示对该 URL 不启用该功能。timeout 为超时时间（ms），list 为 URL 列表，列表不包含原始 URL 表示去除原始访问
  */
 module.exports.getSpareUrls = srcUrl => {
-  if (srcUrl.startsWith("https://npm.elemecdn.com")) {
+  const url = new URL(srcUrl);
+  const allowedHosts = ["npm.elemecdn.com"];
+  if (allowedHosts.includes(url.host)) {
     return {
       timeout: 3000,
-      list: [srcUrl, `https://cdn.cbd.int/${new URL(srcUrl).pathname}`],
+      list: [srcUrl, `https://cdn.cbd.int${url.pathname}`],
     };
   }
 };
