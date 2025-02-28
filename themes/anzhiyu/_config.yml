@@ -9,6 +9,10 @@ menu:
 
   留言板: /comments/ || anzhiyu-icon-envelope
 
+  闲言碎语: /essay/ || anzhiyu-icon-lightbulb
+
+  随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
+
   我的:
     音乐馆: /music/ || anzhiyu-icon-music
     友人帐: /link/ || anzhiyu-icon-link
@@ -23,9 +27,6 @@ menu:
     关于本人: /about/ || anzhiyu-icon-paper-plane
     我的装备: /equipment/ || anzhiyu-icon-dice-d20
 
-    闲言碎语: /essay/ || anzhiyu-icon-lightbulb
-
-  随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
 
 # nav相关配置
 nav:
