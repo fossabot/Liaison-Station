@@ -21,6 +21,7 @@ menu:
 
   关于:
     关于本人: /about/ || anzhiyu-icon-paper-plane
+    我的装备: /equipment/ || anzhiyu-icon-dice-d20
 
   # 闲言碎语: /essay/ || anzhiyu-icon-lightbulb
 
@@ -94,7 +95,7 @@ author_status:
 
 # Algolia search
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 6
   tags:
@@ -106,16 +107,16 @@ algolia_search:
 # Crawler Admin Console: see https://crawler.algolia.com/
 # Settings: https://www.algolia.com/
 docsearch:
-  enable: false
-  appId: # see email
-  apiKey: # see email
-  indexName: # see email
+  enable: true
+  appId: Z7A3XW4R2I # see email
+  apiKey: 12db1ad54372045549ef465881c17e743 # see email
+  indexName: Liaison-Stition # see email
   option:
 
 # 本地搜索
 local_search:
   enable: true #是否开启本地搜索
-  preload: false #预加载，开启后，进入网页后会自动加载搜索文件。关闭时，只有点击搜索按钮后，才会加载搜索文件
+  preload: true #预加载，开启后，进入网页后会自动加载搜索文件。关闭时，只有点击搜索按钮后，才会加载搜索文件
   CDN: #搜索文件的 CDN 地址（默认使用的本地链接）
 
 # Math (数学)
