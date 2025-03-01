@@ -11,7 +11,7 @@ hexo.extend.filter.register("before_generate", () => {
 
   if (hexo.locals.get) {
     const data = hexo.locals.get("data");
-    if (data && data.anzhiyu) {
+    if (data?.anzhiyu) {
       logger.error(" 'anzhiyu.yml' is deprecated. Please use '_config.anzhiyu.yml' ");
       logger.error(" 'anzhiyu.yml' 已经弃用，请使用 '_config.anzhiyu.yml' ");
       process.exit(-1);

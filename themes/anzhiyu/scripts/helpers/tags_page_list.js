@@ -12,7 +12,7 @@ hexo.extend.helper.register('tags_page_list', function (type) {
     return acc;
   }, []);
 
-  let html = ``;
+  let html = "";
   sortedTags.forEach(function (item) {
     html += `
       <a href="/${item.path}" id="/${item.path}">

@@ -428,7 +428,7 @@ const anzhiyu = {
         localStorage.removeItem("commentBarrageSwitch");
       }
     }
-    rm && rm.hideRightMenu();
+    rm?.hideRightMenu();
   },
   initPaginationObserver: () => {
     const commentElement = document.getElementById("post-comment");
@@ -639,7 +639,7 @@ const anzhiyu = {
   // 获取配置，如果为空则返回默认值
   getConfigIfPresent: function (config, configKey, defaultValue) {
     if (!config) return defaultValue;
-    if (!config.hasOwnProperty(configKey)) return defaultValue;
+    if (!Object.prototype.hasOwnProperty.call(config, configKey)) return defaultValue;
     if (!config[configKey]) return defaultValue;
     return config[configKey];
   },
@@ -666,7 +666,7 @@ const anzhiyu = {
       navMusicEl.classList.add("stretch");
     }
     if (changePaly) document.querySelector("#nav-music meting-js").aplayer.toggle();
-    rm && rm.hideRightMenu();
+    rm?.hideRightMenu();
   },
   // 音乐伸缩
   musicTelescopic: function () {
@@ -680,13 +680,13 @@ const anzhiyu = {
   //音乐上一曲
   musicSkipBack: function () {
     navMusicEl.querySelector("meting-js").aplayer.skipBack();
-    rm && rm.hideRightMenu();
+    rm?.hideRightMenu();
   },
 
   //音乐下一曲
   musicSkipForward: function () {
     navMusicEl.querySelector("meting-js").aplayer.skipForward();
-    rm && rm.hideRightMenu();
+    rm?.hideRightMenu();
   },
 
   //获取音乐中的名称
