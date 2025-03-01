@@ -10,6 +10,6 @@
     margin-bottom: 0;
   }
   body[data-type="categories"] #body-wrap #category {
-    padding: 20px 15px 20px;
+    padding: 20px 15px;
   }
 }

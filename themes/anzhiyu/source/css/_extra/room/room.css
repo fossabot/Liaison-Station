@@ -39,7 +39,7 @@ body[data-type="room"] #page .page-title {
 }
 
 #room_page .description {
-  margin: 20px auto 20px;
+  margin: 20px auto;
   border-radius: 24px;
   background: var(--anzhiyu-card-bg);
   border: var(--style-border-always);
