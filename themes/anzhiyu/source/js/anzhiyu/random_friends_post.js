@@ -125,9 +125,9 @@ function fetchRandomPost() {
     }
     if (randomPostTimes >= 5) {
       document.getElementById("random-post").innerHTML =
-        `钓鱼中... （Lv.` + randomPostTimes + ` 当前称号：` + randomPostLevel + `）`;
+        "钓鱼中... （Lv." + randomPostTimes + " 当前称号：" + randomPostLevel + "）";
     } else {
-      document.getElementById("random-post").innerHTML = `钓鱼中...`;
+      document.getElementById("random-post").innerHTML = "钓鱼中...";
     }
 
     let randomTime = randomNum(1000, 3000);
@@ -161,13 +161,13 @@ function fetchRandomPost() {
             window.setTimeout(function () {
               document.getElementById("random-post").innerHTML =
                 randomPostTipsItem +
-                `来自友链 <b>` +
+                "来自友链 <b>" +
                 author +
-                `</b> 的文章：<a class="random-friends-post" onclick="randomClickLink()" target="_blank" href="` +
+                '</b> 的文章：<a class="random-friends-post" onclick="randomClickLink()" target="_blank" href="' +
                 link +
-                `" rel="external nofollow">` +
+                '" rel="external nofollow">' +
                 title +
-                `</a>`;
+                "</a>";
               randomPostTimes += 1;
               localStorage.setItem("randomPostTimes", randomPostTimes);
               document.querySelector(".random-post-start").style.opacity = "1";

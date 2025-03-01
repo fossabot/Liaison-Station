@@ -44,10 +44,10 @@ module.exports.config = {
         const url = new URL(srcUrl)
         return [
             srcUrl,
-            `https://cdn.cbd.int` + url.pathname,
-            `https://cdn.jsdelivr.net/npm` + url.pathname,
-            `https://cdn1.tianli0.top/npm` + url.pathname,
-            `https://fastly.jsdelivr.net/npm` + url.pathname
+            "https://cdn.cbd.int" + url.pathname,
+            "https://cdn.jsdelivr.net/npm" + url.pathname,
+            "https://cdn1.tianli0.top/npm" + url.pathname,
+            "https://fastly.jsdelivr.net/npm" + url.pathname
         ]
       } else {
         return srcUrl
