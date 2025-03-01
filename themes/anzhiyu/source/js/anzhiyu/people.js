@@ -33,7 +33,7 @@ function _arrayWithoutHoles(e) {
 }
 
 function _arrayLikeToArray(e, r) {
-  (r == null || r > e.length) && (r = e.length);
+  
   for (var t = 0, a = new Array(r); t < r; t++) a[t] = e[t];
   return a;
 }

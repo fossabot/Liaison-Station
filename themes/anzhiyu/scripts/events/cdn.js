@@ -113,7 +113,7 @@ hexo.extend.filter.register("before_generate", () => {
   const deleteNullValue = obj => {
     if (!obj) return;
     for (const i in obj) {
-      obj[i] === null && delete obj[i];
+      
     }
     return obj;
   };
