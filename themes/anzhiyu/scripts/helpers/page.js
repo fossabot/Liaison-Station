@@ -39,7 +39,7 @@ hexo.extend.helper.register("get_page_fill_description", function () {
       // 去掉 a 标签及其内容
       const text = heading.replace(/<a[^>]*>.*?<\/a>/g, "");
       // 去除特殊符号 &,:,; 等
-      return text.replace(/<\/?[^>]+>|&|:|;|quot;|，|,|“|”|"|'|#/g, "");
+      return text.replace(/<\/?[^>]+>|&|:|;|quot;|，|,|“|”|"|'|#/gu, "");
     });
 
     // 排除 div.post-ai-description 元素中的内容
@@ -48,7 +48,7 @@ hexo.extend.helper.register("get_page_fill_description", function () {
 
     description = escapeHTML(stripHTML(description).trim())
       .replace(/\n/g, " ")
-      .replace(/[^\u4e00-\u9fa5]/gi, "");
+      .replace(/[^\u4e00-\u9fa5]/giu, "");
 
     return contents.join(", ") + description;
   }
