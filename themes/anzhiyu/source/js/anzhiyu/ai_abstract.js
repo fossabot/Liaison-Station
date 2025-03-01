@@ -249,7 +249,7 @@
         explanation.innerHTML = animationText;
         indexJ = (indexJ % 3) + 1;
       }, 500);
-      const response = await fetch(`https://summary.tianli0.top/`, requestOptions);
+      const response = await fetch("https://summary.tianli0.top/", requestOptions);
       let result;
       if (response.status === 403) {
         result = {

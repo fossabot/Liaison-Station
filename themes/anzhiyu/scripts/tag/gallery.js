@@ -56,7 +56,7 @@ function gallery(args, content) {
   <i class="anzhiyufont anzhiyu-icon-arrow-down"></i>
   </button>`;
 
-  return (html += `</div>`);
+  return (html += "</div>");
 }
 
 function galleryGroup(args) {
