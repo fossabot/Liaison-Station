@@ -40,7 +40,7 @@ span.top-group-text {
   color: var(--anzhiyu-white);
   padding: 2px 8px;
   font-size: 12px;
-  border-radius: 12px 0 12px 0;
+  border-radius: 12px 0;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -49,7 +49,7 @@ span.top-group-text {
 }
 
 #topPostGroup .top-group-list-item .top-group-info {
-  padding: 0.3rem 0.5rem 0.3rem 0.5rem !important;
+  padding: 0.3rem 0.5rem !important;
   transition: 0.3s;
 }
 

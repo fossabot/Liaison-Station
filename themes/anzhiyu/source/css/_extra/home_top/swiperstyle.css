@@ -22,7 +22,6 @@ div.swiper_container_card {
   }
 }
 div#swiper_container {
-  background: rgba(255, 255, 255, 0);
   width: 100%;
   padding: 0;
   overflow: initial;
@@ -256,8 +255,6 @@ div#swiper_container:hover {
   -webkit-line-clamp: 2;
 }
 .blog-slider__button {
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-box;

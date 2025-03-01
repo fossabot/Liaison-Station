@@ -193,7 +193,7 @@
 
 #console .button-group {
   display: flex;
-  margin: 1rem auto 0 auto;
+  margin: 1rem auto 0;
   justify-content: center;
   width: fit-content;
 }
@@ -649,7 +649,6 @@ body:has(#console.show) #nav-music .aplayer .aplayer-lrc .aplayer-lrc-contents {
     width: 85%;
   }
   body:has(#console.show) #console-music-bg {
-    display: block;
     filter: blur(33px);
     display: block;
     background: #000000;
