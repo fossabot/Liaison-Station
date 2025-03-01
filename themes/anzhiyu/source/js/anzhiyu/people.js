@@ -11,13 +11,13 @@ function _nonIterableSpread() {
 
 function _unsupportedIterableToArray(e, r) {
   if (e) {
-    if ("string" == typeof e) return _arrayLikeToArray(e, r);
+    if (typeof e == "string") return _arrayLikeToArray(e, r);
     var t = Object.prototype.toString.call(e).slice(8, -1);
     return (
-      "Object" === t && e.constructor && (t = e.constructor.name),
-      "Map" === t || "Set" === t
+      t === "Object" && e.constructor && (t = e.constructor.name),
+      t === "Map" || t === "Set"
         ? Array.from(e)
-        : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)
+        : t === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)
         ? _arrayLikeToArray(e, r)
         : void 0
     );
@@ -25,7 +25,7 @@ function _unsupportedIterableToArray(e, r) {
 }
 
 function _iterableToArray(e) {
-  if (("undefined" != typeof Symbol && null != e[Symbol.iterator]) || null != e["@@iterator"]) return Array.from(e);
+  if ((typeof Symbol != "undefined" && e[Symbol.iterator] != null) || e["@@iterator"] != null) return Array.from(e);
 }
 
 function _arrayWithoutHoles(e) {
@@ -33,7 +33,7 @@ function _arrayWithoutHoles(e) {
 }
 
 function _arrayLikeToArray(e, r) {
-  (null == r || r > e.length) && (r = e.length);
+  (r == null || r > e.length) && (r = e.length);
   for (var t = 0, a = new Array(r); t < r; t++) a[t] = e[t];
   return a;
 }
@@ -83,11 +83,11 @@ var peopleConfig = {
       t,
       a = e.stage,
       n = e.peep,
-      o = 0.5 < Math.random() ? 1 : -1,
+      o = Math.random() > 0.5 ? 1 : -1,
       i = 100 - 250 * gsap.parseEase("power2.in")(Math.random()),
       s = a.height - n.height + i;
     return (
-      1 == o ? ((r = -n.width), (t = a.width), (n.scaleX = 1)) : ((r = a.width + n.width), (t = 0), (n.scaleX = -1)),
+      o == 1 ? ((r = -n.width), (t = a.width), (n.scaleX = 1)) : ((r = a.width + n.width), (t = 0), (n.scaleX = -1)),
       (n.x = r),
       (n.y = s),
       {

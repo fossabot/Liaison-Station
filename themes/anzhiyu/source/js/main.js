@@ -649,14 +649,14 @@ document.addEventListener("DOMContentLoaded", function () {
       anzhiyu
         .intersectionObserver(
           () => {
-            if (footerDom && musicDom && 768 < document.body.clientWidth) {
+            if (footerDom && musicDom && document.body.clientWidth > 768) {
               musicDom.style.bottom = "-10px";
               musicDom.style.opacity = "0";
             }
             scrollBottomFirstFlag = true;
           },
           () => {
-            if (footerDom && musicDom && 768 < document.body.clientWidth) {
+            if (footerDom && musicDom && document.body.clientWidth > 768) {
               musicDom.style.bottom = "20px";
               musicDom.style.opacity = "1";
             }
@@ -1475,7 +1475,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 开发者工具键盘监听
   window.onkeydown = function (e) {
-    123 === e.keyCode && anzhiyu.snackbarShow("开发者模式已打开，请遵循GPL协议", !1);
+    e.keyCode === 123 && anzhiyu.snackbarShow("开发者模式已打开，请遵循GPL协议", !1);
   };
 
   // 欢迎语
