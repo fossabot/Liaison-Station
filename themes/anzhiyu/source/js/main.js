@@ -1060,7 +1060,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     navTabsElement.forEach(item => {
-      const isJustifiedGallery = !!item.querySelectorAll(".gallery-container");
+      const isJustifiedGallery = Boolean(item.querySelectorAll(".gallery-container"));
       addTabNavEventListener(item, isJustifiedGallery);
       addTabToTopEventListener(item);
     });

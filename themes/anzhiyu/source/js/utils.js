@@ -101,7 +101,7 @@ const anzhiyu = {
     }
 
     let start = null;
-    pos = +pos;
+    pos = Number(pos);
     window.requestAnimationFrame(function step(currentTime) {
       start = !start ? currentTime : start;
       const progress = currentTime - start;
