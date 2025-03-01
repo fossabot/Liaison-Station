@@ -401,7 +401,7 @@ document.addEventListener("DOMContentLoaded", function () {
         i.insertAdjacentHTML("beforeend", htmlStr(arr));
         i.classList.remove("lazyload");
       }
-      window.lazyLoadInstance && window.lazyLoadInstance.update();
+      window.lazyLoadInstance?.update();
       return arrLength > loadItem ? loadItem : arrLength;
     };
 
@@ -463,7 +463,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       anzhiyu.initJustifiedGallery(item);
       anzhiyu.loadLightbox(item.querySelectorAll("img"));
-      window.lazyLoadInstance && window.lazyLoadInstance.update();
+      window.lazyLoadInstance?.update();
     };
 
     const addJustifiedGallery = () => {
@@ -582,8 +582,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
       if (
-        $popupWindow &&
-        $popupWindow.classList.contains("show-popup-window") &&
+        $popupWindow?.classList.contains("show-popup-window") &&
         currentTop > 60 &&
         delta > 20 &&
         lastScrollTop != 0
@@ -782,7 +781,7 @@ document.addEventListener("DOMContentLoaded", function () {
       themeChangeFn(mode);
     });
 
-    rm && rm.hideRightMenu();
+    rm?.hideRightMenu();
 
     const menuDarkmodeText = $rightMenu.querySelector(".menu-darkmode-text");
     if (mode === "light") {
@@ -1590,7 +1589,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (isEscapeKeyPressed) {
         anzhiyu.hideLoading();
         anzhiyu.hideConsole();
-        rm && rm.hideRightMenu();
+        rm?.hideRightMenu();
       }
       const shortcutKeyDelay = GLOBAL_CONFIG.shortcutKey.delay ? GLOBAL_CONFIG.shortcutKey.delay : 100;
       const shortcutKeyShiftDelay = GLOBAL_CONFIG.shortcutKey.shiftDelay ? GLOBAL_CONFIG.shortcutKey.shiftDelay : 200;
@@ -1682,7 +1681,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const element = document.getElementById(elementId);
     if (element && childSelector) {
       const childElement = element.querySelector(childSelector);
-      childElement && childElement.addEventListener("click", rightSideFn.darkmode);
+      childElement?.addEventListener("click", rightSideFn.darkmode);
     } else if (element) {
       element.addEventListener("click", rightSideFn.darkmode);
     }
