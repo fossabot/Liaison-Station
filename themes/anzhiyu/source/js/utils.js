@@ -639,7 +639,7 @@ const anzhiyu = {
   // 获取配置，如果为空则返回默认值
   getConfigIfPresent: function (config, configKey, defaultValue) {
     if (!config) return defaultValue;
-    if (!config.hasOwnProperty(configKey)) return defaultValue;
+    if (!Object.prototype.hasOwnProperty.call(config, configKey)) return defaultValue;
     if (!config[configKey]) return defaultValue;
     return config[configKey];
   },
