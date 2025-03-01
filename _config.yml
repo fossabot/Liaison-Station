@@ -9,7 +9,7 @@ description: '张文涛-联络站，记录生活，分享人生'
 keywords: '张文涛','联络站' 
 author: 张文涛
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 email: mailbox@zhang-wen-tao.com
 
 # URL
