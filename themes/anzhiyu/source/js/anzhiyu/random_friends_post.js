@@ -108,9 +108,7 @@ function fetchRandomPost() {
       randomPostLevel = "愿者上钩";
     } else if (randomPostTimes > 1000) {
       randomPostLevel = "俯览天下";
-    } else if (randomPostTimes > 1000) {
-      randomPostLevel = "超越神了";
-    } else if (randomPostTimes > 100) {
+    }  else if (randomPostTimes > 100) {
       randomPostLevel = "绝世渔夫";
     } else if (randomPostTimes > 75) {
       randomPostLevel = "钓鱼王者";
