@@ -383,9 +383,9 @@ artalk:
 # giscus
 # https://giscus.app/
 giscus:
-  repo: # GitHub repository name
-  repo_id: # GitHub repository id
-  category_id: # GitHub repository category id
+  repo: ZhangWentao-Github/Liaison-Station # GitHub repository name
+  repo_id: R_kgDOM1QcPA # GitHub repository id
+  category_id: DIC_kwDOM1QcPM4CisBE # GitHub repository category id
   theme:
     light: light
     dark: dark
