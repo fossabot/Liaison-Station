@@ -36,11 +36,11 @@ const postTabs = (args, content) => {
     tabId += 1
     tabHref = (tabName + ' ' + tabId).toLowerCase().split(' ').join('-');
 
-    ((tabCaption.length === 0) && (tabIcon.length === 0)) && (tabCaption = tabName + ' ' + tabId)
+    
 
     const isOnlyicon = tabIcon.length > 0 && tabCaption.length === 0 ? ' style="text-align: center;"' : ''
     const icon = tabIcon.trim()
-    tabIcon.length > 0 && (tabIcon = `<i class="${icon}"${isOnlyicon}></i>`)
+    
 
     let isActive = ''
     if ((tabActive > 0 && tabActive === tabId) || (tabActive === 0 && tabId === 1)) {
