@@ -108,7 +108,7 @@ hexo.extend.helper.register("urlNoIndex", function (url = null) {
 
 hexo.extend.helper.register("md5", function (path) {
   return crypto
-    .createHash("md5")
+    .createHash("sha256")
     .update(decodeURI(this.url_for(path)))
     .digest("hex");
 });
