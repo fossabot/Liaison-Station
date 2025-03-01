@@ -86,7 +86,7 @@ window.addEventListener("load", () => {
           content: content,
           url: item.querySelector("url").textContent,
           tags: tagsArr,
-          oneImage: srcArr && srcArr[0],
+          oneImage: srcArr?.[0],
         };
       });
     }
@@ -254,7 +254,7 @@ window.addEventListener("load", () => {
         str += "</div>";
         $resultContent.innerHTML = str;
         if (keywords[0] !== "") $loadingStatus.innerHTML = "";
-        window.pjax && window.pjax.refresh($resultContent);
+        window.pjax?.refresh($resultContent);
       });
     });
   };

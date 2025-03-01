@@ -20,7 +20,7 @@ module.exports.config = {
         if (response) {
           // 如果找到了匹配的缓存响应
           response.json().then(function(data) {
-            anzhiyuPopupManager && anzhiyuPopupManager.enqueuePopup('通知📢', `已刷新缓存，更新为${data.global + "." + data.local}版本最新内容`, null, 5000);
+            anzhiyuPopupManager?.enqueuePopup('通知📢', `已刷新缓存，更新为${data.global + "." + data.local}版本最新内容`, null, 5000);
           });
         } else {
           console.info('未找到匹配的缓存响应');

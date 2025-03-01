@@ -15,7 +15,7 @@ function postNote (args, content) {
 
   let icon = ''
   const iconArray = args[args.length - 2]
-  if (iconArray && iconArray.startsWith('fa')) {
+  if (iconArray?.startsWith('fa')) {
     icon = `<i class="note-icon ${iconArray}"></i>`
     args[args.length - 2] = 'icon-padding'
   }
