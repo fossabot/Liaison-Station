@@ -134,7 +134,7 @@ if (document.querySelector(".comment-barrage")) {
     barrage.className = "comment-barrage-item out";
 
     setTimeout(() => {
-      if (commentBarrageConfig.dom && commentBarrageConfig.dom.contains(barrage)) {
+      if (commentBarrageConfig.dom?.contains(barrage)) {
         commentBarrageConfig.dom.removeChild(barrage);
       }
     }, 1000);
