@@ -17,8 +17,6 @@ nav#nav
       a#site-name(href=url_for('/') accesskey="h")
         .title #[=config.title]
         i.anzhiyufont.anzhiyu-icon-house-chimney
-      if (theme.nav.clock)
-        !=partial('includes/anzhiyu/clock', {}, {cache: true})
 
     div.mask-name-container
       #name-container
