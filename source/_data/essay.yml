@@ -19,12 +19,6 @@
     - content: 搜索🔍支持缩略图显示啦（默认获取文章内容的第一张图片）
       date: 2022/10/23 08:00:00
       from: 安知鱼
-    - content: 遇见彩虹🌈吃定彩虹
-      date: 2022/10/23 10:00:00
-      image:
-        - https://bu.dusays.com/2023/04/09/64329399e285d.webp
-        - https://bu.dusays.com/2023/04/09/64329399aa3bc.webp
-        - https://bu.dusays.com/2023/04/09/6432939996dd7.webp
     - content: 歌曲推荐
       date: 2022/09/25
       aplayer:
