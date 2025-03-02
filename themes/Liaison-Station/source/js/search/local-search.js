@@ -123,10 +123,15 @@ window.addEventListener("load", () => {
           let dataTags = data.tags;
           let oneImage = data.oneImage ?? "";
           const dataContent = data.content
-            ? data.content
-                .trim()
-                .replace(/<[^>]+>/g, "")
-                .toLowerCase()
+            ? (() => {
+                let content = data.content.trim().toLowerCase();
+                let previous;
+                do {
+                  previous = content;
+                  content = content.replace(/<[^>]+>/g, "");
+                } while (content !== previous);
+                return content;
+              })()
             : "";
           const dataUrl = data.url.startsWith("/") ? data.url : GLOBAL_CONFIG.root + data.url;
           let indexTitle = -1;
