@@ -20,7 +20,7 @@ script.
         waline.destroy()
       }
 
-      anzhiyu.addGlobalFn('pjax', destroyWaline, 'destroyWaline')
+      liaisonstation.addGlobalFn('pjax', destroyWaline, 'destroyWaline')
     }
 
     const loadWaline = async () => {
@@ -36,7 +36,7 @@ script.
     }
 
     if ('!{use[0]}' === 'Waline' || !!{lazyload}) {
-      if (!{lazyload}) anzhiyu.loadComment(document.getElementById('waline-wrap'),loadWaline)
+      if (!{lazyload}) liaisonstation.loadComment(document.getElementById('waline-wrap'),loadWaline)
       else setTimeout(loadWaline, 0)
     } else {
       window.loadOtherComment = loadWaline

@@ -62,7 +62,7 @@ if site.data.about
             .author-content-item-tips=skillsTips.tips
             span.author-content-item-title=skillsTips.title
             .skills-style-group
-              include ../anzhiyu/tags-group-all.pug
+              include ../liaisonstation/tags-group-all.pug
               if site.data.creativity
                 .skills-list
                   each i in site.data.creativity
@@ -103,7 +103,7 @@ if site.data.about
                 - let link = item.statistic.link
                 - let text = item.statistic.text
                 a.banner-button(onclick=`pjax.loadUrl("${link}")`)
-                  i.anzhiyufont.liaisonstation-icon-arrow-circle-right
+                  i.liaisonstationfont.liaisonstation-icon-arrow-circle-right
                   |  
                   span.banner-button-text=text
         .author-content-item-group.column.mapAndInfo
@@ -169,7 +169,7 @@ if site.data.about
               |  
               span=buff_bottom
           .card-background-icon
-            i.anzhiyufont.liaisonstation-icon-dice-d20
+            i.liaisonstationfont.liaisonstation-icon-dice-d20
 
       .author-content
         - let {game_tips, game_title, game_uid, game_bg} = item.game
@@ -210,7 +210,7 @@ if site.data.about
               .tips=`跟 ${aboutName} 一起欣赏更多音乐`
             .banner-button-group
               a.banner-button(onclick=`pjax.loadUrl("${music_link}")`)
-                i.anzhiyufont.liaisonstation-icon-arrow-circle-right
+                i.liaisonstationfont.liaisonstation-icon-arrow-circle-right
                 |  
                 span.banner-button-text 更多推荐
 
@@ -243,7 +243,7 @@ if site.data.about
                 time.datatime.reward-list-updateDate-time(datatime=sortedByDate[0].datatime)=new Date(sortedByDate[0].datatime).toISOString().slice(0, -14)
             .about-reward
               #con
-              #TA-con(onclick="anzhiyu.rewardShowConsole()")
+              #TA-con(onclick="liaisonstation.rewardShowConsole()")
                 #text-con
                   #linght
                   #TA 为TA充电

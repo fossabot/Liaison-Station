@@ -9,7 +9,7 @@ if site.data.essay
             .tips=i.tips
           .banner-button-group
             a.banner-button(href=i.buttonLink)
-              i.anzhiyufont.liaisonstation-icon-arrow-circle-right
+              i.liaisonstationfont.liaisonstation-icon-arrow-circle-right
               span.banner-button-text=i.buttonText
       #bber
         section.timeline.page-1
@@ -47,21 +47,21 @@ if site.data.essay
                     .bber-info
                       .bber-info-time
                         - var datedata = new Date(item.date).toISOString()
-                        i.anzhiyufont.liaisonstation-icon-clock
+                        i.liaisonstationfont.liaisonstation-icon-clock
                         time.datatime(datetime= item.date)= datedata
                       if item.link 
                         a.bber-content-link(title="跳转到短文指引的链接", href=url_for(item.link), rel="external nofollow")
-                          i.anzhiyufont.liaisonstation-icon-link
+                          i.liaisonstationfont.liaisonstation-icon-link
                           | 链接
                       if item.from
                         .bber-info-from
-                          i.anzhiyufont.liaisonstation-icon-fw-fire
+                          i.liaisonstationfont.liaisonstation-icon-fw-fire
                           span=item.from
                       if item.address
                         .bber-info-from
-                          i.anzhiyufont.liaisonstation-icon-location-dot
+                          i.liaisonstationfont.liaisonstation-icon-location-dot
                           span=item.address
                     .bber-reply(onclick="rm.rightMenuCommentText(" + `'${item.content}'` + ")")
-                      i.anzhiyufont.liaisonstation-icon-message
+                      i.liaisonstationfont.liaisonstation-icon-message
       #bber-tips(style='color: var(--liaisonstation-secondtext);')
         ="- 只展示最近" + i.limit + "条短文 -"

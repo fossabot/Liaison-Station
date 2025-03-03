@@ -12,12 +12,12 @@ if home_top_config.enable
               .banners-title-big=title
               .banners-title-big=subTitle
               .banners-title-small=siteText
-            include ../anzhiyu/tags-group-all.pug
+            include ../liaisonstation/tags-group-all.pug
 
           a#random-hover(href='javascript:toRandomPost()')
-            i.anzhiyufont.liaisonstation-icon-paper-plane
+            i.liaisonstationfont.liaisonstation-icon-paper-plane
             .bannerText 随便逛逛
-              i.anzhiyufont.liaisonstation-icon-arrow-right
+              i.liaisonstationfont.liaisonstation-icon-arrow-right
         .categoryGroup
           each item in home_top_config.category
             .categoryItem(style=`box-shadow:${item.shadow}`)
@@ -28,8 +28,8 @@ if home_top_config.enable
                 else if (item.icon.startsWith("icon"))
                   svg.icon(aria-hidden="true")
                     use(xlink:href=`#`+ item.icon)
-                else if (item.icon.startsWith("anzhiyu"))
-                  i.anzhiyufont(class=`${item.icon}`)
+                else if (item.icon.startsWith("liaisonstation"))
+                  i.liaisonstationfont(class=`${item.icon}`)
       if theme.home_top.swiper.enable
         #swiper_container_blog
           #swiper_container.blog-slider.swiper-container-fade.swiper-container-horizontal
@@ -89,8 +89,8 @@ if home_top_config.enable
               .todayCard-title=top_group_banner_title
             img.todayCard-cover(src=url_for(top_group_banner_image) onerror=`this.onerror=null;this.src='${url_for(theme.error_img.post_page)}'` alt='封面')
             .banner-button-group
-              .banner-button(onclick='event.stopPropagation();event.preventDefault();anzhiyu.hideTodayCard();')
-                i.anzhiyufont.liaisonstation-icon-arrow-circle-right
+              .banner-button(onclick='event.stopPropagation();event.preventDefault();liaisonstation.hideTodayCard();')
+                i.liaisonstationfont.liaisonstation-icon-arrow-circle-right
                 span.banner-button-text 更多推荐
         
         link(rel="stylesheet", href=theme.home_top.banner.top_group_banner_css)

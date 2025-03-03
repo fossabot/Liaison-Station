@@ -1,47 +1,47 @@
 if theme.aside.card_webinfo.enable
   .card-webinfo
     .item-headline
-      i.anzhiyufont.liaisonstation-icon-chart-line
+      i.liaisonstationfont.liaisonstation-icon-chart-line
       span= _p('aside.card_webinfo.headline')
     .webinfo
       if theme.aside.card_webinfo.post_count
         .webinfo-item
           .webinfo-item-title
-            i.anzhiyufont.liaisonstation-icon-file-lines
+            i.liaisonstationfont.liaisonstation-icon-file-lines
             .item-name= _p('aside.card_webinfo.article_name') + " :"
           .item-count= site.posts.length
       if theme.runtimeshow.enable
         .webinfo-item
           .webinfo-item-title
-            i.anzhiyufont.liaisonstation-icon-stopwatch
+            i.liaisonstationfont.liaisonstation-icon-stopwatch
             .item-name= _p('aside.card_webinfo.runtime.name') + " :"
           .item-count#runtimeshow(data-publishDate=date_xml(theme.runtimeshow.publish_date))
-            i.anzhiyufont.liaisonstation-icon-spinner.liaisonstation-spin
+            i.liaisonstationfont.liaisonstation-icon-spinner.liaisonstation-spin
       if theme.wordcount.enable && theme.wordcount.total_wordcount
         .webinfo-item
           .webinfo-item-title
-            i.anzhiyufont.liaisonstation-icon-font
+            i.liaisonstationfont.liaisonstation-icon-font
             .item-name=_p('aside.card_webinfo.site_wordcount') + " :"
           .item-count=totalcount(site)
       if theme.busuanzi.site_uv
         .webinfo-item
           .webinfo-item-title
-            i.anzhiyufont.liaisonstation-icon-universal-access
+            i.liaisonstationfont.liaisonstation-icon-universal-access
             .item-name= _p('aside.card_webinfo.site_uv_name') + " :"
           .item-count#busuanzi_value_site_uv
-            i.anzhiyufont.liaisonstation-icon-spinner.liaisonstation-spin
+            i.liaisonstationfont.liaisonstation-icon-spinner.liaisonstation-spin
       if theme.busuanzi.site_pv
         .webinfo-item
           .webinfo-item-title
-            i.anzhiyufont.liaisonstation-icon-square-poll-vertical
+            i.liaisonstationfont.liaisonstation-icon-square-poll-vertical
             .item-name= _p('aside.card_webinfo.site_pv_name') + " :"
           .item-count#busuanzi_value_site_pv
-            i.anzhiyufont.liaisonstation-icon-spinner.liaisonstation-spin
+            i.liaisonstationfont.liaisonstation-icon-spinner.liaisonstation-spin
       if theme.aside.card_webinfo.last_push_date
         .webinfo-item
           .webinfo-item-title
-            i.anzhiyufont.liaisonstation-icon-hourglass-start
+            i.liaisonstationfont.liaisonstation-icon-hourglass-start
             .item-name= _p('aside.card_webinfo.last_push_date.name') + " :"
           .item-count#last-push-date(data-lastPushDate=date_xml(Date.now()))
-            i.anzhiyufont.liaisonstation-icon-spinner.liaisonstation-spin
+            i.liaisonstationfont.liaisonstation-icon-spinner.liaisonstation-spin
 

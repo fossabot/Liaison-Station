@@ -12,36 +12,36 @@
             span.post-meta-separator
 
           each item, index in page.categories.data
-            i.anzhiyufont.liaisonstation-icon-inbox.post-meta-icon
+            i.liaisonstationfont.liaisonstation-icon-inbox.post-meta-icon
             a(href=url_for(item.path) itemprop="url").post-meta-categories #[=item.name]
             if (index < page.categories.data.length - 1)
-              i.anzhiyufont.liaisonstation-icon-angle-right.post-meta-separator
+              i.liaisonstationfont.liaisonstation-icon-angle-right.post-meta-separator
       if (theme.post_meta.page.tags)
         span.article-meta.tags
           each item, index in page.tags.data
             a(href=url_for(item.path) tabindex="-1" itemprop="url").article-meta__tags 
               span 
-                i.anzhiyufont.liaisonstation-icon-hashtag
+                i.liaisonstationfont.liaisonstation-icon-hashtag
                 =item.name
 
   h1.post-title(itemprop="name headline")= page.title || _p('no_title')
     if (theme.post_edit.enable && (theme.post_edit.github !== false))
       a.post-edit-link(href=theme.post_edit.url + page.source title=_p('post.edit.github') + ' - ' + page.title target="_blank")
-        i.anzhiyufont.liaisonstation-icon-pencil
+        i.liaisonstationfont.liaisonstation-icon-pencil
     if (theme.post_edit.enable && (theme.post_edit.yuque !== false))
       a.post-edit-link(href=theme.post_edit.yuque + page.id + '/edit/' title=_p('post.edit.yuque') + ' - ' + page.title target="_blank")
-        i.anzhiyufont.liaisonstation-icon-pencil
+        i.liaisonstationfont.liaisonstation-icon-pencil
 
   #post-meta
     .meta-firstline
       if (theme.post_meta.post.date_type)
         span.post-meta-date
           if (theme.post_meta.post.date_type === 'both')
-            i.anzhiyufont.liaisonstation-icon-calendar-days.post-meta-icon
+            i.liaisonstationfont.liaisonstation-icon-calendar-days.post-meta-icon
             span.post-meta-label= _p('post.created')
             time.post-meta-date-created(itemprop="dateCreated datePublished" datetime=date_xml(page.date) title=_p('post.created') + ' ' + full_date(page.date))=date(page.date, config.date_format)
             span.post-meta-separator
-            i.anzhiyufont.liaisonstation-icon-history.post-meta-icon
+            i.liaisonstationfont.liaisonstation-icon-history.post-meta-icon
             span.post-meta-label= _p('post.updated')
             time.post-meta-date-updated(itemprop="dateCreated datePublished" datetime=date_xml(page.updated) title=_p('post.updated') + ' ' + full_date(page.updated))=date(page.updated, config.date_format)
           else
@@ -49,7 +49,7 @@
             - let date_type = data_type_update ? 'updated' : 'date'
             - let date_icon = data_type_update ? 'liaisonstation-icon-history' :'liaisonstation-icon-calendar-days'
             - let date_title = data_type_update ? _p('post.updated') : _p('post.created')
-            i.post-meta-icon.anzhiyufont(class=date_icon)
+            i.post-meta-icon.liaisonstationfont(class=date_icon)
             span.post-meta-label= date_title
             time(itemprop="dateCreated datePublished" datetime=date_xml(page[date_type]) title=date_title + ' ' + full_date(page[date_type]))=date(page[date_type], config.date_format)
 
@@ -59,13 +59,13 @@
         span.post-meta-separator
         span.post-meta-wordcount
           if theme.wordcount.post_wordcount
-            i.anzhiyufont.liaisonstation-icon-file-word.post-meta-icon(title="文章字数")
+            i.liaisonstationfont.liaisonstation-icon-file-word.post-meta-icon(title="文章字数")
             span.post-meta-label(title="文章字数")= _p('post.wordcount') + ':'
             span.word-count(title="文章字数")= wordcount(page.content)
             if theme.wordcount.min2read
               span.post-meta-separator
           if theme.wordcount.min2read
-            i.anzhiyufont.liaisonstation-icon-clock.post-meta-icon(title="阅读时长")
+            i.liaisonstationfont.liaisonstation-icon-clock.post-meta-icon(title="阅读时长")
             span.post-meta-label(title="阅读时长")= _p('post.min2read') + ':'
             span= min2read(page.content, {cn: 350, en: 160}) + _p('post.min2read_unit')
     
@@ -73,7 +73,7 @@
       mixin pvBlock(parent_id,parent_class,parent_title)
         span.post-meta-separator
         span(class=parent_class id=parent_id data-flag-title=page.title)
-          i.anzhiyufont.liaisonstation-icon-fw-eye.post-meta-icon
+          i.liaisonstationfont.liaisonstation-icon-fw-eye.post-meta-icon
           span.post-meta-label(title="阅读量")=_p('post.page_pv') + ':'
           if block
             block
@@ -83,32 +83,32 @@
         if commentUse[0] === 'Valine' && theme.valine.visitor
           +pvBlock(url_for(page.path),'leancloud_visitors',page.title)
             span.leancloud-visitors-count(title="访问量")
-              i.anzhiyufont.liaisonstation-icon-spinner.liaisonstation-spin
+              i.liaisonstationfont.liaisonstation-icon-spinner.liaisonstation-spin
         else if commentUse[0] === 'Waline' && theme.waline.pageview
           +pvBlock('','','')
             span.waline-pageview-count(data-path=url_for(page.path) title="访问量")
-              i.anzhiyufont.liaisonstation-icon-spinner.liaisonstation-spin
+              i.liaisonstationfont.liaisonstation-icon-spinner.liaisonstation-spin
         else if commentUse[0] === 'Twikoo' && theme.twikoo.visitor
           +pvBlock('','','')
             span#twikoo_visitors(title="访问量")
-              i.anzhiyufont.liaisonstation-icon-spinner.liaisonstation-spin
+              i.liaisonstationfont.liaisonstation-icon-spinner.liaisonstation-spin
         else if commentUse[0] === 'Artalk' && theme.artalk.visitor
           +pvBlock('','','')
             span#ArtalkPV
-              i.anzhiyufont.liaisonstation-icon-spinner.liaisonstation-spin
+              i.liaisonstationfont.liaisonstation-icon-spinner.liaisonstation-spin
         else if theme.busuanzi.page_pv
           +pvBlock('','post-meta-pv-cv','')
             span#busuanzi_value_page_pv
-              i.anzhiyufont.liaisonstation-icon-spinner.liaisonstation-spin
+              i.liaisonstationfont.liaisonstation-icon-spinner.liaisonstation-spin
       else if theme.busuanzi.page_pv
         +pvBlock('','post-meta-pv-cv','')
           span#busuanzi_value_page_pv
-            i.anzhiyufont.liaisonstation-icon-spinner.liaisonstation-spin
+            i.liaisonstationfont.liaisonstation-icon-spinner.liaisonstation-spin
       - let location = page.location ? page.location : theme.post_copyright.location
       if theme.post_copyright.enable && location
         span.post-meta-separator        
         span.post-meta-position(title="作者IP属地为" + location)
-          i.anzhiyufont.liaisonstation-icon-location-dot
+          i.liaisonstationfont.liaisonstation-icon-location-dot
           =location
 
       if comments.count && !comments.lazyload && page.comments !== false && comments.use
@@ -117,7 +117,7 @@
         mixin countBlock
           span.post-meta-separator
           span.post-meta-commentcount
-            i.anzhiyufont.liaisonstation-icon-comments.post-meta-icon
+            i.liaisonstationfont.liaisonstation-icon-comments.post-meta-icon
             span.post-meta-label= _p('post.comments') + ':'
             if block
               block
@@ -127,19 +127,19 @@
             +countBlock
               a(href=url_for(page.path) + '#post-comment' itemprop="discussionUrl")
                 span.valine-comment-count(data-xid=url_for(page.path) itemprop="commentCount")
-                  i.anzhiyufont.liaisonstation-icon-spinner.liaisonstation-spin
+                  i.liaisonstationfont.liaisonstation-icon-spinner.liaisonstation-spin
           when 'Waline'
             +countBlock
               a(href=url_for(page.path) + '#post-comment')
                 span.waline-comment-count(data-path=url_for(page.path))
-                  i.anzhiyufont.liaisonstation-icon-spinner.liaisonstation-spin
+                  i.liaisonstationfont.liaisonstation-icon-spinner.liaisonstation-spin
           when 'Twikoo'
             +countBlock
               a(href=url_for(page.path) + '#post-comment' tabindex="-1")
                 span#twikoo-count
-                  i.anzhiyufont.liaisonstation-icon-spinner.liaisonstation-spin
+                  i.liaisonstationfont.liaisonstation-icon-spinner.liaisonstation-spin
           when 'Artalk'
             +countBlock
               a(href=url_for(page.path) + '#post-comment')
                 span.artalk-count
-                  i.anzhiyufont.liaisonstation-icon-spinner.liaisonstation-spin
+                  i.liaisonstationfont.liaisonstation-icon-spinner.liaisonstation-spin

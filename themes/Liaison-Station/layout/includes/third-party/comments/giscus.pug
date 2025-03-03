@@ -42,10 +42,10 @@ script.
       });
     }
 
-    anzhiyu.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+    liaisonstation.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
 
     if ('!{use[0]}' === 'Giscus' || !!{lazyload}) {
-      if (!{lazyload}) anzhiyu.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+      if (!{lazyload}) liaisonstation.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
       else loadGiscus()
     } else {
       window.loadOtherComment = loadGiscus

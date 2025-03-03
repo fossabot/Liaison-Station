@@ -1,5 +1,5 @@
 /**
- * AnZhiYu
+ * liaisonstation
  * for aside categories
  */
 
@@ -61,7 +61,7 @@ hexo.extend.helper.register('aside_categories', function (categories, options) {
 
           if (isExpand && isTopParent && child) {
             expandBtn = ' expandBtn'
-            result += `<i class="anzhiyufont liaisonstation-icon-caret-left ${expandClass}"></i>`
+            result += `<i class="liaisonstationfont liaisonstation-icon-caret-left ${expandClass}"></i>`
           }
 
           result += '</a>'
@@ -83,13 +83,13 @@ hexo.extend.helper.register('aside_categories', function (categories, options) {
   const moreButton = function () {
     if (categories.length <= limit) return ''
     const moreHtml = `<a class="card-more-btn" href="${categoryDir}/" title="${buttonLabel}">
-    <i class="anzhiyufont liaisonstation-icon-angle-right"></i></a>`
+    <i class="liaisonstationfont liaisonstation-icon-angle-right"></i></a>`
 
     return moreHtml
   }
 
   return `<div class="item-headline">
-            <i class="anzhiyufont liaisonstation-icon-folder-open"></i>
+            <i class="liaisonstationfont liaisonstation-icon-folder-open"></i>
             <span>${this._p('aside.card_categories')}</span>
             ${moreButton()}
             </div>

@@ -1,7 +1,7 @@
 [data-theme="light"] #footer-wrap {
   color: var(--font-color);
 }
-#footer-wrap .anzhiyufont.liaisonstation-icon-heartbeat {
+#footer-wrap .liaisonstationfont.liaisonstation-icon-heartbeat {
   transition: 0.3s;
   animation: heartbeat-bounce 2s ease-in-out infinite;
   -webkit-font-smoothing: antialiased;

@@ -1,5 +1,5 @@
 /**
- * AnZhiYu
+ * liaisonstation
  * for aside archives
  */
 
@@ -70,13 +70,13 @@ hexo.extend.helper.register("aside_archives", function (options = {}) {
   const len = data.length;
   const Judge = limit === 0 ? len : Math.min(len, limit);
 
-  result += `<div class="item-headline"><i class="anzhiyufont liaisonstation-icon-archive"></i><span>${this._p(
+  result += `<div class="item-headline"><i class="liaisonstationfont liaisonstation-icon-archive"></i><span>${this._p(
     "aside.card_archives"
   )}</span>`;
 
   if (len > Judge) {
     result += `<a class="card-more-btn" href="${this.url_for(archiveDir)}/" title="${this._p("aside.more_button")}">
-    <i class="anzhiyufont liaisonstation-icon-angle-right"></i></a>`;
+    <i class="liaisonstationfont liaisonstation-icon-angle-right"></i></a>`;
   }
 
   result += '</div><ul class="card-archive-list">';

@@ -1,5 +1,5 @@
 /**
- * AnZhiYu
+ * liaisonstation
  * Merge CDN
  */
 
@@ -41,27 +41,27 @@ hexo.extend.filter.register("before_generate", () => {
     },
     random_friends_post_js: {
       name: "hexo-theme-liaisonstation",
-      file: "js/Liaison-Stationanzhiyu/random_friends_post.js",
+      file: "js/Liaison-Stationliaisonstation/random_friends_post.js",
       version,
     },
     right_click_menu_js: {
       name: "hexo-theme-liaisonstation",
-      file: "js/Liaison-Stationanzhiyu/right_click_menu.js",
+      file: "js/Liaison-Stationliaisonstation/right_click_menu.js",
       version,
     },
     comment_barrage_js: {
       name: "hexo-theme-liaisonstation",
-      file: "js/Liaison-Stationanzhiyu/comment_barrage.js",
+      file: "js/Liaison-Stationliaisonstation/comment_barrage.js",
       version,
     },
     ai_abstract_js: {
       name: "hexo-theme-liaisonstation",
-      file: "js/Liaison-Stationanzhiyu/ai_abstract.js",
+      file: "js/Liaison-Stationliaisonstation/ai_abstract.js",
       version,
     },
     people_js: {
       name: "hexo-theme-liaisonstation",
-      file: "js/Liaison-Stationanzhiyu/people.js",
+      file: "js/Liaison-Stationliaisonstation/people.js",
       version,
     },
   };

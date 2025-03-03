@@ -8,11 +8,11 @@
         .banner-button-group
           if (theme.friends_vue.apiurl)
             a.banner-button.secondary.no-text-decoration(onclick="friendChainRandomTransmission()")
-              i.anzhiyufont.liaisonstation-icon-paper-plane1
+              i.liaisonstationfont.liaisonstation-icon-paper-plane1
               span.banner-button-text 随机访问
           if theme.linkPageTop.addFriendPlaceholder && theme.comments.use == 'Twikoo' && theme.twikoo.envId
-            a.banner-button.no-text-decoration(onclick="anzhiyu.addFriendLink()")
-              i.anzhiyufont.liaisonstation-icon-arrow-circle-right
+            a.banner-button.no-text-decoration(onclick="liaisonstation.addFriendLink()")
+              i.liaisonstationfont.liaisonstation-icon-arrow-circle-right
               span.banner-button-text 申请友链
       #skills-tags-group-all
         .tags-group-wrapper
@@ -41,7 +41,7 @@
       .title-h2-a-left
         h2(style='padding-top:0;margin:.6rem 0 .6rem') 🎣 钓鱼
         a.random-post-start.no-text-decoration(href='javascript:fetchRandomPost();')
-          i.anzhiyufont.liaisonstation-icon-arrow-rotate-right
+          i.liaisonstationfont.liaisonstation-icon-arrow-rotate-right
       .title-h2-a-right
         a.random-post-all.no-text-decoration(href='/link/') 全部友链
     #random-post
@@ -54,7 +54,7 @@
           h2!= i.class_name + "(" + i.link_list.length + ")"
         if i.class_desc
           .flink-desc!=i.class_desc
-        if i.flink_style === 'anzhiyu'
+        if i.flink_style === 'liaisonstation'
           div(class=i.lost_contact ? 'liaisonstation-flink-list cf-friends-lost-contact' : 'liaisonstation-flink-list')
             if i.link_list
               each item in i.link_list

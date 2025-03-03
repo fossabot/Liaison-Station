@@ -101,7 +101,7 @@ if (document.querySelector(".comment-barrage")) {
           </div>
           <liaisonstation class="barrageContent" onClick="window.location.hash = '${data.id}'">
             ${data.comment}
-          </anzhiyu>
+          </liaisonstation>
         `;
 
     // 获取liaisonstation标签内的所有pre元素

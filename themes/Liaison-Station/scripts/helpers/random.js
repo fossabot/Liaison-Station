@@ -80,7 +80,7 @@ hexo.extend.generator.register("random", function (locals) {
     };`;
   }
   return {
-    path: config.path || "anzhiyu/random.js",
+    path: config.path || "liaisonstation/random.js",
     data: result,
   };
 });
