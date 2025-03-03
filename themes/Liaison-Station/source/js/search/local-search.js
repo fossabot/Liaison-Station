@@ -130,7 +130,7 @@ window.addEventListener("load", () => {
                 let previous;
                 do {
                   previous = content;
-                  content = content.replace(/<[^>]*>/g, "");
+                  content = content.replace(/<[^>]+>/g, "");
                 } while (content !== previous);
                 return content;
               })()
