@@ -1,1 +1,0 @@
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FZhangWentao-Github%2FLiaison-Station.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2FZhangWentao-Github%2FLiaison-Station?ref=badge_large&issueType=license)
