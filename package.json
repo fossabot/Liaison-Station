@@ -17,7 +17,7 @@
     "@statsig/session-replay": "^3.12.2",
     "@statsig/web-analytics": "^3.12.2",
     "dompurify": "^3.2.4",
-    "eslint": "^8.10.0",
+    "eslint": "^9.21.0",
     "hexo": "^7.3.0",
     "hexo-bilibili-bangumi": "^1.10.8",
     "hexo-butterfly-envelope": "^1.0.15",
