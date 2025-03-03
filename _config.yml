@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: 张文涛-联络站
+subtitle: '个人博客'
+description: '记录生活，分享人生'
 keywords:
-author: John Doe
+author: 张文涛
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://zhang-wen-tao.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
