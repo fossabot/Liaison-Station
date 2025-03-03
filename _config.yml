@@ -8,8 +8,8 @@ subtitle: '个人博客'
 description: '记录生活，分享人生'
 keywords:
 author: 张文涛
-language: en
-timezone: ''
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
