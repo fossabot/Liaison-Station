@@ -131,9 +131,9 @@ hexo.extend.filter.register(
         runtime: {
           enable: false,
           launch_time: "04/01/2021 00:00:00",
-          work_img: "https://npm.elemecdn.com/liaisonstation-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg",
+          work_img: "https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg",
           work_description: "距离月入25k也就还差一个大佬带我~",
-          offduty_img: "https://npm.elemecdn.com/liaisonstation-blog@2.0.4/img/badge/安知鱼-下班啦.svg",
+          offduty_img: "https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg",
           offduty_description: "下班了就该开开心心的玩耍，嘿嘿~",
         },
         bdageitem: {
@@ -141,12 +141,12 @@ hexo.extend.filter.register(
           list: [
             {
               link: "https://hexo.io/",
-              shields: "https://npm.elemecdn.com/liaisonstation-blog@2.1.5/img/badge/Frame-Hexo.svg",
+              shields: "https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg",
               message: "博客框架为Hexo_v5.4.0",
             },
             {
               link: "https://blog.anheyu.com/",
-              shields: "https://npm.elemecdn.com/liaisonstation-theme-static@1.0.9/img/Theme-liaisonstation-2E67D3.svg",
+              shields: "https://npm.elemecdn.com/anzhiyu-theme-static@1.0.9/img/Theme-liaisonstation-2E67D3.svg",
               message: "本站使用AnZhiYu主题",
             },
           ],
@@ -171,7 +171,7 @@ hexo.extend.filter.register(
           },
           linkList: [
             {
-              link: "https://github.com/liaisonstation-c/hexo-theme-liaisonstation",
+              link: "https://github.com/anzhiyu-c/hexo-theme-liaisonstation",
               text: "主题",
             },
           ],

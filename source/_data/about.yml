@@ -1,6 +1,6 @@
 - class_name: 关于页
   subtitle: 只要肯吃苦就有吃不完的苦✨
-  avatarImg: https://npm.elemecdn.com/liaisonstation-blog-static@1.0.0/img/avatar.webp
+  avatarImg: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.0/img/avatar.webp
   avatarSkills:
     left:
       - 🤖️ 数码科技爱好者
@@ -58,7 +58,7 @@
     author_name: 执政官
     personality_type: ESFJ-A
     photo_url: https://bu.dusays.com/2023/07/05/64a4c63495ac5.jpg
-    personality_img: https://npm.elemecdn.com/liaisonstation-blog@2.0.8/img/svg/ESFJ-A.svg
+    personality_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/ESFJ-A.svg
     name_url: https://www.16personalities.com/ch/esfj-%E4%BA%BA%E6%A0%BC
   maxim:
     maxim_tips: 座右铭
