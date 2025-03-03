@@ -12,7 +12,7 @@ hexo.extend.tag.register("dogeplayer", function (args) {
     '<div id="' +
     divId +
     '"></div>\n' +
-    '<script type="text/javascript" data-pjax src="https://player.dogecloud.com/js/loader"></script>\n' +
+    '<script type="text/javascript" data-pjax src="https://player.dogecloud.com/js/Liaison-Stationloader"></script>\n' +
     '<script type="text/javascript" data-pjax defer>\n' +
     "  setTimeout(() => {\n" +
     "    var dogePlayer = new DogePlayer({\n" +

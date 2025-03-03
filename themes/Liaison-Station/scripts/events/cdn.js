@@ -16,52 +16,52 @@ hexo.extend.filter.register("before_generate", () => {
   const internalSrc = {
     main: {
       name: "hexo-theme-liaisonstation",
-      file: "js/main.js",
+      file: "js/Liaison-Stationmain.js",
       version,
     },
     utils: {
       name: "hexo-theme-liaisonstation",
-      file: "js/utils.js",
+      file: "js/Liaison-Stationutils.js",
       version,
     },
     translate: {
       name: "hexo-theme-liaisonstation",
-      file: "js/tw_cn.js",
+      file: "js/Liaison-Stationtw_cn.js",
       version,
     },
     local_search: {
       name: "hexo-theme-liaisonstation",
-      file: "js/search/local-search.js",
+      file: "js/Liaison-Stationsearch/local-search.js",
       version,
     },
     algolia_js: {
       name: "hexo-theme-liaisonstation",
-      file: "js/search/algolia.js",
+      file: "js/Liaison-Stationsearch/algolia.js",
       version,
     },
     random_friends_post_js: {
       name: "hexo-theme-liaisonstation",
-      file: "js/anzhiyu/random_friends_post.js",
+      file: "js/Liaison-Stationanzhiyu/random_friends_post.js",
       version,
     },
     right_click_menu_js: {
       name: "hexo-theme-liaisonstation",
-      file: "js/anzhiyu/right_click_menu.js",
+      file: "js/Liaison-Stationanzhiyu/right_click_menu.js",
       version,
     },
     comment_barrage_js: {
       name: "hexo-theme-liaisonstation",
-      file: "js/anzhiyu/comment_barrage.js",
+      file: "js/Liaison-Stationanzhiyu/comment_barrage.js",
       version,
     },
     ai_abstract_js: {
       name: "hexo-theme-liaisonstation",
-      file: "js/anzhiyu/ai_abstract.js",
+      file: "js/Liaison-Stationanzhiyu/ai_abstract.js",
       version,
     },
     people_js: {
       name: "hexo-theme-liaisonstation",
-      file: "js/anzhiyu/people.js",
+      file: "js/Liaison-Stationanzhiyu/people.js",
       version,
     },
   };

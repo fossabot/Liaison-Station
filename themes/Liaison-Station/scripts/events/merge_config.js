@@ -416,7 +416,7 @@ hexo.extend.filter.register(
       google_adsense: {
         enable: false,
         auto_ads: true,
-        js: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+        js: "https://pagead2.googlesyndication.com/pagead/js/Liaison-Stationadsbygoogle.js",
         client: null,
         enable_page_level_ads: true,
       },

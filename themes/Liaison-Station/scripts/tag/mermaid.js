@@ -1,7 +1,7 @@
 /**
  * AnZhiYu
  * mermaid
- * https://github.com/mermaid-js/mermaid
+ * https://github.com/mermaid-js/Liaison-Stationmermaid
  */
 
 'use strict'
