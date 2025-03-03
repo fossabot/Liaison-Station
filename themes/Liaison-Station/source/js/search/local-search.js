@@ -1,5 +1,3 @@
-import DOMPurify from 'dompurify';
-
 window.addEventListener("load", () => {
   let loadFlag = false;
   let dataObj = [];
@@ -88,7 +86,7 @@ window.addEventListener("load", () => {
           content: content,
           url: item.querySelector("url").textContent,
           tags: tagsArr,
-          oneImage: srcArr?.[0],
+          oneImage: srcArr && srcArr[0],
         };
       });
     }
@@ -125,15 +123,10 @@ window.addEventListener("load", () => {
           let dataTags = data.tags;
           let oneImage = data.oneImage ?? "";
           const dataContent = data.content
-            ? (() => {
-                let content = data.content.trim().toLowerCase();
-                let previous;
-                do {
-                  previous = content;
-                  content = content.replace(/<[^>]*>/g, "");
-                } while (content !== previous);
-                return content;
-              })()
+            ? data.content
+                .trim()
+                .replace(/<[^>]+>/g, "")
+                .toLowerCase()
             : "";
           const dataUrl = data.url.startsWith("/") ? data.url : GLOBAL_CONFIG.root + data.url;
           let indexTitle = -1;
@@ -259,9 +252,9 @@ window.addEventListener("load", () => {
             "</div>";
         }
         str += "</div>";
-        $resultContent.innerHTML = DOMPurify.sanitize(str);
+        $resultContent.innerHTML = str;
         if (keywords[0] !== "") $loadingStatus.innerHTML = "";
-        window.pjax?.refresh($resultContent);
+        window.pjax && window.pjax.refresh($resultContent);
       });
     });
   };
