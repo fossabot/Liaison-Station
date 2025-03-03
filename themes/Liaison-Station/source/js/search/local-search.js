@@ -125,7 +125,7 @@ window.addEventListener("load", () => {
           const dataContent = data.content
             ? data.content
                 .trim()
-                .replace(/<!--|--!?>/g, "")
+                .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/g, "")
                 .toLowerCase()
             : "";
           const dataUrl = data.url.startsWith("/") ? data.url : GLOBAL_CONFIG.root + data.url;
