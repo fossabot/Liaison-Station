@@ -1,5 +1,5 @@
 #article-container .tag-Link {
-  background: var(--anzhiyu-secondbg);
+  background: var(--liaisonstation-secondbg);
   border-radius: 8px !important;
   display: flex;
   border: var(--style-border);
@@ -17,12 +17,12 @@
   border-bottom: var(--style-border);
   padding-bottom: 4px;
   font-size: 12px;
-  color: var(--anzhiyu-gray);
+  color: var(--liaisonstation-gray);
   font-weight: normal;
 }
 
 #article-container .tag-Link:hover .tag-link-tips {
-  color: var(--anzhiyu-white);
+  color: var(--liaisonstation-white);
 }
 
 #article-container .tag-Link .tag-link-bottom {
@@ -37,8 +37,8 @@
   min-width: 60px;
   height: 60px;
   background-size: cover;
-  border-radius: var(--anzhiyu-border-radius);
-  background-color: var(--anzhiyu-card-bg);
+  border-radius: var(--liaisonstation-border-radius);
+  background-color: var(--liaisonstation-card-bg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,7 +47,7 @@
   padding: 0;
   margin: auto;
   font-size: 24px;
-  color: var(--anzhiyu-fontcolor);
+  color: var(--liaisonstation-fontcolor);
 }
 
 #article-container .tag-Link .tag-link-bottom .tag-link-right {
@@ -62,13 +62,13 @@
 
 #article-container .tag-Link .tag-link-bottom .tag-link-right .tag-link-sitename {
   font-size: 0.7rem;
-  color: var(--anzhiyu-gray);
+  color: var(--liaisonstation-gray);
   font-weight: normal;
   margin-top: 4px;
 }
 
 #article-container .tag-Link:hover .tag-link-bottom .tag-link-right .tag-link-sitename {
-  color: var(--anzhiyu-white);
+  color: var(--liaisonstation-white);
 }
 
 #article-container .tag-Link .tag-link-bottom i {

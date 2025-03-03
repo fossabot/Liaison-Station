@@ -4,7 +4,7 @@
   display: none
   width: 100%
   height: 100%
-  background: var(--anzhiyu-maskbg);
+  background: var(--liaisonstation-maskbg);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: blur(20px);
   transform: translateZ(0);
@@ -23,7 +23,7 @@
     overflow: hidden auto;
     width: 300px;
     height: 100%;
-    background: var(--anzhiyu-background);
+    background: var(--liaisonstation-background);
     transition: all .5s ease 0s;
     padding-top: 30px;
     border-left: var(--style-border-always);
@@ -33,7 +33,7 @@
       padding: 0 16px;
       .back-menu-list-title
         font-size: 12px;
-        color: var(--anzhiyu-secondtext);
+        color: var(--liaisonstation-secondtext);
       .back-menu-list
         width: calc(100% + 16px);
         justify-content: flex-start;
@@ -43,7 +43,7 @@
         flex-wrap: wrap;
         .back-menu-item
           width: calc(50% - 16px);
-          background: var(--anzhiyu-card-bg);
+          background: var(--liaisonstation-card-bg);
           border: var(--style-border-always);
           border-radius: 8px;
           display: flex;
@@ -62,9 +62,9 @@
         cursor: pointer;
         margin: 0;
         font-size: .9rem;
-        color: var(--anzhiyu-fontcolor);
+        color: var(--liaisonstation-fontcolor);
         width: 100%;
-        background: var(--anzhiyu-card-bg);
+        background: var(--liaisonstation-card-bg);
         border-radius: 8px;
         border: var(--style-border-always);
         display: flex;
@@ -73,7 +73,7 @@
 
     span.sidebar-menu-item-title
       font-size: 12px;
-      color: var(--anzhiyu-secondtext);
+      color: var(--liaisonstation-secondtext);
       margin-left: 16px;
     .card-tag-cloud 
       padding: 0 11px;
@@ -82,12 +82,12 @@
       flex-wrap: wrap;
       margin-bottom: 60px;
       a
-        color: var(--anzhiyu-fontcolor);
+        color: var(--liaisonstation-fontcolor);
         padding: 2px 8px 2px 12px;
         margin: 4px;
         border-radius: 8px;
         border: var(--style-border-always);
-        background: var(--anzhiyu-card-bg);
+        background: var(--liaisonstation-card-bg);
         sup 
           opacity: .6;
           margin-left: 4px;
@@ -111,7 +111,7 @@
         font-size: 12px;
         position: relative
         padding-left: .3rem
-        color: var(--anzhiyu-fontcolor)
+        color: var(--liaisonstation-fontcolor)
 
         i:first-child
           width: 15%
@@ -136,19 +136,19 @@
         margin: 0
         list-style: none
         .site-page.child
-          background: var(--anzhiyu-card-bg);
+          background: var(--liaisonstation-card-bg);
 
 /* tags样式 */
 #aside-content .card-tag-cloud a {
-  border-radius: var(--anzhiyu-border-radius);
+  border-radius: var(--liaisonstation-border-radius);
   display: inline-block;
   margin-right: 4px;
 }
 
 #aside-content .card-tag-cloud a:hover {
-  background: var(--anzhiyu-theme);
-  color: var(--anzhiyu-white) !important;
-  box-shadow: var(--anzhiyu-shadow-theme);
+  background: var(--liaisonstation-theme);
+  color: var(--liaisonstation-white) !important;
+  box-shadow: var(--liaisonstation-shadow-theme);
 }
 @media screen and (min-width: 1200px) {
   #aside-content .card-tag-cloud a:active {
@@ -198,9 +198,9 @@ li.card-category-list-item {
 
 #aside-content .card-archives ul.card-archive-list > .card-archive-list-item a:hover,
 #aside-content .card-categories ul.card-category-list > .card-category-list-item a:hover {
-  color: var(--anzhiyu-white);
-  background-color: var(--anzhiyu-theme);
-  border-radius: var(--anzhiyu-border-radius);
+  color: var(--liaisonstation-white);
+  background-color: var(--liaisonstation-theme);
+  border-radius: var(--liaisonstation-border-radius);
   border: 1px solid transparent;
 }
 
@@ -213,7 +213,7 @@ li.card-category-list-item {
 
 #aside-content .card-archives ul.card-archive-list > .card-archive-list-item a,
 #aside-content .card-categories ul.card-category-list > .card-category-list-item a {
-  border-radius: var(--anzhiyu-border-radius);
+  border-radius: var(--liaisonstation-border-radius);
   margin: 4px 0;
   display: flex;
   flex-direction: column;
@@ -234,7 +234,7 @@ li.card-category-list-item {
 }
 /* 个人card */
 #aside-content .card-info #card-info-btn {
-  border-radius: var(--anzhiyu-border-radius);
+  border-radius: var(--liaisonstation-border-radius);
 }
 
 /* 最近文章样式修改 */
@@ -270,20 +270,20 @@ li.card-category-list-item {
   transform: scale(1);
 }
 #aside-content .aside-list > .aside-list-item:not(:last-child) {
-  border-bottom: 0 dashed var(--anzhiyu-background) !important;
+  border-bottom: 0 dashed var(--liaisonstation-background) !important;
 }
 #aside-content .aside-list > .aside-list-item .thumbnail {
-  border-radius: var(--anzhiyu-border-radius);
+  border-radius: var(--liaisonstation-border-radius);
   border: var(--style-border);
 }
 #aside-content .aside-list > .aside-list-item:hover {
-  background: var(--anzhiyu-main);
-  color: var(--anzhiyu-white);
+  background: var(--liaisonstation-main);
+  color: var(--liaisonstation-white);
   transition: 0.3s;
-  box-shadow: var(--anzhiyu-shadow-main);
+  box-shadow: var(--liaisonstation-shadow-main);
 }
 #aside-content .aside-list > .aside-list-item:hover a {
-  color: var(--anzhiyu-white) !important;
+  color: var(--liaisonstation-white) !important;
 }
 .card-widget.card-recent-post {
   padding: 0.4rem 1rem !important;
@@ -291,7 +291,7 @@ li.card-category-list-item {
 
 /* 文章toc */
 #aside-content #card-toc .toc-content .toc-link.active {
-  border-radius: var(--anzhiyu-border-radius);
+  border-radius: var(--liaisonstation-border-radius);
 }
 #aside-content #card-toc .toc-content {
   overflow-y: auto;
@@ -302,14 +302,14 @@ li.card-category-list-item {
 #aside-content #card-toc .toc-content .toc-link.active {
   line-height: 1.2;
   border-radius: 12px;
-  border-left-color: var(--anzhiyu-hovertext);
-  background-color: var(--anzhiyu-card-bg);
-  color: var(--anzhiyu-lighttext);
+  border-left-color: var(--liaisonstation-hovertext);
+  background-color: var(--liaisonstation-card-bg);
+  color: var(--liaisonstation-lighttext);
   font-weight: 700;
   font-size: 20px;
 }
 [data-theme="dark"].toc .toc-item.active .toc-link .toc-text {
-  color: var(--anzhiyu-white);
+  color: var(--liaisonstation-white);
 }
 #aside-content #card-toc .toc-content .toc-item.active .toc-link {
   opacity: 1;
@@ -320,7 +320,7 @@ li.card-category-list-item {
   padding: 8px;
   border-left: 0 solid transparent;
   border-radius: 12px;
-  color: var(--anzhiyu-secondtext);
+  color: var(--liaisonstation-secondtext);
   cursor: default;
 }
 #aside-content #card-toc .toc-content .toc-link:not(.active) span {
@@ -334,17 +334,17 @@ li.card-category-list-item {
   opacity: 1;
 }
 #aside-content #card-toc .toc-content .toc-link:not(.active) span:hover {
-  color: var(--anzhiyu-lighttext);
+  color: var(--liaisonstation-lighttext);
 }
 
 .site-data > a .headline,
 .site-data > a .length-num {
-  color: var(--anzhiyu-white);
+  color: var(--liaisonstation-white);
 }
 
 #sidebar-menus.open .site-data > a .headline,
 #sidebar-menus.open .site-data > a .length-num {
-  color: var(--anzhiyu-fontcolor);
+  color: var(--liaisonstation-fontcolor);
 }
 
 @media screen and (min-width: 900px) {
@@ -369,8 +369,8 @@ li.card-category-list-item {
   transition: 0.3s;
 }
 #aside-content .card-widget {
-  box-shadow: var(--anzhiyu-shadow-border);
-  background: var(--anzhiyu-card-bg);
+  box-shadow: var(--liaisonstation-shadow-border);
+  background: var(--liaisonstation-card-bg);
   border: var(--style-border);
   transition: 0.3s;
 }
@@ -378,7 +378,7 @@ li.card-category-list-item {
   display: flex;
   position: relative;
   margin: 1rem 0;
-  border: 1px dashed var(--anzhiyu-theme-op);
+  border: 1px dashed var(--liaisonstation-theme-op);
 }
 #aside-content hr:before {
   content: none;

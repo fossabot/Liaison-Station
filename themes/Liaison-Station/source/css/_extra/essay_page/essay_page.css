@@ -8,7 +8,7 @@ body[data-type="essay"] #page .page-title {
   display: none;
 }
 body[data-type="essay"] #web_bg {
-  background: var(--anzhiyu-background);
+  background: var(--liaisonstation-background);
 }
 #bber .bber-container-img {
   display: flex;
@@ -48,12 +48,12 @@ body[data-type="essay"] #web_bg {
   content: "视频";
   display: inline-block;
   padding: 1px 6px;
-  background: var(--anzhiyu-black-op);
+  background: var(--liaisonstation-black-op);
   border-radius: 8px;
   margin-left: 4px;
   font-size: 12px;
   font-weight: 700;
-  color: var(--anzhiyu-white);
+  color: var(--liaisonstation-white);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: blur(20px);
   transform: translateZ(0);
@@ -67,7 +67,7 @@ body[data-type="essay"] #web_bg {
   order: 0;
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--anzhiyu-fontcolor);
+  color: var(--liaisonstation-fontcolor);
   width: 100%;
   line-height: 1.38;
   border-radius: 12px;
@@ -97,8 +97,8 @@ body[data-type="essay"] #web_bg {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  background: var(--anzhiyu-card-bg);
-  box-shadow: var(--anzhiyu-shadow-border);
+  background: var(--liaisonstation-card-bg);
+  box-shadow: var(--liaisonstation-shadow-border);
   margin-right: 2%;
 }
 #bber .timeline #waterfall.show {
@@ -132,7 +132,7 @@ body[data-type="essay"] #web_bg {
   display: flex;
   position: relative;
   margin: 8px 0px;
-  border: 1px dashed var(--anzhiyu-theme-op);
+  border: 1px dashed var(--liaisonstation-theme-op);
   width: 100%;
 }
 
@@ -143,9 +143,9 @@ body[data-type="essay"] #web_bg {
 
 #bber > section > ul > li > div .bber-info-time,
 #bber > section > ul > li > div .bber-info-from {
-  color: var(--anzhiyu-fontcolor);
+  color: var(--liaisonstation-fontcolor);
   font-size: 0.7rem;
-  background-color: var(--anzhiyu-gray-op);
+  background-color: var(--liaisonstation-gray-op);
   padding: 0px 8px;
   border-radius: 20px;
   cursor: default;
@@ -153,7 +153,7 @@ body[data-type="essay"] #web_bg {
   align-items: center;
 }
 
-#bber .bber-info .anzhiyufont.anzhiyu-icon-clock {
+#bber .bber-info .anzhiyufont.liaisonstation-icon-clock {
   margin-right: 4px;
   font-size: 0.7rem;
 }
@@ -180,7 +180,7 @@ body[data-type="essay"] #web_bg {
 }
 
 .bber-reply:hover {
-  color: var(--anzhiyu-main);
+  color: var(--liaisonstation-main);
   max-height: 35px;
 }
 
@@ -203,8 +203,8 @@ body[data-type="essay"] #web_bg {
   font-size: 0.7rem;
 }
 #bber .bber-content-link:hover {
-  background-color: var(--anzhiyu-main);
-  color: var(--anzhiyu-white);
+  background-color: var(--liaisonstation-main);
+  color: var(--liaisonstation-white);
 }
 #bber .bber-music {
   width: 100%;
@@ -213,7 +213,7 @@ body[data-type="essay"] #web_bg {
   border-radius: 8px;
   overflow: hidden;
   border: var(--style-border-always);
-  background: var(--anzhiyu-secondbg);
+  background: var(--liaisonstation-secondbg);
 }
 #bber .aplayer {
   margin: 0;
@@ -235,7 +235,7 @@ body[data-type="essay"] #web_bg {
   font-size: 0.8rem;
   font-weight: 700;
   margin: 0;
-  color: var(--anzhiyu-fontcolor);
+  color: var(--liaisonstation-fontcolor);
 }
 
 #bber .aplayer .aplayer-info .aplayer-controller {
@@ -248,7 +248,7 @@ body[data-type="essay"] #web_bg {
   position: initial;
 }
 #bber .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar {
-  background: var(--anzhiyu-gray);
+  background: var(--liaisonstation-gray);
   height: 8px;
   border-radius: 12px;
   transition: 0.3s;
@@ -272,12 +272,12 @@ body[data-type="essay"] #web_bg {
 /* 顶部样式 */
 .author-content.author-content-item.essayPage {
   height: 19rem;
-  color: var(--anzhiyu-white);
+  color: var(--liaisonstation-white);
   overflow: hidden;
   margin-top: 0px;
 }
 body[data-type="essay"] #page .author-content-item .card-content .banner-button-group .banner-button:hover {
-  color: var(--anzhiyu-white);
+  color: var(--liaisonstation-white);
   border-radius: 20px !important;
 }
 
@@ -297,11 +297,11 @@ body[data-type="essay"] #page .author-content-item .card-content .banner-button-
 [data-theme="dark"] #bber .bber-music .aplayer,
 [data-theme="dark"] #bber .aplayer .aplayer-lrc:before,
 [data-theme="dark"] #bber .aplayer .aplayer-lrc:after {
-  background: var(--anzhiyu-card-bg);
-  color: var(--anzhiyu-fontcolor);
+  background: var(--liaisonstation-card-bg);
+  color: var(--liaisonstation-fontcolor);
 }
 #bber .aplayer .aplayer-lrc p {
-  color: var(--anzhiyu-fontcolor);
+  color: var(--liaisonstation-fontcolor);
   min-height: 40px;
   line-height: 30px !important;
   height: 40px !important;

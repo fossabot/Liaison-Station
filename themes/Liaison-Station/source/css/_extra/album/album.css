@@ -1,6 +1,6 @@
 /* 处理单页背景 */
 body[data-type="album"] #web_bg {
-  background: var(--anzhiyu-background);
+  background: var(--liaisonstation-background);
 }
 body[data-type="album"] #page {
   border: 0;

@@ -22,8 +22,8 @@
   let summaryID = null;
 
   const post_ai = document.querySelector(".post-ai-description");
-  const aiTitleRefreshIcon = post_ai.querySelector(".ai-title .anzhiyufont.anzhiyu-icon-arrow-rotate-right");
-  let aiReadAloudIcon = post_ai.querySelector(".anzhiyu-icon-circle-dot");
+  const aiTitleRefreshIcon = post_ai.querySelector(".ai-title .liaisonstationfont.liaisonstation-icon-arrow-rotate-right");
+  let aiReadAloudIcon = post_ai.querySelector(".liaisonstation-icon-circle-dot");
   const explanation = post_ai.querySelector(".ai-explanation");
 
   let aiStr = "";
@@ -54,10 +54,10 @@
 
   async function readAloud() {
     if (!summaryID) {
-      anzhiyu.snackbarShow("摘要还没加载完呢，请稍后。。。");
+      liaisonstation.snackbarShow("摘要还没加载完呢，请稍后。。。");
       return;
     }
-    aiReadAloudIcon = post_ai.querySelector(".anzhiyu-icon-circle-dot");
+    aiReadAloudIcon = post_ai.querySelector(".liaisonstation-icon-circle-dot");
     aiReadAloudIcon.style.opacity = "0.2";
     if (audio && !isPaused) {
       audio.pause();

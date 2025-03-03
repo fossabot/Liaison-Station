@@ -1,4 +1,4 @@
-const anzhiyu = {
+const liaisonstation = {
   debounce: (func, wait = 0, immediate = false) => {
     let timeout;
     return (...args) => {
@@ -59,7 +59,7 @@ const anzhiyu = {
     const { position, bgLight, bgDark } = GLOBAL_CONFIG.Snackbar;
     const bg = document.documentElement.getAttribute("data-theme") === "light" ? bgLight : bgDark;
     const root = document.querySelector(":root");
-    root.style.setProperty("--anzhiyu-snackbar-time", duration + "ms");
+    root.style.setProperty("--liaisonstation-snackbar-time", duration + "ms");
 
     Snackbar.show({
       text: text,
@@ -120,7 +120,7 @@ const anzhiyu = {
 
   initJustifiedGallery: function (selector) {
     const runJustifiedGallery = i => {
-      if (!anzhiyu.isHidden(i)) {
+      if (!liaisonstation.isHidden(i)) {
         fjGallery(i, {
           itemSelector: ".fj-gallery-item",
           rowHeight: i.getAttribute("data-rowHeight"),
@@ -199,7 +199,7 @@ const anzhiyu = {
         if (i.parentNode.tagName !== "A") {
           const dataSrc = i.dataset.lazySrc || i.src;
           const dataCaption = i.title || i.alt || "";
-          anzhiyu.wrap(i, "a", {
+          liaisonstation.wrap(i, "a", {
             href: dataSrc,
             "data-fancybox": "gallery",
             "data-caption": dataCaption,
@@ -277,7 +277,7 @@ const anzhiyu = {
 
   addEventListenerPjax: (ele, event, fn, option = false) => {
     ele.addEventListener(event, fn, option);
-    anzhiyu.addGlobalFn("pjax", () => {
+    liaisonstation.addGlobalFn("pjax", () => {
       ele.removeEventListener(event, fn, option);
     });
   },
@@ -304,15 +304,15 @@ const anzhiyu = {
   //顶栏自适应主题色
   initThemeColor: function () {
     let themeColor = getComputedStyle(document.documentElement)
-      .getPropertyValue("--anzhiyu-bar-background")
+      .getPropertyValue("--liaisonstation-bar-background")
       .trim()
       .replace('"', "")
       .replace('"', "");
     const currentTop = window.scrollY || document.documentElement.scrollTop;
     if (currentTop > 26) {
-      if (anzhiyu.is_Post()) {
+      if (liaisonstation.is_Post()) {
         themeColor = getComputedStyle(document.documentElement)
-          .getPropertyValue("--anzhiyu-meta-theme-post-color")
+          .getPropertyValue("--liaisonstation-meta-theme-post-color")
           .trim()
           .replace('"', "")
           .replace('"', "");
@@ -358,7 +358,7 @@ const anzhiyu = {
     rm.hideRightMenu();
     if (rm.downloadimging == false) {
       rm.downloadimging = true;
-      anzhiyu.snackbarShow("正在下载中，请稍后", false, 10000);
+      liaisonstation.snackbarShow("正在下载中，请稍后", false, 10000);
       setTimeout(function () {
         let image = new Image();
         // 解决跨域 Canvas 污染问题
@@ -377,11 +377,11 @@ const anzhiyu = {
           a.dispatchEvent(event); // 触发a的单击事件
         };
         image.src = imgsrc;
-        anzhiyu.snackbarShow("图片已添加盲水印，请遵守版权协议");
+        liaisonstation.snackbarShow("图片已添加盲水印，请遵守版权协议");
         rm.downloadimging = false;
       }, "10000");
     } else {
-      anzhiyu.snackbarShow("有正在进行中的下载，请稍后再试");
+      liaisonstation.snackbarShow("有正在进行中的下载，请稍后再试");
     }
   },
   //禁止图片右键单击
@@ -416,7 +416,7 @@ const anzhiyu = {
     if (commentBarrage) {
       if (window.getComputedStyle(commentBarrage).display === "flex") {
         commentBarrage.style.display = "none";
-        anzhiyu.snackbarShow("✨ 已关闭评论弹幕");
+        liaisonstation.snackbarShow("✨ 已关闭评论弹幕");
         document.querySelector(".menu-commentBarrage-text").textContent = "显示热评";
         document.querySelector("#consoleCommentBarrage").classList.remove("on");
         localStorage.setItem("commentBarrageSwitch", "false");
@@ -424,7 +424,7 @@ const anzhiyu = {
         commentBarrage.style.display = "flex";
         document.querySelector(".menu-commentBarrage-text").textContent = "关闭热评";
         document.querySelector("#consoleCommentBarrage").classList.add("on");
-        anzhiyu.snackbarShow("✨ 已开启评论弹幕");
+        liaisonstation.snackbarShow("✨ 已开启评论弹幕");
         localStorage.removeItem("commentBarrageSwitch");
       }
     }
@@ -506,7 +506,7 @@ const anzhiyu = {
         }
       });
 
-      anzhiyu.scrollByMouseWheel($list, $catalog);
+      liaisonstation.scrollByMouseWheel($list, $catalog);
     }
   },
   // Page Tag 激活
@@ -514,7 +514,7 @@ const anzhiyu = {
     const $list = document.getElementById("tag-page-tags");
     if ($list) {
       const $tagPageTags = document.getElementById(decodeURIComponent(window.location.pathname));
-      anzhiyu.scrollByMouseWheel($list, $tagPageTags);
+      liaisonstation.scrollByMouseWheel($list, $tagPageTags);
     }
   },
   // 修改时间显示"最近"
@@ -575,7 +575,7 @@ const anzhiyu = {
       document.querySelectorAll("#bber time").forEach(function (e) {
         var t = e,
           datetime = t.getAttribute("datetime");
-        (t.innerText = anzhiyu.diffDate(datetime, true)), (t.style.display = "inline");
+        (t.innerText = liaisonstation.diffDate(datetime, true)), (t.style.display = "inline");
       });
   },
   // 修改相册集中的时间
@@ -584,7 +584,7 @@ const anzhiyu = {
       document.querySelectorAll("#album_detail time").forEach(function (e) {
         var t = e,
           datetime = t.getAttribute("datetime");
-        (t.innerText = anzhiyu.diffDate(datetime, true)), (t.style.display = "inline");
+        (t.innerText = liaisonstation.diffDate(datetime, true)), (t.style.display = "inline");
       });
   },
   // 刷新瀑布流
@@ -645,24 +645,24 @@ const anzhiyu = {
   },
   //切换音乐播放状态
   musicToggle: function (changePaly = true) {
-    if (!anzhiyu_musicFirst) {
-      anzhiyu.musicBindEvent();
-      anzhiyu_musicFirst = true;
+    if (!liaisonstation_musicFirst) {
+      liaisonstation.musicBindEvent();
+      liaisonstation_musicFirst = true;
     }
-    let msgPlay = '<i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span>';
-    let msgPause = '<i class="anzhiyufont anzhiyu-icon-pause"></i><span>暂停音乐</span>';
-    if (anzhiyu_musicPlaying) {
+    let msgPlay = '<i class="liaisonstationfont liaisonstation-icon-play"></i><span>播放音乐</span>';
+    let msgPause = '<i class="liaisonstationfont liaisonstation-icon-pause"></i><span>暂停音乐</span>';
+    if (liaisonstation_musicPlaying) {
       navMusicEl.classList.remove("playing");
       document.getElementById("menu-music-toggle").innerHTML = msgPlay;
       document.getElementById("nav-music-hoverTips").innerHTML = "音乐已暂停";
       document.querySelector("#consoleMusic").classList.remove("on");
-      anzhiyu_musicPlaying = false;
+      liaisonstation_musicPlaying = false;
       navMusicEl.classList.remove("stretch");
     } else {
       navMusicEl.classList.add("playing");
       document.getElementById("menu-music-toggle").innerHTML = msgPause;
       document.querySelector("#consoleMusic").classList.add("on");
-      anzhiyu_musicPlaying = true;
+      liaisonstation_musicPlaying = true;
       navMusicEl.classList.add("stretch");
     }
     if (changePaly) document.querySelector("#nav-music meting-js").aplayer.toggle();
@@ -712,12 +712,12 @@ const anzhiyu = {
   rewardShowConsole: function () {
     // 判断是否为赞赏打开控制台
     consoleEl.classList.add("reward-show");
-    anzhiyu.initConsoleState();
+    liaisonstation.initConsoleState();
   },
   // 显示中控台
   showConsole: function () {
     consoleEl.classList.add("show");
-    anzhiyu.initConsoleState();
+    liaisonstation.initConsoleState();
   },
 
   //隐藏中控台
@@ -750,7 +750,7 @@ const anzhiyu = {
       const currentTime = new Date().getTime();
       if (currentTime - data.timestamp < 24 * 60 * 60 * 1000) {
         // 如果缓存的数据没有过期，直接使用
-        anzhiyu.playMusic(data.songs);
+        liaisonstation.playMusic(data.songs);
         return;
       }
     }
@@ -764,7 +764,7 @@ const anzhiyu = {
           songs: songs,
         };
         localStorage.setItem("musicData", JSON.stringify(cacheData));
-        anzhiyu.playMusic(songs);
+        liaisonstation.playMusic(songs);
       });
   },
   // 播放音乐
@@ -824,16 +824,16 @@ const anzhiyu = {
         if (musiccover) {
           clearInterval(timer);
           // 绑定事件
-          anzhiyu.addEventListenerMusic();
+          liaisonstation.addEventListenerMusic();
           // 确保第一次能够正确替换背景
-          anzhiyu.changeMusicBg();
+          liaisonstation.changeMusicBg();
 
           // 暂停nav的音乐
           if (
             document.querySelector("#nav-music meting-js").aplayer &&
             !document.querySelector("#nav-music meting-js").aplayer.audio.paused
           ) {
-            anzhiyu.musicToggle();
+            liaisonstation.musicToggle();
           }
         }
       }, 100);
@@ -851,11 +851,11 @@ const anzhiyu = {
     if (urlParams.get("id") && urlParams.get("server")) {
       const id = urlParams.get("id");
       const server = urlParams.get("server");
-      anMusicPageMeting.innerHTML = `<meting-js id="${id}" server=${server} type="playlist" type="playlist" mutex="true" preload="auto" theme="var(--anzhiyu-main)" order="list" list-max-height="calc(100vh - 169px)!important"></meting-js>`;
+      anMusicPageMeting.innerHTML = `<meting-js id="${id}" server=${server} type="playlist" type="playlist" mutex="true" preload="auto" theme="var(--liaisonstation-main)" order="list" list-max-height="calc(100vh - 169px)!important"></meting-js>`;
     } else {
-      anMusicPageMeting.innerHTML = `<meting-js id="${userId}" server="${userServer}" type="playlist" mutex="true" preload="auto" theme="var(--anzhiyu-main)" order="list" list-max-height="calc(100vh - 169px)!important"></meting-js>`;
+      anMusicPageMeting.innerHTML = `<meting-js id="${userId}" server="${userServer}" type="playlist" mutex="true" preload="auto" theme="var(--liaisonstation-main)" order="list" list-max-height="calc(100vh - 169px)!important"></meting-js>`;
     }
-    anzhiyu.changeMusicBg(false);
+    liaisonstation.changeMusicBg(false);
   },
   //隐藏今日推荐
   hideTodayCard: function () {
@@ -880,7 +880,7 @@ const anzhiyu = {
     //初始化音量
     metingAplayer.volume(0.8, true);
     metingAplayer.on("loadeddata", function () {
-      anzhiyu.changeMusicBg();
+      liaisonstation.changeMusicBg();
     });
 
     aplayerIconMenu.addEventListener("click", function () {
@@ -910,20 +910,20 @@ const anzhiyu = {
         // 随机播放一首
         metingAplayer.list.switch(randomIndex);
       } else {
-        anzhiyu.cacheAndPlayMusic();
+        liaisonstation.cacheAndPlayMusic();
       }
     });
     anMusicRefreshBtn.addEventListener("click", () => {
       localStorage.removeItem("musicData");
-      anzhiyu.snackbarShow("已移除相关缓存歌曲");
+      liaisonstation.snackbarShow("已移除相关缓存歌曲");
     });
     anMusicSwitchingBtn.addEventListener("click", () => {
-      anzhiyu.changeMusicList();
+      liaisonstation.changeMusicList();
     });
 
     // 默认加载的歌单
     if (GLOBAL_CONFIG.music_page_default === "custom") {
-      anzhiyu.changeMusicList();
+      liaisonstation.changeMusicList();
     }
 
     // 监听键盘事件
@@ -1105,7 +1105,7 @@ const anzhiyu = {
 
   // 跳转开往
   totraveling: function () {
-    anzhiyu.snackbarShow(
+    liaisonstation.snackbarShow(
       "即将跳转到「开往」项目的成员博客，不保证跳转网站的安全性和可用性",
       element => {
         element.style.opacity = 0;
@@ -1127,10 +1127,10 @@ const anzhiyu = {
   // 音乐绑定事件
   musicBindEvent: function () {
     document.querySelector("#nav-music .aplayer-music").addEventListener("click", function () {
-      anzhiyu.musicTelescopic();
+      liaisonstation.musicTelescopic();
     });
     document.querySelector("#nav-music .aplayer-button").addEventListener("click", function () {
-      anzhiyu.musicToggle(false);
+      liaisonstation.musicToggle(false);
     });
   },
 
@@ -1188,16 +1188,16 @@ const anzhiyu = {
   },
 
   keyboardToggle: function () {
-    const isKeyboardOn = anzhiyu_keyboard;
+    const isKeyboardOn = liaisonstation_keyboard;
 
     if (isKeyboardOn) {
       const consoleKeyboard = document.querySelector("#consoleKeyboard");
       consoleKeyboard.classList.remove("on");
-      anzhiyu_keyboard = false;
+      liaisonstation_keyboard = false;
     } else {
       const consoleKeyboard = document.querySelector("#consoleKeyboard");
       consoleKeyboard.classList.add("on");
-      anzhiyu_keyboard = true;
+      liaisonstation_keyboard = true;
     }
 
     localStorage.setItem("keyboardToggle", isKeyboardOn ? "false" : "true");
@@ -1227,10 +1227,10 @@ const anzhiyu = {
     if (consoleKeyboard) {
       if (localStorage.getItem("keyboardToggle") === "true") {
         consoleKeyboard.classList.add("on");
-        anzhiyu_keyboard = true;
+        liaisonstation_keyboard = true;
       } else {
         consoleKeyboard.classList.remove("on");
-        anzhiyu_keyboard = false;
+        liaisonstation_keyboard = false;
       }
     }
   },
@@ -1272,7 +1272,7 @@ const anzhiyu = {
           left: 0,
           behavior: "smooth",
         });
-        nextButton.innerHTML = '<i class="anzhiyufont anzhiyu-icon-angle-double-right"></i>';
+        nextButton.innerHTML = '<i class="liaisonstationfont liaisonstation-icon-angle-double-right"></i>';
       } else {
         // 滚动到下一个视图
         items.scrollBy({
@@ -1343,7 +1343,7 @@ const anzhiyu = {
   },
 };
 
-const anzhiyuPopupManager = {
+const liaisonstationPopupManager = {
   queue: [],
   processing: false,
   Jump: false,

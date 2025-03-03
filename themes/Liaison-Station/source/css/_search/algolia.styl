@@ -6,14 +6,14 @@
         width: 100%
         outline: none
         border: var(--style-border)
-        border-radius: var(--anzhiyu-radius)
-        background: var(--anzhiyu-secondbg)
+        border-radius: var(--liaisonstation-radius)
+        background: var(--liaisonstation-secondbg)
         color: var(--search-input-color)
         &:focus
           border: var(--style-border-hover)
     .search-dialog-title
       font-weight: 700;
-      color: var(--anzhiyu-main);
+      color: var(--liaisonstation-main);
 
 
     .ais-Hits-list
@@ -23,11 +23,11 @@
 
       .ais-Hits-item
         &:hover
-          background: var(--anzhiyu-main)
+          background: var(--liaisonstation-main)
           cursor pointer
           transition: all .2s;
           a
-            color: var(--anzhiyu-white)
+            color: var(--liaisonstation-white)
       mark
         background: transparent
         color: $search-keyword-highlight
@@ -93,23 +93,23 @@
 #algolia-search #search-mask
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  background: var(--anzhiyu-maskbg);
+  background: var(--liaisonstation-maskbg);
 
 #algolia-search .search-dialog
   border-radius: 12px;
-  box-shadow: var(--anzhiyu-shadow-lightblack);
-  background: var(--anzhiyu-card-bg);
+  box-shadow: var(--liaisonstation-shadow-lightblack);
+  background: var(--liaisonstation-card-bg);
   border: var(--style-border);
   transition: 0.3s;
 
 #algolia-search .search-dialog .ais-Pagination .ais-Pagination-item--selected a
   border-radius: 4px;
-  background: var(--anzhiyu-main);
-  color: var(--anzhiyu-white);
+  background: var(--liaisonstation-main);
+  color: var(--liaisonstation-white);
 
 #algolia-search .search-dialog:hover
   border: var(--style-border-hover);
-  box-shadow: var(--anzhiyu-shadow-theme);
+  box-shadow: var(--liaisonstation-shadow-theme);
   +maxWidth768()
     border: var(--style-border)
 

@@ -1,9 +1,9 @@
 #bbTimeList {
-  background: var(--anzhiyu-white);
-  color: var(--anzhiyu-fontcolor);
+  background: var(--liaisonstation-white);
+  color: var(--liaisonstation-fontcolor);
   padding: 0.5rem 1rem;
   border-radius: 12px;
-  box-shadow: var(--anzhiyu-shadow-lightblack);
+  box-shadow: var(--liaisonstation-shadow-lightblack);
   display: flex;
   transition: all 0.3s ease 0s;
   margin: 1rem auto 0;
@@ -47,7 +47,7 @@ i.bber-logo {
 }
 i.bber-logo:hover,
 i.bber-gotobb:hover {
-  color: var(--anzhiyu-main);
+  color: var(--liaisonstation-main);
 }
 
 i.bber-gotobb {
@@ -70,12 +70,12 @@ i.bber-gotobb {
   white-space: nowrap;
 }
 #bber-talk .li-style:hover {
-  color: var(--anzhiyu-main);
+  color: var(--liaisonstation-main);
 }
 
 #bbTimeList:hover {
   border: var(--style-border-hover);
-  box-shadow: var(--anzhiyu-shadow-main);
+  box-shadow: var(--liaisonstation-shadow-main);
 }
 
 /* 文章页H1-H6图标样式效果 */

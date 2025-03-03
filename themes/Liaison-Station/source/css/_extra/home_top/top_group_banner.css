@@ -20,7 +20,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background: var(--anzhiyu-card-bg);
+  background: var(--liaisonstation-card-bg);
   border-radius: 12px;
   margin-left: 0.5rem;
   overflow: hidden;
@@ -35,7 +35,7 @@
   bottom: 2rem;
   left: 2rem;
   z-index: 2;
-  color: var(--anzhiyu-white);
+  color: var(--liaisonstation-white);
   max-width: 60%;
   transition: 0.3s;
 }
@@ -74,9 +74,9 @@
 }
 
 .topGroup .banner-button {
-  background: var(--anzhiyu-white-op);
+  background: var(--liaisonstation-white-op);
   border-radius: 20px;
-  color: var(--anzhiyu-white);
+  color: var(--liaisonstation-white);
   display: flex;
   align-items: center;
   z-index: 1;
@@ -117,7 +117,7 @@
   object-fit: cover;
   width: 100%;
   height: 80px;
-  background: var(--anzhiyu-secondbg);
+  background: var(--liaisonstation-secondbg);
   border-radius: 12px 12px 0 0;
 }
 .topGroup .recent-post-item:nth-child(4),
@@ -132,7 +132,7 @@
   width: 200px;
   flex-direction: column;
   align-items: flex-start;
-  background: var(--anzhiyu-card-bg);
+  background: var(--liaisonstation-card-bg);
   border-radius: 12px;
   overflow: hidden;
   min-width: 200px;
@@ -141,14 +141,14 @@
   border: var(--style-border-always);
   transition: 0.3s;
   position: relative;
-  box-shadow: var(--anzhiyu-shadow-border);
+  box-shadow: var(--liaisonstation-shadow-border);
   margin-left: 0.5rem;
   margin-right: 0px;
   margin-bottom: 0.5rem;
   cursor: pointer;
 }
 .topGroup .recent-post-item:hover .recent-post-info .article-title {
-  color: var(--anzhiyu-main);
+  color: var(--liaisonstation-main);
 }
 .topGroup .recent-post-item .post_cover {
   width: 100%;
@@ -164,8 +164,8 @@
   left: -40px;
   display: flex;
   z-index: 1;
-  background: var(--anzhiyu-theme);
-  color: var(--anzhiyu-white);
+  background: var(--liaisonstation-theme);
+  color: var(--liaisonstation-white);
   padding: 2px 8px;
   font-size: 12px;
   border-radius: 12px 0;
@@ -176,7 +176,7 @@
 .topGroup .recent-post-item .post_cover img {
   object-fit: cover;
   width: 100%;
-  background: var(--anzhiyu-secondbg);
+  background: var(--liaisonstation-secondbg);
   border-radius: 12px 12px 0 0;
 }
 .topGroup .recent-post-item .recent-post-info {
@@ -263,6 +263,6 @@
 }
 
 .topGroup .banner-button:hover {
-  background: var(--anzhiyu-theme);
-  color: var(--anzhiyu-white);
+  background: var(--liaisonstation-theme);
+  color: var(--liaisonstation-white);
 }

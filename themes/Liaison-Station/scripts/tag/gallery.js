@@ -53,7 +53,7 @@ function gallery(args, content) {
     <span class="gallery-data">${dataStr}</span>
   </div><button class="gallery-load-more" style="${!lazyloadBtn ? "opacity:0" : ""}">
   <span>${data[languages[0]].load_more}</span>
-  <i class="anzhiyufont anzhiyu-icon-arrow-down"></i>
+  <i class="anzhiyufont liaisonstation-icon-arrow-down"></i>
   </button>`;
 
   return (html += "</div>");

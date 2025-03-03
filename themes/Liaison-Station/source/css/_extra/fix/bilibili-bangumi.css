@@ -1,7 +1,7 @@
 /* bilibli番剧插件 */
 #page #article-container .bangumi-tab.bangumi-active {
-  background: var(--anzhiyu-theme);
-  color: var(--anzhiyu-ahoverbg);
+  background: var(--liaisonstation-theme);
+  color: var(--liaisonstation-ahoverbg);
   border-radius: 10px;
 }
 #page #article-container .bangumi-tabs .bangumi-tab {
@@ -11,16 +11,16 @@
 #page #article-container .bangumi-tabs a.bangumi-tab:hover {
   text-decoration: none !important;
   border-radius: 10px;
-  column-gap: var(--anzhiyu-ahoverbg);
+  column-gap: var(--liaisonstation-ahoverbg);
 }
 #page #article-container .bangumi-pagination a.bangumi-button {
   border-bottom: none;
   border-radius: 10px;
 }
 .bangumi-button:hover {
-  background: var(--anzhiyu-theme) !important;
+  background: var(--liaisonstation-theme) !important;
   border-radius: 10px !important;
-  color: var(--anzhiyu-ahoverbg) !important;
+  color: var(--liaisonstation-ahoverbg) !important;
 }
 a.bangumi-button.bangumi-nextpage:hover {
   text-decoration: none !important;

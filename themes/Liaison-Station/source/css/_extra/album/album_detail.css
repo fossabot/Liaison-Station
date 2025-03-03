@@ -1,6 +1,6 @@
 /* 处理单页背景 */
 body[data-type="album_detail"] #web_bg {
-  background: var(--anzhiyu-background);
+  background: var(--liaisonstation-background);
 }
 body[data-type="album_detail"] #page {
   border: 0;
@@ -46,7 +46,7 @@ body[data-type="album_detail"] #page .page-title {
   order: 0;
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--anzhiyu-fontcolor);
+  color: var(--liaisonstation-fontcolor);
   width: 100%;
   line-height: 1.38;
   border-radius: 12px;
@@ -76,8 +76,8 @@ body[data-type="album_detail"] #page .page-title {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  background: var(--anzhiyu-card-bg);
-  box-shadow: var(--anzhiyu-shadow-border);
+  background: var(--liaisonstation-card-bg);
+  box-shadow: var(--liaisonstation-shadow-border);
   margin-right: 2%;
 }
 #album_detail .timeline #waterfall.show {
@@ -111,7 +111,7 @@ body[data-type="album_detail"] #page .page-title {
   display: flex;
   position: relative;
   margin: 8px 0px;
-  border: 1px dashed var(--anzhiyu-theme-op);
+  border: 1px dashed var(--liaisonstation-theme-op);
   width: 100%;
 }
 
@@ -126,9 +126,9 @@ body[data-type="album_detail"] #page .page-title {
 #album_detail > section > ul > li > div .album-info-time,
 #album_detail > section > ul > li > div .album-info-address,
 #album_detail > section > ul > li > div .album-info-from {
-  color: var(--anzhiyu-fontcolor);
+  color: var(--liaisonstation-fontcolor);
   font-size: 0.7rem;
-  background-color: var(--anzhiyu-gray-op);
+  background-color: var(--liaisonstation-gray-op);
   padding: 0px 8px;
   border-radius: 20px;
   cursor: default;
@@ -156,7 +156,7 @@ body[data-type="album_detail"] #page .page-title {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-#album_detail .album-info .anzhiyufont.anzhiyu-icon-instagram {
+#album_detail .album-info .anzhiyufont.liaisonstation-icon-instagram {
   margin-right: 8px;
 }
 
@@ -190,8 +190,8 @@ body[data-type="album_detail"] #page .page-title {
   margin-right: 3px;
 }
 #album_detail .album-content-link:hover {
-  background-color: var(--anzhiyu-main);
-  color: var(--anzhiyu-white);
+  background-color: var(--liaisonstation-main);
+  color: var(--liaisonstation-white);
 }
 #album_detail .album-music {
   width: 100%;
@@ -200,7 +200,7 @@ body[data-type="album_detail"] #page .page-title {
   border-radius: 8px;
   overflow: hidden;
   border: var(--style-border-always);
-  background: var(--anzhiyu-secondbg);
+  background: var(--liaisonstation-secondbg);
 }
 #album_detail .aplayer {
   margin: 0;
@@ -222,7 +222,7 @@ body[data-type="album_detail"] #page .page-title {
   font-size: 0.8rem;
   font-weight: 700;
   margin: 0;
-  color: var(--anzhiyu-fontcolor);
+  color: var(--liaisonstation-fontcolor);
 }
 
 #album_detail .aplayer .aplayer-info .aplayer-controller {
@@ -235,7 +235,7 @@ body[data-type="album_detail"] #page .page-title {
   position: initial;
 }
 #album_detail .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar {
-  background: var(--anzhiyu-gray);
+  background: var(--liaisonstation-gray);
   height: 8px;
   border-radius: 12px;
   transition: 0.3s;
@@ -257,7 +257,7 @@ body[data-type="album_detail"] #page .page-title {
 }
 
 body[data-type="album_detail"] #page .author-content-item .card-content .banner-button-group .banner-button:hover {
-  color: var(--anzhiyu-white);
+  color: var(--liaisonstation-white);
   border-radius: 20px !important;
 }
 
@@ -277,11 +277,11 @@ body[data-type="album_detail"] #page .author-content-item .card-content .banner-
 [data-theme="dark"] #album_detail .album-music .aplayer,
 [data-theme="dark"] #album_detail .aplayer .aplayer-lrc:before,
 [data-theme="dark"] #album_detail .aplayer .aplayer-lrc:after {
-  background: var(--anzhiyu-card-bg);
-  color: var(--anzhiyu-fontcolor);
+  background: var(--liaisonstation-card-bg);
+  color: var(--liaisonstation-fontcolor);
 }
 #album_detail .aplayer .aplayer-lrc p {
-  color: var(--anzhiyu-fontcolor);
+  color: var(--liaisonstation-fontcolor);
 }
 
 #album_detail .type-gallery {
@@ -300,9 +300,9 @@ body[data-type="album_detail"] #page .author-content-item .card-content .banner-
   top: 8px;
   padding: 4px 6px;
   border-radius: 8px;
-  background: var(--anzhiyu-black-op);
+  background: var(--liaisonstation-black-op);
   font-size: 12px;
-  color: var(--anzhiyu-white);
+  color: var(--liaisonstation-white);
   transition: 0.3s;
   z-index: 1;
   user-select: none;

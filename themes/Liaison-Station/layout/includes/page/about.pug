@@ -103,7 +103,7 @@ if site.data.about
                 - let link = item.statistic.link
                 - let text = item.statistic.text
                 a.banner-button(onclick=`pjax.loadUrl("${link}")`)
-                  i.anzhiyufont.anzhiyu-icon-arrow-circle-right
+                  i.anzhiyufont.liaisonstation-icon-arrow-circle-right
                   |  
                   span.banner-button-text=text
         .author-content-item-group.column.mapAndInfo
@@ -169,7 +169,7 @@ if site.data.about
               |  
               span=buff_bottom
           .card-background-icon
-            i.anzhiyufont.anzhiyu-icon-dice-d20
+            i.anzhiyufont.liaisonstation-icon-dice-d20
 
       .author-content
         - let {game_tips, game_title, game_uid, game_bg} = item.game
@@ -210,7 +210,7 @@ if site.data.about
               .tips=`跟 ${aboutName} 一起欣赏更多音乐`
             .banner-button-group
               a.banner-button(onclick=`pjax.loadUrl("${music_link}")`)
-                i.anzhiyufont.anzhiyu-icon-arrow-circle-right
+                i.anzhiyufont.liaisonstation-icon-arrow-circle-right
                 |  
                 span.banner-button-text 更多推荐
 
@@ -234,7 +234,7 @@ if site.data.about
                     .reward-list-item-name=item.name
                     .reward-list-bottom-group
                       if item.amount >= 50
-                        .reward-list-item-money(style='background:var(--anzhiyu-yellow)')=`¥${item.amount}`
+                        .reward-list-item-money(style='background:var(--liaisonstation-yellow)')=`¥${item.amount}`
                       else 
                         .reward-list-item-money=`¥${item.amount + (item.suffix ? item.suffix : "")}`
                       .datatime.reward-list-item-time(datatime=item.datatime)=new Date(item.datatime).toISOString().slice(0, -14)

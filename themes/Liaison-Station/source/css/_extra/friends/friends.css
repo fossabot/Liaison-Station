@@ -1,7 +1,7 @@
 /* 顶部样式 */
 .fcircle_page .author-content.fcirclePage {
   height: 19rem;
-  color: var(--anzhiyu-white);
+  color: var(--liaisonstation-white);
   overflow: hidden;
   margin-top: 0px;
 }
@@ -28,7 +28,7 @@ body[data-type="fcircle"] #page {
 }
 .fcircle_page .cf-article-avatar a:hover {
   background: none !important;
-  color: var(--anzhiyu-fontcolor) !important;
+  color: var(--liaisonstation-fontcolor) !important;
 }
 /* 随机文章样式 */
 
@@ -48,39 +48,39 @@ body[data-type="fcircle"] #page {
 }
 .title-h2-a a {
   margin-left: 0.5rem;
-  color: var(--anzhiyu-fontcolor);
+  color: var(--liaisonstation-fontcolor);
   font-weight: 700;
 }
 #random-post {
   min-height: 32px;
   background: var(--card-bg);
   border: var(--style-border-always);
-  box-shadow: var(--anzhiyu-shadow-border);
+  box-shadow: var(--liaisonstation-shadow-border);
   padding: 20px 30px;
   border-radius: 12px;
   margin-top: 8px;
 }
 #random-post .random-friends-post {
   text-decoration: none;
-  border-bottom: 2px solid var(--anzhiyu-lighttext) !important;
-  color: var(--anzhiyu-fontcolor);
+  border-bottom: 2px solid var(--liaisonstation-lighttext) !important;
+  color: var(--liaisonstation-fontcolor);
   font-weight: 700;
   padding: 0 4px;
 }
 
 #random-post .random-friends-post:hover {
   text-decoration: none;
-  border-bottom: 2px solid var(--anzhiyu-none) !important;
-  color: var(--anzhiyu-white) !important;
-  background: var(--anzhiyu-main) !important;
+  border-bottom: 2px solid var(--liaisonstation-none) !important;
+  color: var(--liaisonstation-white) !important;
+  background: var(--liaisonstation-main) !important;
   border-radius: 4px;
-  box-shadow: var(--anzhiyu-shadow-main);
+  box-shadow: var(--liaisonstation-shadow-main);
 }
 #article-container .title-h2-a a:hover {
-  color: var(--anzhiyu-hovertext) !important;
+  color: var(--liaisonstation-hovertext) !important;
 }
 .fcircle_page .title-h2-a-right a.random-post-all {
-  color: var(--anzhiyu-fontcolor);
+  color: var(--liaisonstation-fontcolor);
 }
 #cf-overshow.cf-show-now p a.cf-article-title:hover,
 .fcircle_page #fcircleContainer .cf-article a.cf-article-title:hover,
@@ -88,7 +88,7 @@ body[data-type="fcircle"] #page {
 .fcircle_page .title-h2-a-left a.random-post-start:hover {
   background: none;
   box-shadow: none;
-  color: var(--anzhiyu-theme);
+  color: var(--liaisonstation-theme);
 }
 .fcircle_page .fish-pond-item .cf-article .cf-article-title {
   line-height: 2;

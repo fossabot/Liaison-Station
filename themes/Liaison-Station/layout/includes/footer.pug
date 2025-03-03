@@ -43,7 +43,7 @@
 
   if theme.footer.list.enable
     - let projectList = theme.footer.list.project
-    #anzhiyu-footer
+    #liaisonstation-footer
       each item, index in projectList
         .footer-group
           .footer-title=item.title
@@ -55,7 +55,7 @@
           .footer-title-group
             .footer-title 友链
             a.random-friends-btn#footer-random-friends-btn(href="javascript:addFriendLinksInFooter();" title="换一批友情链接")
-              i.anzhiyufont.anzhiyu-icon-arrow-rotate-right
+              i.anzhiyufont.liaisonstation-icon-arrow-rotate-right
           .footer-links#friend-links-in-footer
 
   if theme.footer.bdageitem.enable
@@ -87,7 +87,7 @@ if theme.footer.footerBar && theme.footer.footerBar.enable
           a.footer-bar-link(href=url_for(item.link) title=item.text)=item.text
         if theme.footer.footerBar.cc.enable
           a.footer-bar-link.cc(href=url_for(theme.footer.footerBar.cc.link) title="cc协议")
-            i.anzhiyufont.anzhiyu-icon-copyright-line
-            i.anzhiyufont.anzhiyu-icon-creative-commons-by-line
-            i.anzhiyufont.anzhiyu-icon-creative-commons-nc-line
-            i.anzhiyufont.anzhiyu-icon-creative-commons-nd-line
+            i.anzhiyufont.liaisonstation-icon-copyright-line
+            i.anzhiyufont.liaisonstation-icon-creative-commons-by-line
+            i.anzhiyufont.liaisonstation-icon-creative-commons-nc-line
+            i.anzhiyufont.liaisonstation-icon-creative-commons-nd-line

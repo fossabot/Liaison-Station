@@ -7,8 +7,8 @@ window.addEventListener("load", () => {
     const bodyStyle = document.body.style;
     bodyStyle.width = "100%";
     bodyStyle.overflow = "hidden";
-    anzhiyu.animateIn($searchMask, "to_show 0.5s");
-    anzhiyu.animateIn(document.querySelector("#local-search .search-dialog"), "titleScale 0.5s");
+    liaisonstation.animateIn($searchMask, "to_show 0.5s");
+    liaisonstation.animateIn(document.querySelector("#local-search .search-dialog"), "titleScale 0.5s");
     setTimeout(() => {
       document.querySelector("#local-search-input input").focus();
     }, 100);
@@ -29,8 +29,8 @@ window.addEventListener("load", () => {
     const bodyStyle = document.body.style;
     bodyStyle.width = "";
     bodyStyle.overflow = "";
-    anzhiyu.animateOut(document.querySelector("#local-search .search-dialog"), "search_close .5s");
-    anzhiyu.animateOut($searchMask, "to_hide 0.5s");
+    liaisonstation.animateOut(document.querySelector("#local-search .search-dialog"), "search_close .5s");
+    liaisonstation.animateOut($searchMask, "to_hide 0.5s");
   };
 
   const searchClickFn = () => {
@@ -109,7 +109,7 @@ window.addEventListener("load", () => {
     $input.addEventListener("input", function () {
       const keywords = this.value.trim().toLowerCase().split(/[\s]+/);
       if (keywords[0] !== "")
-        $loadingStatus.innerHTML = '<i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-pulse-icon"></i>';
+        $loadingStatus.innerHTML = '<i class="liaisonstationfont liaisonstation-icon-spinner liaisonstation-pulse-icon"></i>';
 
       $resultContent.innerHTML = "";
       let str = '<div class="search-result-list">';
@@ -264,7 +264,7 @@ window.addEventListener("load", () => {
 
   // pjax
   window.addEventListener("pjax:complete", () => {
-    !anzhiyu.isHidden($searchMask) && closeSearch();
+    !liaisonstation.isHidden($searchMask) && closeSearch();
     searchClickFn();
   });
 });

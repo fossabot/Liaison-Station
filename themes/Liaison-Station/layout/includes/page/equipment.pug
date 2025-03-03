@@ -25,8 +25,8 @@
                       if iten.link.includes('https://') || iten.link.includes('http://')
                         a.equipment-item-content-item-link(href= iten.link, target='_blank') 详情
                         .bber-reply(onclick="rm.rightMenuCommentText(" + `'${iten.name + " " + iten.specification + " " + iten.description}'` + ")")
-                          i.anzhiyufont.anzhiyu-icon-message
+                          i.anzhiyufont.liaisonstation-icon-message
                       else  
                         a.equipment-item-content-item-link(href= iten.link, target='_blank') 查看文章
                         .bber-reply(onclick="rm.rightMenuCommentText(" + `'${iten.name + " " + iten.specification + " " + iten.description}'` + ")")
-                          i.anzhiyufont.anzhiyu-icon-message
+                          i.anzhiyufont.liaisonstation-icon-message

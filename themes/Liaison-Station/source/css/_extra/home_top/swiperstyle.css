@@ -31,7 +31,7 @@ div#swiper_container {
 }
 div#swiper_container:hover {
   border: var(--style-border-hover);
-  box-shadow: var(--anzhiyu-shadow-main);
+  box-shadow: var(--liaisonstation-shadow-main);
 }
 .blog-slider {
   width: 100%;

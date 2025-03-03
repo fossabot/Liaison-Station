@@ -43,8 +43,8 @@ beautify()
 
 blockquote {
   border: var(--style-border-always);
-  background-color: var(--anzhiyu-secondbg);
-  color: var(--anzhiyu-secondtext);
+  background-color: var(--liaisonstation-secondbg);
+  color: var(--liaisonstation-secondtext);
   border-radius: 8px;
   margin: 1rem 0;
   padding: 0.5rem 0.8rem;
@@ -61,7 +61,7 @@ blockquote {
   h6
     .post-content
       line-height: 1.6;
-      border-top: 1px dashed var(--anzhiyu-theme-op);
+      border-top: 1px dashed var(--liaisonstation-theme-op);
       padding-top: 1.5rem;
       padding-left: 0;
 
@@ -194,12 +194,12 @@ blockquote {
 
 #post
   +maxWidth768()
-    background: var(--anzhiyu-background) !important;
+    background: var(--liaisonstation-background) !important;
     border: none;
   #article-container
     h2
       if hexo-config("h2Divider")
-        border-top: 1px dashed var(--anzhiyu-theme-op);
+        border-top: 1px dashed var(--liaisonstation-theme-op);
         padding-top: 1.5rem;
         margin-top: 1.5rem;
   .post_share
@@ -254,7 +254,7 @@ blockquote {
           line-height: w
 
   .post-copyright
-    background: var(--anzhiyu-secondbg);
+    background: var(--liaisonstation-secondbg);
     padding: 1rem 1.3rem;
     border: var(--style-border);
     border-width: 1px;
@@ -286,7 +286,7 @@ blockquote {
         left: calc(50% - 33px);
         top: -33px;
         border: var(--style-border-always);
-        box-shadow: var(--anzhiyu-shadow-main);
+        box-shadow: var(--liaisonstation-shadow-main);
         &:hover
           img.post-copyright__author_img_back
             z-index: 21;
@@ -312,12 +312,12 @@ blockquote {
         text-align: center;
         font-size: 20px;
         font-weight: 700;
-        color: var(--anzhiyu-fontcolor);
+        color: var(--liaisonstation-fontcolor);
         line-height: 1;
       .post-copyright__author_desc
           text-align: center;
           font-size: 14px;
-          color: var(--anzhiyu-secondtext);
+          color: var(--liaisonstation-secondtext);
           margin-top: 4px;
 
     &__post__info
@@ -326,8 +326,8 @@ blockquote {
       justify-content: center;
       margin-top: 0.2rem;
     &__original,&__reprint
-      background: var(--anzhiyu-main);
-      color: var(--anzhiyu-wihite-font);
+      background: var(--liaisonstation-main);
+      color: var(--liaisonstation-wihite-font);
       padding: 0.2rem 1rem;
       font-size: .8rem;
       border-radius: 8px;
@@ -337,14 +337,14 @@ blockquote {
       white-space: nowrap;
       user-select: none;
   
-    .anzhiyufont.anzhiyu-icon-copyright
+    .anzhiyufont.liaisonstation-icon-copyright
       position: absolute
       font-size: 1.3em
       top: -71px;
       right: -20px;
       font-size: 8.3em;
       z-index: -1;
-      color: var(--anzhiyu-main)
+      color: var(--liaisonstation-main)
       @media screen and (min-width: 1365px)
         z-index: 0;
 
@@ -358,12 +358,12 @@ blockquote {
         cursor pointer
       
       &:hover
-        color: var(--anzhiyu-fontcolor)
+        color: var(--liaisonstation-fontcolor)
     .post-copyright__notice
       font-size: 12px;
       .post-copyright-info
         padding-left: 0;
-        color: var(--anzhiyu-secondtext);
+        color: var(--liaisonstation-secondtext);
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 1;
@@ -373,7 +373,7 @@ blockquote {
           -webkit-line-clamp: 2;
         a
           &:hover
-            color: var(--anzhiyu-main)
+            color: var(--liaisonstation-main)
 
   .post-outdate-notice
     position: relative
@@ -416,7 +416,7 @@ blockquote {
       justify-content: space-between;
       flex-direction: row-reverse;
 .post-ai-description
-  background: var(--anzhiyu-secondbg);
+  background: var(--liaisonstation-secondbg);
   border-radius: 12px;
   padding: 12px 16px;
   line-height: 1.3;
@@ -434,14 +434,14 @@ blockquote {
     font-size: 20px;
     line-height: 20px;
     height 20px
-  .anzhiyufont.anzhiyu-icon-circle-dot
+  .anzhiyufont.liaisonstation-icon-circle-dot
     margin-left: auto;
     margin-right: 4px;
     font-size: 14px;
     opacity: 0;
     &:active
       transform: scale(0.97);
-  .anzhiyufont.anzhiyu-icon-arrow-rotate-right
+  .anzhiyufont.liaisonstation-icon-arrow-rotate-right
     font-size: 14px;
     margin-left: 4px
     cursor pointer
@@ -452,7 +452,7 @@ blockquote {
 
 #ai-tag
   font-size: 12px;
-  background-color: var(--anzhiyu-lighttext);
+  background-color: var(--liaisonstation-lighttext);
   color: rgba(255, 255, 255, 0.9);
   border-radius: 4px;
   line-height: 1;
@@ -460,8 +460,8 @@ blockquote {
   cursor pointer
 #ai-Toggle 
   font-size: 12px;
-  background: var(--anzhiyu-lighttext);
-  color: var(--anzhiyu-card-bg);
+  background: var(--liaisonstation-lighttext);
+  color: var(--liaisonstation-card-bg);
   padding: 4px;
   border-radius: 4px;
   margin-left: 6px;
@@ -470,8 +470,8 @@ blockquote {
   transition: 0.3s;
   font-weight: bold;
   &:hover
-    background: var(--anzhiyu-fontcolor);
-    color: var(--anzhiyu-card-bg);
+    background: var(--liaisonstation-fontcolor);
+    color: var(--liaisonstation-card-bg);
 
 
 #go-tianli-blog
@@ -479,7 +479,7 @@ blockquote {
 .ai-explanation
   margin-top: 12px;
   padding: 8px 12px;
-  background: var(--anzhiyu-card-bg);
+  background: var(--liaisonstation-card-bg);
   border-radius: 8px;
   border: var(--style-border-always);
   font-size: 15px;
@@ -510,14 +510,14 @@ blockquote {
   margin: 10px 16px 0px 5px;
   width: fit-content;
   line-height: 1;
-  background: var(--anzhiyu-main)
+  background: var(--liaisonstation-main)
   color: #fff;
   border-radius: 6px;
   user-select: none;
   transition: all 0.3s;
   cursor: pointer;
   &:hover
-    background: var(--anzhiyu-theme);
+    background: var(--liaisonstation-theme);
 
 .ai-recommend
   display: flex;
@@ -526,7 +526,7 @@ blockquote {
   .ai-recommend-item
     width: calc(50% - 20px);
     margin: 10px;
-    background: var(--anzhiyu-secondbg);
+    background: var(--liaisonstation-secondbg);
     border-radius: 4px;
     padding: 10px;
     cursor pointer
@@ -535,10 +535,10 @@ blockquote {
     span.index
       padding: 4px
     &:hover
-      color: var(--anzhiyu-white);
-      background: var(--anzhiyu-theme);
+      color: var(--liaisonstation-white);
+      background: var(--liaisonstation-theme);
       a
-        color: var(--anzhiyu-white);
+        color: var(--liaisonstation-white);
 
 +maxWidth768()
   .ai-btn-box

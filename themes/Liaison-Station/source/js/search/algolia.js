@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
   const $searchDialog = document.querySelector("#algolia-search .search-dialog");
 
   const openSearch = () => {
-    anzhiyu.animateIn($searchMask, "to_show 0.5s");
+    liaisonstation.animateIn($searchMask, "to_show 0.5s");
     $searchDialog.style.display = "block";
     setTimeout(() => {
       document.querySelector("#algolia-search .ais-SearchBox-input").focus();
@@ -22,7 +22,7 @@ window.addEventListener("load", () => {
   };
 
   // shortcut: shift+S
-  if (anzhiyu_keyboard) {
+  if (liaisonstation_keyboard) {
     window.addEventListener("keydown", function (event) {
       if (event.keyCode == 83 && event.shiftKey) {
         console.info(selectTextNow);
@@ -44,8 +44,8 @@ window.addEventListener("load", () => {
   }
 
   const closeSearch = () => {
-    anzhiyu.animateOut($searchDialog, "search_close .5s");
-    anzhiyu.animateOut($searchMask, "to_hide 0.5s");
+    liaisonstation.animateOut($searchDialog, "search_close .5s");
+    liaisonstation.animateOut($searchMask, "to_hide 0.5s");
     window.removeEventListener("resize", fixSafariHeight);
   };
 
@@ -57,7 +57,7 @@ window.addEventListener("load", () => {
   };
 
   const searchClickFn = () => {
-    anzhiyu.addEventListenerPjax(document.querySelector("#search-button > .search"), "click", openSearch);
+    liaisonstation.addEventListenerPjax(document.querySelector("#search-button > .search"), "click", openSearch);
   };
 
   const searchFnOnce = () => {
@@ -77,7 +77,7 @@ window.addEventListener("load", () => {
     searchClient: algoliasearch(algolia.appId, algolia.apiKey),
     searchFunction(helper) {
       if (helper.state.query) {
-        let innerLoading = '<i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i>';
+        let innerLoading = '<i class="liaisonstationfont liaisonstation-icon-spinner liaisonstation-spin"></i>';
         document.getElementById("algolia-hits").innerHTML = innerLoading;
         helper.search();
       }
@@ -104,7 +104,7 @@ window.addEventListener("load", () => {
       item(data) {
         const link = data.permalink ? data.permalink : GLOBAL_CONFIG.root + data.path;
         const result = data._highlightResult;
-        const loadingLogo = document.querySelector("#algolia-hits .anzhiyu-spin");
+        const loadingLogo = document.querySelector("#algolia-hits .liaisonstation-spin");
         if (loadingLogo) {
           loadingLogo.style.display = "none";
         }
@@ -117,7 +117,7 @@ window.addEventListener("load", () => {
           </a>`;
       },
       empty: function (data) {
-        const loadingLogo = document.querySelector("#algolia-hits .anzhiyu-spin");
+        const loadingLogo = document.querySelector("#algolia-hits .liaisonstation-spin");
         console.info(loadingLogo);
         if (loadingLogo) {
           loadingLogo.style.display = "none";
@@ -157,10 +157,10 @@ window.addEventListener("load", () => {
     container: "#algolia-pagination",
     totalPages: algolia.hits.per_page ?? 5,
     templates: {
-      first: '<i class="anzhiyufont anzhiyu-icon-angle-double-left"></i>',
-      last: '<i class="anzhiyufont anzhiyu-icon-angle-double-right"></i>',
-      previous: '<i class="anzhiyufont anzhiyu-icon-angle-left"></i>',
-      next: '<i class="anzhiyufont anzhiyu-icon-angle-right"></i>',
+      first: '<i class="liaisonstationfont liaisonstation-icon-angle-double-left"></i>',
+      last: '<i class="liaisonstationfont liaisonstation-icon-angle-double-right"></i>',
+      previous: '<i class="liaisonstationfont liaisonstation-icon-angle-left"></i>',
+      next: '<i class="liaisonstationfont liaisonstation-icon-angle-right"></i>',
     },
     scrollTo: false,
     showFirstLast: false,
@@ -181,7 +181,7 @@ window.addEventListener("load", () => {
   searchFnOnce();
 
   window.addEventListener("pjax:complete", () => {
-    !anzhiyu.isHidden($searchMask) && closeSearch();
+    !liaisonstation.isHidden($searchMask) && closeSearch();
     searchClickFn();
   });
 

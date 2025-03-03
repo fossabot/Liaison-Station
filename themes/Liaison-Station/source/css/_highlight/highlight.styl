@@ -34,7 +34,7 @@ $code-block
   margin: 0 0 20px
   padding: 0
   if $highlight_theme == 'light' || ($highlight_theme == 'mac light')
-    background: var(--anzhiyu-card-bg)
+    background: var(--liaisonstation-card-bg)
     border: var(--style-border-always);
   else
     background: var(--hl-bg)
@@ -143,7 +143,7 @@ $code-block
       transition: color .2s
 
       &:hover
-        color: var(--anzhiyu-main)
+        color: var(--liaisonstation-main)
 
   .gutter
     user-select: none
@@ -197,7 +197,7 @@ $code-block
       transition: all 0.3s
       font-size: 20px;
       if $highlight_theme == 'light' || ($highlight_theme == 'mac light')
-        background: var(--anzhiyu-secondbg)
+        background: var(--liaisonstation-secondbg)
       else
         background: var(--hlexpand-bg)
       text-align: center
@@ -212,13 +212,13 @@ $code-block
       font-size: 16px
       if $highlight_theme == 'light' || ($highlight_theme == 'mac light')
         &:hover
-          background: var(--anzhiyu-main);
+          background: var(--liaisonstation-main);
           i
-            color: var(--anzhiyu-white);
+            color: var(--liaisonstation-white);
 
       i
         if $highlight_theme == 'light' || ($highlight_theme == 'mac light')
-          color: var(--anzhiyu-fontcolor)
+          color: var(--liaisonstation-fontcolor)
         else 
           color: var(--hlnumber-color)
         animation: 1.2s ease 0s infinite normal none running code-expand-key

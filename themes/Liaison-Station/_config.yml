@@ -1,32 +1,32 @@
 menu:
   文章:
-    隧道: /archives/ || anzhiyu-icon-box-archive
-    分类: /categories/ || anzhiyu-icon-shapes
-    标签: /tags/ || anzhiyu-icon-tags
+    隧道: /archives/ || liaisonstation-icon-box-archive
+    分类: /categories/ || liaisonstation-icon-shapes
+    标签: /tags/ || liaisonstation-icon-tags
 
   # 服务:
     # 在线工具箱: /
 
-  留言板: /comments/ || anzhiyu-icon-envelope
+  留言板: /comments/ || liaisonstation-icon-envelope
 
-  闲言碎语: /essay/ || anzhiyu-icon-lightbulb
+  闲言碎语: /essay/ || liaisonstation-icon-lightbulb
 
-  随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
+  随便逛逛: javascript:toRandomPost() || liaisonstation-icon-shoe-prints1
 
   我的:
-    音乐馆: /music/ || anzhiyu-icon-music
-    友人帐: /link/ || anzhiyu-icon-link
+    音乐馆: /music/ || liaisonstation-icon-music
+    友人帐: /link/ || liaisonstation-icon-link
     朋友圈: /fcircle/ || icon-artstation
 
-    追番页: /bangumis/ || anzhiyu-icon-bilibili
+    追番页: /bangumis/ || liaisonstation-icon-bilibili
 
-    相册集: /album/ || anzhiyu-icon-images
+    相册集: /album/ || liaisonstation-icon-images
 
-  # 小空调: /air-conditioner/ || anzhiyu-icon-fan
+  # 小空调: /air-conditioner/ || liaisonstation-icon-fan
 
   关于:
-    关于本人: /about/ || anzhiyu-icon-paper-plane
-    我的装备: /equipment/ || anzhiyu-icon-dice-d20
+    关于本人: /about/ || liaisonstation-icon-paper-plane
+    我的装备: /equipment/ || liaisonstation-icon-dice-d20
 
 
 # nav相关配置
@@ -70,8 +70,8 @@ copy:
 formal:
   name: link || icon
 social:
-  Github: https://github.com/ZhangWentao-Github || anzhiyu-icon-github
-  BiliBili: https://space.bilibili.com/3546613664450652 || anzhiyu-icon-bilibili
+  Github: https://github.com/ZhangWentao-Github || liaisonstation-icon-github
+  BiliBili: https://space.bilibili.com/3546613664450652 || liaisonstation-icon-bilibili
 
 # 作者卡片 状态
 author_status:
@@ -200,7 +200,7 @@ post_meta:
 mainTone:
   enable: false # true or false 文章是否启用获取图片主色调
   mode: api # cdn/api/both cdn模式为图片url+imageAve参数获取主色调，api模式为请求API获取主色调，both模式会先请求cdn参数，无法获取的情况下将请求API获取，可以在文章内配置main_color: '#3e5658'，使用十六进制颜色，则不会请求both/cdn/api获取主色调，而是直接使用配置的颜色
-  # 项目地址：https://github.com/anzhiyu-c/img2color-go
+  # 项目地址：https://github.com/liaisonstation-c/img2color-go
   api: https://img2color-go.vercel.app/api?img= # mode为api时可填写
   cover_change: true # 整篇文章跟随cover修改主色调
 
@@ -252,10 +252,10 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png
+    - img: https://npm.elemecdn.com/liaisonstation-blog@1.1.6/img/post/common/qrcode-weichat.png
       link:
       text: 微信
-    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png
+    - img: https://npm.elemecdn.com/liaisonstation-blog@1.1.6/img/post/common/qrcode-alipay.png
       link:
       text: 支付宝
 
@@ -438,9 +438,9 @@ footer:
   runtime:
     enable: false
     launch_time: 04/01/2021 00:00:00 # 网站上线时间
-    work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
+    work_img: https://npm.elemecdn.com/liaisonstation-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
     work_description: 距离月入25k也就还差一个大佬带我~
-    offduty_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg
+    offduty_img: https://npm.elemecdn.com/liaisonstation-blog@2.0.4/img/badge/安知鱼-下班啦.svg
     offduty_description: 下班了就该开开心心的玩耍，嘿嘿~
   # 徽标部分配置项 https://shields.io/
   # https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
@@ -448,49 +448,49 @@ footer:
     enable: false
     list:
       - link: https://hexo.io/ #徽标指向网站链接
-        shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg #徽标API
+        shields: https://npm.elemecdn.com/liaisonstation-blog@2.1.5/img/badge/Frame-Hexo.svg #徽标API
         message: 博客框架为Hexo_v5.4.0 #徽标提示语
       - link: https://blog.anheyu.com/
-        shields: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.9/img/Theme-AnZhiYu-2E67D3.svg
+        shields: https://npm.elemecdn.com/liaisonstation-theme-static@1.0.9/img/Theme-liaisonstation-2E67D3.svg
         message: 本站使用AnZhiYu主题
       # - link: https://www.dogecloud.com/
-      #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg
+      #   shields: https://npm.elemecdn.com/liaisonstation-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg
       #   message: 本站使用多吉云为静态资源提供CDN加速
       # - link: https://github.com/
-      #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
+      #   shields: https://npm.elemecdn.com/liaisonstation-blog@2.1.5/img/badge/Source-Github.svg
       #   message: 本站项目由Github托管
       # - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
-      #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg
+      #   shields: https://npm.elemecdn.com/liaisonstation-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg
       #   message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
   socialBar:
     enable: false
     centerImg:
     left:
       # - title: email
-      #   link: mailto:anzhiyu-c@qq.com
-      #   icon: anzhiyu-icon-envelope
+      #   link: mailto:liaisonstation-c@qq.com
+      #   icon: liaisonstation-icon-envelope
       # - title: 微博
       #   link: https://weibo.com/u/6378063631
-      #   icon: anzhiyu-icon-weibo
+      #   icon: liaisonstation-icon-weibo
       # - title: facebook
       #   link: https://www.facebook.com/profile.php?id=100092208016287&sk=about
-      #   icon: anzhiyu-icon-facebook1
+      #   icon: liaisonstation-icon-facebook1
       # - title: RSS
       #   link: atom.xml
-      #   icon: anzhiyu-icon-rss
+      #   icon: liaisonstation-icon-rss
     right:
       # - title: Github
-      #   link: https://github.com/anzhiyu-c
-      #   icon: anzhiyu-icon-github
+      #   link: https://github.com/liaisonstation-c
+      #   icon: liaisonstation-icon-github
       # - title: Bilibili
       #   link: https://space.bilibili.com/372204786
-      #   icon: anzhiyu-icon-bilibili
+      #   icon: liaisonstation-icon-bilibili
       # - title: 抖音
       #   link: https://v.douyin.com/DwCpMEy/
-      #   icon: anzhiyu-icon-tiktok
+      #   icon: liaisonstation-icon-tiktok
       # - title: CC
       #   link: /copyright
-      #   icon: anzhiyu-icon-copyright-line
+      #   icon: liaisonstation-icon-copyright-line
   list:
     enable: false
     randomFriends: 3
@@ -508,7 +508,7 @@ footer:
       #     - title: 文档
       #       link: /docs/
       #     - title: 源码
-      #       link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
+      #       link: https://github.com/liaisonstation-c/hexo-theme-liaisonstation
       #     - title: 更新日志
       #       link: /update/
       # - title: 导航
@@ -534,7 +534,7 @@ footer:
       enable: false
       link: /copyright
     linkList:
-      - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
+      - link: https://github.com/liaisonstation-c/hexo-theme-liaisonstation
         text: 主题
       # - link: https://image.anheyu.com
       #   text: 图床
@@ -625,15 +625,15 @@ theme_color:
   paginator: "#425AEF"
   #   button_hover: "#FF7242"
   text_selection: "#2128bd"
-  link_color: "var(--anzhiyu-fontcolor)"
-  meta_color: "var(--anzhiyu-fontcolor)"
+  link_color: "var(--liaisonstation-fontcolor)"
+  meta_color: "var(--liaisonstation-fontcolor)"
   hr_color: "#4259ef23"
   code_foreground: "#fff"
-  code_background: "var(--anzhiyu-code-stress)"
+  code_background: "var(--liaisonstation-code-stress)"
   toc_color: "#425AEF"
   #   blockquote_padding_color: "#425AEF"
   #   blockquote_background_color: "#425AEF"
-  scrollbar_color: "var(--anzhiyu-scrollbar)"
+  scrollbar_color: "var(--liaisonstation-scrollbar)"
   meta_theme_color_light: "#f7f9fe"
   meta_theme_color_dark: "#18171d"
 
@@ -797,7 +797,7 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
-  avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg # 自定加载动画义头像
+  avatar: https://npm.elemecdn.com/liaisonstation-blog-static@1.0.4/img/avatar.jpg # 自定加载动画义头像
 
 # aside (侧边栏)
 # --------------------------------------
@@ -1038,7 +1038,7 @@ pwa:
   enable: false
   startup_image_enable: true
   manifest: /manifest.json
-  theme_color: var(--anzhiyu-main)
+  theme_color: var(--liaisonstation-main)
   mask_icon: /img/siteicon/apple-icon-180.png
   apple_touch_icon: /img/siteicon/apple-icon-180.png
   bookmark_icon: /img/siteicon/apple-icon-180.png
@@ -1062,33 +1062,33 @@ home_top:
   category:
     - name: 前端
       path: 
-      shadow: var(--anzhiyu-shadow-blue)
+      shadow: var(--liaisonstation-shadow-blue)
       class: blue
-      icon: anzhiyu-icon-dove
+      icon: liaisonstation-icon-dove
     - name: 大学
       path: 
-      shadow: var(--anzhiyu-shadow-red)
+      shadow: var(--liaisonstation-shadow-red)
       class: red
-      icon: anzhiyu-icon-fire
+      icon: liaisonstation-icon-fire
     - name: 生活
       path: 
-      shadow: var(--anzhiyu-shadow-green)
+      shadow: var(--liaisonstation-shadow-green)
       class: green
-      icon: anzhiyu-icon-book
+      icon: liaisonstation-icon-book
   default_descr: 再怎么看我也不知道怎么描述它的啦！
   swiper:
     enable: false
-    swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css #swiper css依赖
-    swiper_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js #swiper js依赖
+    swiper_css: https://npm.elemecdn.com/liaisonstation-theme-static@1.0.0/swiper/swiper.min.css #swiper css依赖
+    swiper_js: https://npm.elemecdn.com/liaisonstation-theme-static@1.0.0/swiper/swiper.min.js #swiper js依赖
   banner:
     tips: 新品主题
-    title: Theme-AnZhiYu
+    title: Theme-liaisonstation
     image: https://bu.dusays.com/2023/05/13/645fa3cf90d70.webp
     link: https://docs.anheyu.com/
 
 friends_vue:
   enable: true
-  vue_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.2/friends/index.f9a2b8d2.js
+  vue_js: https://npm.elemecdn.com/liaisonstation-theme-static@1.1.2/friends/index.f9a2b8d2.js
   apiurl: https://friends.anheyu.com/ # 朋友圈后端地址
   top_background: https://img02.anheyu.com/adminuploads/1/2022/08/21/630249e2df20f.jpg
 

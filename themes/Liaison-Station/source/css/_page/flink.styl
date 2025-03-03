@@ -6,13 +6,13 @@ body[data-type="link"]
   display: flex;
   width: 100%;
   height: 76%;
-  background: var(--anzhiyu-card-bg);
+  background: var(--liaisonstation-card-bg);
   padding: 1.5rem;
   border: var(--style-border);
   border-radius: 12px;
   overflow: hidden;
   position: relative;
-  box-shadow: var(--anzhiyu-shadow-border);
+  box-shadow: var(--liaisonstation-shadow-border);
   flex-direction: column;
   overflow: hidden;
   transition: 0.3s;
@@ -32,12 +32,12 @@ body[data-type="link"]
     +maxWidth768()
       display: none
     .banner-button
-      color: var(--anzhiyu-card-bg);
+      color: var(--liaisonstation-card-bg);
       &.secondary 
-        color: var(--anzhiyu-fontcolor);
+        color: var(--liaisonstation-fontcolor);
       &:hover
-        background: var(--anzhiyu-theme);
-        color: var(--anzhiyu-white);
+        background: var(--liaisonstation-theme);
+        color: var(--liaisonstation-white);
       i
         margin-right: 8px;
         font-size: 1rem;
@@ -58,7 +58,7 @@ body[data-type="link"]
   margin: .2rem 0 .5rem
 
 #article-container
-  .anzhiyu-flink-list
+  .liaisonstation-flink-list
     overflow: auto
     margin: -6px
     text-align: center
@@ -89,8 +89,8 @@ body[data-type="link"]
       position: relative;
       width: calc(20% - 12px);
       border: var(--style-border);
-      box-shadow: var(--anzhiyu-shadow-border);
-      background: var(--anzhiyu-card-bg);
+      box-shadow: var(--liaisonstation-shadow-border);
+      background: var(--liaisonstation-card-bg);
       display: flex;
       float: left;
       overflow: hidden;
@@ -103,7 +103,7 @@ body[data-type="link"]
         width: 100%;
         height: 100%;
         align-items: center;
-        color: var(--anzhiyu-fontcolor);
+        color: var(--liaisonstation-fontcolor);
         text-decoration: none;
         font-weight: bold;
         padding: 0 4px;
@@ -112,7 +112,7 @@ body[data-type="link"]
           border-radius: 32px;
           margin: 15px 20px 15px 15px;
           transition: 0.3s;
-          background: var(--anzhiyu-background);
+          background: var(--liaisonstation-background);
           min-width: 60px;
           min-height: 60px;
           width: 60px;
@@ -144,7 +144,7 @@ body[data-type="link"]
           @extend .limit-one-line
           text-align: left;
           line-height: 20px;
-          color: var(--anzhiyu-fontcolor);
+          color: var(--liaisonstation-fontcolor);
           display: block;
           padding: 0px 10px 0px 0px;
           font-weight: 700;
@@ -158,7 +158,7 @@ body[data-type="link"]
           @extend .limit-one-line
           white-space: normal;
           padding: 5px 10px 16px 0;
-          color: var(--anzhiyu-fontcolor);
+          color: var(--liaisonstation-fontcolor);
           text-align: left;
           font-size: 0.93em;
           height: 40px;
@@ -170,9 +170,9 @@ body[data-type="link"]
           -webkit-line-clamp: 2;
       &:hover
         transform: scale(1);
-        background: var(--anzhiyu-theme);
+        background: var(--liaisonstation-theme);
         border: var(--style-border-hover);
-        box-shadow: var(--anzhiyu-shadow-main);
+        box-shadow: var(--liaisonstation-shadow-main);
         .site-card-tag
           left: -70px;
         a 
@@ -187,11 +187,11 @@ body[data-type="link"]
           .flink-item-info
             min-width: calc(100% - 20px);
           .flink-item-name
-            color: var(--anzhiyu-white);
+            color: var(--liaisonstation-white);
           .flink-item-desc
             overflow: hidden;
             width: 100%;
-            color: var(--anzhiyu-white);
+            color: var(--liaisonstation-white);
 
 .flink-name
   margin-bottom: 5px
@@ -208,9 +208,9 @@ body[data-type="link"]
     .wrapper img
       transition: transform .5s ease-out !important;
     &:hover
-      border-color: var(--anzhiyu-main)!important;
-      background-color: var(--anzhiyu-main)!important;
-      box-shadow: var(--anzhiyu-shadow-theme)!important;
+      border-color: var(--liaisonstation-main)!important;
+      background-color: var(--liaisonstation-main)!important;
+      box-shadow: var(--liaisonstation-shadow-theme)!important;
 
   & > a
     width: calc(100% / 5 - 0.5rem);
@@ -332,20 +332,20 @@ body[data-type="link"]
   top: 0;
   left: 0;
   padding: 4px 8px;
-  background-color: var(--anzhiyu-theme);
-  box-shadow: var(--anzhiyu-shadow-blue);
-  color: var(--anzhiyu-white);
+  background-color: var(--liaisonstation-theme);
+  box-shadow: var(--liaisonstation-shadow-blue);
+  color: var(--liaisonstation-white);
   z-index: 1;
   border-radius: 11px 0 12px 0;
   transition: 0.3s;
   font-size: 12px;
   &.speed
-    background: var(--anzhiyu-green);
-    box-shadow: var(--anzhiyu-shadow-green);
+    background: var(--liaisonstation-green);
+    box-shadow: var(--liaisonstation-shadow-green);
   &.vip
     background: linear-gradient(38deg, rgba(229, 176, 133, 1) 0%, rgba(212, 143, 22, 1) 100%);
     overflow: hidden;
-    box-shadow: var(--anzhiyu-shadow-yellow);
+    box-shadow: var(--liaisonstation-shadow-yellow);
   i.light
     cursor: pointer;
     position: absolute;
@@ -380,8 +380,8 @@ body[data-type="link"]
       height: 200px;
       position: relative;
       width: calc(100% / 7 - 16px);
-      background: var(--anzhiyu-card-bg);
-      box-shadow: var(--anzhiyu-shadow-border);
+      background: var(--liaisonstation-card-bg);
+      box-shadow: var(--liaisonstation-shadow-border);
       .img-alt
         display: none
       +maxWidth1200()
@@ -394,16 +394,16 @@ body[data-type="link"]
         width: calc(50% - 16px) !important;
       &:hover
         border: var(--style-border-hover);
-        box-shadow: var(--anzhiyu-shadow-main);
+        box-shadow: var(--liaisonstation-shadow-main);
         .info
-          background: var(--anzhiyu-theme);
+          background: var(--liaisonstation-theme);
           height: 120px;
           .site-card-text 
             .title
-              color: var(--anzhiyu-white);
+              color: var(--liaisonstation-white);
             .desc
               transition: 0.3s;
-              color: var(--anzhiyu-white);
+              color: var(--liaisonstation-white);
               width: 100%;
             +minWidth768()
               .desc
@@ -429,7 +429,7 @@ body[data-type="link"]
           flex-direction: column;
           align-items: flex-start;
           .title
-            color: var(--anzhiyu-fontcolor);
+            color: var(--liaisonstation-fontcolor);
             text-align: left;
             font-weight: 600;
             display: -webkit-box;
@@ -439,7 +439,7 @@ body[data-type="link"]
             transition: all 0.3s ease 0s;
           .desc
             font-size: 0.9rem;
-            color: var(--anzhiyu-fontcolor);
+            color: var(--liaisonstation-fontcolor);
             opacity: 0.7;
             transition: 0.3s;
             text-align: left;
@@ -459,7 +459,7 @@ body[data-type="link"]
           height: 20px;
           min-width: 20px;
           min-height: 20px;
-          background: var(--anzhiyu-secondbg);
+          background: var(--liaisonstation-secondbg);
       .img
         -webkit-mask-image: -webkit-radial-gradient(center, rgb(255, 255, 255), rgb(0, 0, 0));
         border-radius: 0;

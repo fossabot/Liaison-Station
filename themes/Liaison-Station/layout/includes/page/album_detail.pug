@@ -14,7 +14,7 @@
             .tips=i.description
           .banner-button-group
             a.banner-button(onclick=`pjax.loadUrl("${url_for(album_detail_top_link ? album_detail_top_link : '/about')}")`, data-pjax-state)
-              i.anzhiyufont.anzhiyu-icon-arrow-circle-right(style='font-size: 1.5rem')
+              i.anzhiyufont.liaisonstation-icon-arrow-circle-right(style='font-size: 1.5rem')
               span.banner-button-text=album_detail_top_btn_text ? album_detail_top_btn_text : "关于我"
       section.timeline.page-1
         if type == 1
@@ -33,28 +33,28 @@
                         .album-content-noimg
                     if item.aplayer
                       .album-music
-                        .aplayer.no-destroy(data-id=item.aplayer.id data-server=item.aplayer.server data-type="song"  data-order="list" data-preload="none" data-autoplay="false" data-mutex="true" data-theme='var(--anzhiyu-main)')
+                        .aplayer.no-destroy(data-id=item.aplayer.id data-server=item.aplayer.server data-type="song"  data-order="list" data-preload="none" data-autoplay="false" data-mutex="true" data-theme='var(--liaisonstation-main)')
                 hr
                 .album-bottom
                   .album-info
                     .album-info-time
                       - var datedata = new Date(item.date).toISOString()
-                      i.anzhiyufont.anzhiyu-icon-instagram
+                      i.anzhiyufont.liaisonstation-icon-instagram
                       time.datatime(datetime= item.date)= datedata
                     if item.link 
                       a.album-content-link(target="_blank", title="跳转到短文指引的链接", href=item.link, rel="external nofollow")
-                        i.anzhiyufont.anzhiyu-icon-link
+                        i.anzhiyufont.liaisonstation-icon-link
                         | 链接
                     if item.address
                       .album-info-address
-                        i.anzhiyufont.anzhiyu-icon-location-dot
+                        i.anzhiyufont.liaisonstation-icon-location-dot
                         span=item.address
                     if item.from 
                       .album-info-from
-                          i.anzhiyufont.anzhiyu-icon-fw-fire
+                          i.anzhiyufont.liaisonstation-icon-fw-fire
                           span=item.from
                   .album-reply(onclick="rm.rightMenuCommentText(" + `'${item.content}'` + ")")
-                    i.anzhiyufont.anzhiyu-icon-message
+                    i.anzhiyufont.liaisonstation-icon-message
         else if type == 2
           .type-gallery
             - const rowHeight = i.rowHeight != "undefined" ? i.rowHeight : 220
@@ -83,7 +83,7 @@
               if btn
                 button.gallery-load-more
                   span=_p('load_more')
-                  i.anzhiyufont.anzhiyu-icon-arrow-down
+                  i.anzhiyufont.liaisonstation-icon-arrow-down
               else 
                 #album_detail_gallery_load_more
 

@@ -95,7 +95,7 @@ hexo.extend.helper.register("cloudTags", function (options = {}) {
 
     const matchingTag = highlightTags.find(highlightTag => highlightTag === tag.name);
     if (matchingTag) {
-      style += " font-weight: 500; color: var(--anzhiyu-lighttext)";
+      style += " font-weight: 500; color: var(--liaisonstation-lighttext)";
     }
     result += `<a href="${env.url_for(tag.path)}" style="${style}">${tag.name}<sup>${tag.length}</sup></a>`;
   });

@@ -101,7 +101,7 @@
       animation: header 5s linear forwards;
       animation-timeline: view();
     if hexo-config('mainTone.enable')
-      background-color: var(--anzhiyu-bar-background)
+      background-color: var(--liaisonstation-bar-background)
     else 
       background-color: transparent
 
@@ -141,7 +141,7 @@
       overflow: hidden;
       margin-bottom: 0;
       user-select: none
-      transform: rotate(10deg) translateY(-10%) scale(var(--anzhiyu-header-cover-scale));
+      transform: rotate(10deg) translateY(-10%) scale(var(--liaisonstation-header-cover-scale));
       will-change: transform
       if !hexo-config('mainTone.enable')
         filter: blur(10px) brightness(60%);
@@ -178,9 +178,9 @@
         height: 100%;
         top: 0;
         left: 0;
-        box-shadow: 110px -130px 300px 60px var(--anzhiyu-bar-background) inset;
+        box-shadow: 110px -130px 300px 60px var(--liaisonstation-bar-background) inset;
         +maxWidth768()
-          box-shadow: 0 0 205px 59px var(--anzhiyu-main) inset
+          box-shadow: 0 0 205px 59px var(--liaisonstation-main) inset
 
       #post-top-bg
         width: 100%;
@@ -204,8 +204,8 @@
       border-bottom: none;
     &.nav-fixed
       #nav
-        background: var(--anzhiyu-card-bg);
-        outline: 1px solid var(--anzhiyu-card-border);
+        background: var(--liaisonstation-card-bg);
+        outline: 1px solid var(--liaisonstation-card-border);
         transform: translateZ(0);
       +maxWidth768()
         #nav
@@ -216,8 +216,8 @@
       min-height: 450px;
       &.nav-fixed
         #nav
-          background: var(--anzhiyu-card-bg);
-          outline: 1px solid var(--anzhiyu-card-border);
+          background: var(--liaisonstation-card-bg);
+          outline: 1px solid var(--liaisonstation-card-border);
     if hexo-config('mainTone.enable')
       &:before    
         position: absolute
@@ -225,7 +225,7 @@
         height: 100%
         content: ''
         transition: 0s;
-        background-color: var(--anzhiyu-bar-background);
+        background-color: var(--liaisonstation-bar-background);
         animation: slide-in-op 0.6s 0s forwards;
 
   #post-info
@@ -240,9 +240,9 @@
     flex-direction: column;
     z-index: 3
     +minWidth768()
-      --anzhiyu-header-translateY: 0
+      --liaisonstation-header-translateY: 0
       animation: post-info-slide-in 0.6s 0.3s backwards;
-      transform: scale(var(--anzhiyu-header-info-scale)) translateY(var(--anzhiyu-header-translateY));
+      transform: scale(var(--liaisonstation-header-info-scale)) translateY(var(--liaisonstation-header-translateY));
       transform-origin: left top
       will-change: transform;
     +maxWidth1400()
@@ -262,7 +262,7 @@
           height: 100%;
           bottom: 0;
           left: 0;
-          box-shadow: 0px -265px 287px 45px var(--anzhiyu-bar-background) inset;
+          box-shadow: 0px -265px 287px 45px var(--liaisonstation-bar-background) inset;
           z-index: 0;
           animation: none
 
@@ -271,18 +271,18 @@
     height: 60px
     background: 0
     #nav #menus .menus_item:hover > a
-      background: var(--anzhiyu-main);
+      background: var(--liaisonstation-main);
     #travellings_button::after
-      background: var(--anzhiyu-main) !important;
+      background: var(--liaisonstation-main) !important;
     #nav 
       #blog_name .back-home-button,
       #blog_name #site-name,
       #nav-right .nav-button a,
       #nav-right #toggle-menu
         &:hover
-          color: var(--anzhiyu-white);
-          background: var(--anzhiyu-main);
-          box-shadow: var(--anzhiyu-shadow-main);
+          color: var(--liaisonstation-white);
+          background: var(--liaisonstation-main);
+          box-shadow: var(--liaisonstation-shadow-main);
     .post-meta-categories
       background: rgba(0, 0, 0, 0.2)
 
@@ -303,8 +303,8 @@
     #nav
       position: fixed
       z-index: 91
-      background: var(--anzhiyu-card-bg);
-      outline: 1px solid var(--anzhiyu-card-border);
+      background: var(--liaisonstation-card-bg);
+      outline: 1px solid var(--liaisonstation-card-border);
       transform: translateZ(0);
       top: 0
       #toggle-menu
@@ -458,8 +458,8 @@
           text-decoration: none;
           padding: 0 0.2em;
           &:hover 
-            color: var(--anzhiyu-white);
-            background-color: var(--anzhiyu-main);
+            color: var(--liaisonstation-white);
+            background-color: var(--liaisonstation-main);
             border-radius: 4px;
 
     a
@@ -486,7 +486,7 @@
   height: 60px
   opacity: 1
   justify-content: space-between;
-  outline: 1px solid var(--anzhiyu-none);
+  outline: 1px solid var(--liaisonstation-none);
   i
     font-size: 1.2rem
     font-weight: bold
@@ -546,7 +546,7 @@
       &:hover
         .menus_item_child
           border: var(--style-border-hover);
-          box-shadow: var(--anzhiyu-shadow-main);
+          box-shadow: var(--liaisonstation-shadow-main);
           opacity: 1;
           pointer-events: all;
           transform: translateY(0) scale(1);
@@ -564,10 +564,10 @@
         width: max-content
         border-radius 5px
         top 35px
-        box-shadow var(--anzhiyu-shadow-black)
+        box-shadow var(--liaisonstation-shadow-black)
         border var(--style-border)
         transition 0.2s
-        background-color var(--anzhiyu-card-bg)
+        background-color var(--liaisonstation-card-bg)
         border-radius 50px
         right auto
         left auto
@@ -607,11 +607,11 @@
             color: var(--font-color) !important
             text-shadow: none !important
             &:hover
-              color: var(--anzhiyu-white) !important
+              color: var(--liaisonstation-white) !important
               padding: .125rem 1.25rem;
               transform: scale(1) !important;
-              background: var(--anzhiyu-main)!important;
-              box-shadow: var(--anzhiyu-shadow-main);
+              background: var(--liaisonstation-main)!important;
+              box-shadow: var(--liaisonstation-shadow-main);
               transform: scale(1)!important;
 
   &.hide-menu
@@ -645,7 +645,7 @@
     font-size: .78em
     cursor: pointer
     &:hover
-      color: var(--anzhiyu-white) !important
+      color: var(--liaisonstation-white) !important
 
 @keyframes move-forever
   0%
@@ -717,8 +717,8 @@ if hexo-config('dynamicEffect') && hexo-config('dynamicEffect.postTopWave')
     height: 32px;
 
     a.post-meta-original
-      background: var(--anzhiyu-white-op);
-      color: var(--anzhiyu-white);
+      background: var(--liaisonstation-white-op);
+      color: var(--liaisonstation-white);
       padding: 0 0.7rem;
       font-size: 0.9rem;
       margin: auto;
@@ -730,7 +730,7 @@ if hexo-config('dynamicEffect') && hexo-config('dynamicEffect.postTopWave')
       height: 100%;
       display: flex;
     span.post-meta-categories
-      color: var(--anzhiyu-white);
+      color: var(--liaisonstation-white);
       
       font-size: 0.9rem;
       margin: auto;
@@ -746,8 +746,8 @@ if hexo-config('dynamicEffect') && hexo-config('dynamicEffect.postTopWave')
       a.post-meta-categories
         border-radius: 8px;
         padding: 0 0.7rem;
-        background: var(--anzhiyu-white-op);
-        color: var(--anzhiyu-white);
+        background: var(--liaisonstation-white-op);
+        color: var(--liaisonstation-white);
         font-size: 0.9rem;
         width: 100%;
         height: 100%;
@@ -759,34 +759,34 @@ if hexo-config('dynamicEffect') && hexo-config('dynamicEffect.postTopWave')
       +maxWidth768()
         display: none
     .article-meta__tags
-      color: var(--anzhiyu-white);
+      color: var(--liaisonstation-white);
       opacity: 0.8;
       margin-right: 8px;
-    .anzhiyu-icon-hashtag:before 
+    .liaisonstation-icon-hashtag:before 
       font-size: 17px;
-    .anzhiyu-icon-location-dot
+    .liaisonstation-icon-location-dot
       margin-right: 4px
 #post
   #post-info
     #post-firstinfo
       .meta-firstline 
         a.post-meta-original
-          background: var(--anzhiyu-black)
+          background: var(--liaisonstation-black)
         a.post-meta-categories 
-          background: var(--anzhiyu-black)
+          background: var(--liaisonstation-black)
         .article-meta__tags
-          color: var(--anzhiyu-black)
+          color: var(--liaisonstation-black)
 +maxWidth768()
   .layout > div:first-child:not(.recent-posts)
     z-index: 10;
   if hexo-config('mainTone.enable')
     #page-header.post-bg #nav
-      background: linear-gradient(to top, var(--anzhiyu-main-none) 0%, var(--anzhiyu-bar-background) 100%);
+      background: linear-gradient(to top, var(--liaisonstation-main-none) 0%, var(--liaisonstation-bar-background) 100%);
       transition: 0s
   .post-bg:has(.bldbanner) #post-info:after,
   .post-bg:has(.bili-banner) #post-info:after,
   .post-bg:has(.blqbanner) #post-info:after
-    box-shadow: 0px -214px 287px 45px var(--anzhiyu-black-op) inset;
+    box-shadow: 0px -214px 287px 45px var(--liaisonstation-black-op) inset;
   /*Shrinking for mobile*/
   .waves-area .waves-svg
     height: 40px;
@@ -798,8 +798,8 @@ if hexo-config('dynamicEffect') && hexo-config('dynamicEffect.postTopWave')
 @keyframes showCover
   0%
     opacity: 0;
-    transform: rotate(10deg) translateY(-8%) scale(var(--anzhiyu-header-cover-scale));
+    transform: rotate(10deg) translateY(-8%) scale(var(--liaisonstation-header-cover-scale));
 
   100%
     opacity: 0.5;
-    transform: rotate(10deg) translateY(-10%) scale(var(--anzhiyu-header-cover-scale));
+    transform: rotate(10deg) translateY(-10%) scale(var(--liaisonstation-header-cover-scale));

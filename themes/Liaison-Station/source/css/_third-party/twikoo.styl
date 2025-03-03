@@ -2,7 +2,7 @@ if hexo-config('comments.use') == 'Twikoo'
   .OwO .OwO-body
     min-width: 31.25rem
   .twikoo svg
-    color: var(--anzhiyu-fontcolor);
+    color: var(--liaisonstation-fontcolor);
   /* 评论区表情放大 */
   @keyframes owoIn
     0% {
@@ -38,7 +38,7 @@ if hexo-config('comments.use') == 'Twikoo'
     box-shadow: 0 8px 16px -4px #2c2d300c;
     border-radius: 50px;
     letter-spacing: 5px;
-    background-color: var(--anzhiyu-card-bg);
+    background-color: var(--liaisonstation-card-bg);
 
   #twikoo 
     .tk-comments > .tk-submit
@@ -48,7 +48,7 @@ if hexo-config('comments.use') == 'Twikoo'
         border: var(--style-border-always) !important;
         border-radius: 8px !important;
         overflow: hidden;
-        background-color: var(--anzhiyu-maskbg) !important;
+        background-color: var(--liaisonstation-maskbg) !important;
         backdrop-filter: saturate(180%) blur(10px);
         cursor: auto;
         top: 2.1em !important;
@@ -57,12 +57,12 @@ if hexo-config('comments.use') == 'Twikoo'
         .OwO-items-show
           margin: 12px 8px;
       button.el-button.tk-cancel.el-button--default.el-button--small
-        background: var(--anzhiyu-secondbg);
+        background: var(--liaisonstation-secondbg);
         border-radius: 8px;
-        color: var(--anzhiyu-fontcolor);
+        color: var(--liaisonstation-fontcolor);
         &:hover
-          background: var(--anzhiyu-lighttext);
-          color: var(--anzhiyu-white);
+          background: var(--liaisonstation-lighttext);
+          color: var(--liaisonstation-white);
       a.tk-submit-action-icon.__markdown
         display: none;
       &>div.tk-submit>div.tk-row.actions>a
@@ -72,10 +72,10 @@ if hexo-config('comments.use') == 'Twikoo'
       .el-button--primary.is-disabled, .el-button--primary.is-disabled:active, .el-button--primary.is-disabled:focus, .el-button--primary.is-disabled:hover
         opacity .2
       .el-button--primary
-        border-color: var(--anzhiyu-fontcolor);
-        color: var(--anzhiyu-card-bg);
+        border-color: var(--liaisonstation-fontcolor);
+        color: var(--liaisonstation-card-bg);
         border-radius: 12px;
-        box-shadow: var(--anzhiyu-shadow-black);
+        box-shadow: var(--liaisonstation-shadow-black);
         transition: .3s;
         width: 6.25rem;
         position: absolute;
@@ -94,22 +94,22 @@ if hexo-config('comments.use') == 'Twikoo'
           box-sizing: border-box;
           width: 100%;
           font-size: inherit;
-          color: var(--anzhiyu-fontcolor);
-          background-color: var(--anzhiyu-secondbg);
+          color: var(--liaisonstation-fontcolor);
+          background-color: var(--liaisonstation-secondbg);
           border: var(--style-border-always);
           transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 
       .el-input__inner
-        background: var(--anzhiyu-secondbg)!important;
+        background: var(--liaisonstation-secondbg)!important;
         border: none!important;
-        color: var(--anzhiyu-fontcolor)!important;
+        color: var(--liaisonstation-fontcolor)!important;
         padding-left: 8px;
       .el-input__inner:focus
         border: none;
       .el-input-group__append, .el-input-group__prepend
-        background-color: var(--anzhiyu-card-bg);
-        color: var(--anzhiyu-fontcolor);
-        border-color: var(--anzhiyu-card-border);
+        background-color: var(--liaisonstation-card-bg);
+        color: var(--liaisonstation-fontcolor);
+        border-color: var(--liaisonstation-card-border);
         border: none;
         font-weight: 700;
       .el-input-group--prepend .el-input__inner, .el-input-group__append
@@ -126,7 +126,7 @@ if hexo-config('comments.use') == 'Twikoo'
         width: calc(100% - 6.875rem);
         .el-input.el-input--small.el-input-group.el-input-group--prepend
           border-radius: 12px;
-          background: var(--anzhiyu-secondbg);
+          background: var(--liaisonstation-secondbg);
           border: var(--style-border-always);
         .el-input .el-input-group__prepend
           user-select: none;
@@ -147,19 +147,19 @@ if hexo-config('comments.use') == 'Twikoo'
       .tk-admin
         backdrop-filter: blur(5px);
       .el-button
-        background-color: var(--anzhiyu-fontcolor);
-        border: 0 solid var(--anzhiyu-main);
-        color: var(--anzhiyu-background);
+        background-color: var(--liaisonstation-fontcolor);
+        border: 0 solid var(--liaisonstation-main);
+        color: var(--liaisonstation-background);
       .tk-tag-green
-        background-color: var(--anzhiyu-main);
+        background-color: var(--liaisonstation-main);
         border: none;
         border-radius: 4px;
-        color: var(--anzhiyu-white);
+        color: var(--liaisonstation-white);
       .tk-action-icon
-        color: var(--anzhiyu-main)
+        color: var(--liaisonstation-main)
         cursor pointer
       .tk-icon.__comments
-        color: var(--anzhiyu-main)
+        color: var(--liaisonstation-main)
       .tk-actions
         a
         cursor pointer
@@ -171,7 +171,7 @@ if hexo-config('comments.use') == 'Twikoo'
       .tk-expand
         &:hover
           color: #fff;
-          background-color: var(--anzhiyu-main);
+          background-color: var(--liaisonstation-main);
           border: var(--style-border-none);
 
       .tk-content 
@@ -184,7 +184,7 @@ if hexo-config('comments.use') == 'Twikoo'
       background: none;
     code
       padding: 2px 4px;
-      background: var(--anzhiyu-secondbg);
+      background: var(--liaisonstation-secondbg);
       color: #f47466;
     .tk-comment .tk-submit .tk-avatar, .tk-replies .tk-avatar
       height: 2.5rem !important;
@@ -201,8 +201,8 @@ if hexo-config('comments.use') == 'Twikoo'
       .tk-comments-container .tk-comment
         padding: 1rem;
         border: var(--style-border-always);
-        box-shadow: var(--anzhiyu-shadow-border);
-        background: var(--anzhiyu-card-bg);
+        box-shadow: var(--liaisonstation-shadow-border);
+        background: var(--liaisonstation-card-bg);
       .tk-replies .tk-comment
         border: none
 
@@ -223,7 +223,7 @@ if hexo-config('comments.use') == 'Twikoo'
       transition: all 0.3s ease 0s;
     .tk-content span:first-child:not(.token)
       font-size: .75rem;
-      color: var(--anzhiyu-secondtext);
+      color: var(--liaisonstation-secondtext);
 
 
   [data-theme="dark"] #owo-big
@@ -302,12 +302,12 @@ if hexo-config('comments.use') == 'Twikoo'
   }
 
   #twikoo .tk-extra {
-    background: var(--anzhiyu-card-bg);
+    background: var(--liaisonstation-card-bg);
     border: var(--style-border-always);
     padding: 4px 8px;
     border-radius: 8px;
     margin-right: 4px;
-    color: var(--anzhiyu-secondtext);
+    color: var(--liaisonstation-secondtext);
     margin-top: 6px;
     font-size: 0.8rem;
   }
@@ -322,14 +322,14 @@ if hexo-config('comments.use') == 'Twikoo'
   }
   .tk-content span a:not([data-fancybox="gallery"]) {
     font-weight: 500;
-    border-bottom: solid 2px var(--anzhiyu-lighttext);
-    color: var(--anzhiyu-fontcolor);
+    border-bottom: solid 2px var(--liaisonstation-lighttext);
+    color: var(--liaisonstation-fontcolor);
     padding: 0 0.2em;
     text-decoration: none;
   }
   .tk-content span a:not([data-fancybox="gallery"]):hover {
-    color: var(--anzhiyu-white);
-    background-color: var(--anzhiyu-theme);
+    color: var(--liaisonstation-white);
+    background-color: var(--liaisonstation-theme);
     border-radius: 4px;
   }
   .tk-main .tk-content span > a {
@@ -366,9 +366,9 @@ if hexo-config('comments.use') == 'Twikoo'
 
 
   #body-wrap.page .el-input__inner {
-    background: var(--anzhiyu-card-bg);
-    box-shadow: var(--anzhiyu-shadow-border);
-    color: var(--anzhiyu-fontcolor);
+    background: var(--liaisonstation-card-bg);
+    box-shadow: var(--liaisonstation-shadow-border);
+    color: var(--liaisonstation-fontcolor);
   }
   #body-wrap.page .tk-admin-config .el-input__inner{
     color: currentColor;
@@ -376,7 +376,7 @@ if hexo-config('comments.use') == 'Twikoo'
 
   #twikoo.twikoo .el-input__inner:focus,
   #twikoo.twikoo .el-textarea__inner:focus {
-    border-color: var(--anzhiyu-main);
+    border-color: var(--liaisonstation-main);
   }
 
   .tk-comments-container > .tk-comment {
@@ -393,8 +393,8 @@ if hexo-config('comments.use') == 'Twikoo'
   #post-comment .comment-tips {
     background-color: rgba(103, 194, 58, 0.13);
     border: var(--style-border-always);
-    border-color: var(--anzhiyu-green);
-    color: var(--anzhiyu-green);
+    border-color: var(--liaisonstation-green);
+    color: var(--liaisonstation-green);
     border-radius: 8px;
     padding: 8px 12px;
     margin-top: 0.5rem;
@@ -407,12 +407,12 @@ if hexo-config('comments.use') == 'Twikoo'
   }
 
   #page .tk-comments-container > .tk-comment
-    background: var(--anzhiyu-card-bg);
+    background: var(--liaisonstation-card-bg);
     padding: 1rem;
     padding-bottom: 1rem;
     border: var(--style-border);
     border-top: var(--style-border);
-    box-shadow: var(--anzhiyu-shadow-border);
+    box-shadow: var(--liaisonstation-shadow-border);
     if hexo-config('dynamicEffect.pageCommentsRollZoom')
       animation: animate-in-and-out 1s linear forwards;
       animation-timeline: view();
@@ -443,7 +443,7 @@ if hexo-config('comments.use') == 'Twikoo'
       top: -126px;
     }
     #twikoo .el-textarea__inner {
-      background: var(--anzhiyu-card-bg)!important;
+      background: var(--liaisonstation-card-bg)!important;
       overflow: hidden;
       resize: none!important;
     }
@@ -464,6 +464,6 @@ if hexo-config('comments.use') == 'Twikoo'
   }
 
   .OwO .OwO-body .OwO-items .OwO-item:hover {
-    box-shadow: var(--anzhiyu-shadow-lightblack) !important;
+    box-shadow: var(--liaisonstation-shadow-lightblack) !important;
     border-radius: 8px;
   }

@@ -16,7 +16,7 @@
   padding: 8px
   border-radius: 12px
   border: var(--style-border-always)
-  background: var(--anzhiyu-card-bg)
+  background: var(--liaisonstation-card-bg)
   font-size: 14px
   height: 4.2rem;
   width: 7rem;
@@ -83,7 +83,7 @@
     z-index: 31;
     &:hover
       &::after
-        background: var(--anzhiyu-main) !important;
+        background: var(--liaisonstation-main) !important;
     &::after
       content: "";
       width: 35px;
@@ -93,11 +93,11 @@
       z-index: -1;
       top: -6px;
       left: -6.3px;
-      background: var(--anzhiyu-fontcolor) !important;
+      background: var(--liaisonstation-fontcolor) !important;
       border-radius: 50px;
     &:is(.widget, .widget:hover) i
       height: calc(var(--icon-size)/4.5);
-      background: var(--anzhiyu-white) !important;
+      background: var(--liaisonstation-white) !important;
     i.left
       width: 100% !important;
       transform: rotate(-45deg) !important;
@@ -107,11 +107,11 @@
       width: 100% !important;
       transform: rotate(45deg) !important;
 [data-theme="dark"] #center-console:checked + label:is(.widget, #center-console:checked + label .widget:hover) i
-  background: var(--anzhiyu-black) !important;
+  background: var(--liaisonstation-black) !important;
 #body-wrap
   .nav-fixed #travellings_button
     &::after
-      background: var(--anzhiyu-main) !important;
+      background: var(--liaisonstation-main) !important;
 
   #travellings_button
     display: flex
@@ -121,11 +121,11 @@
       visibility: visible;
     &:hover
       a
-        background: var(--anzhiyu-main);
-        -webkit-box-shadow: var(--anzhiyu-shadow-main);
-        box-shadow: var(--anzhiyu-shadow-main);
+        background: var(--liaisonstation-main);
+        -webkit-box-shadow: var(--liaisonstation-shadow-main);
+        box-shadow: var(--liaisonstation-shadow-main);
         i
-          color: var(--anzhiyu-white);
+          color: var(--liaisonstation-white);
     &::after
       --height: 2rem;
       content: attr(title);
@@ -133,10 +133,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: var(--anzhiyu-white);
-      background: var(--anzhiyu-white-op) !important;
-      box-shadow: var(--anzhiyu-shadow-nav);
-      border-radius: var(--anzhiyu-radius-full);
+      color: var(--liaisonstation-white);
+      background: var(--liaisonstation-white-op) !important;
+      box-shadow: var(--liaisonstation-shadow-nav);
+      border-radius: var(--liaisonstation-radius-full);
       width: fit-content;
       height: var(--height);
       font-size: var(--global-font-size);
@@ -162,7 +162,7 @@
     display: none
 #body-wrap .page #travellings_button:hover
   &::after
-    background: var(--anzhiyu-main) !important;
+    background: var(--liaisonstation-main) !important;
 
 
 @media screen and (max-width: 768px)
@@ -190,7 +190,7 @@
   #nav-right .nav-button,
   #nav-right #toggle-menu
     a:hover
-      background var(--anzhiyu-main)
+      background var(--liaisonstation-main)
       transition 0.3s
 
 #page-header.not-top-img
@@ -278,43 +278,43 @@
   #nav-right .nav-button,
   #nav-right #toggle-menu
     a:hover
-      color var(--anzhiyu-white)
-      background var(--anzhiyu-main)
+      color var(--liaisonstation-white)
+      background var(--liaisonstation-main)
       transition 0.3s
-      box-shadow var(--anzhiyu-shadow-main)
+      box-shadow var(--liaisonstation-shadow-main)
 .post #nav 
   #blog_name .back-home-button,
   #blog_name #site-name,
   #nav-right .nav-button a,
   #nav-right #toggle-menu
     &:hover
-      color var(--anzhiyu-white)
-      background var(--anzhiyu-white-op)
+      color var(--liaisonstation-white)
+      background var(--liaisonstation-white-op)
       transition 0.3s
 .post #nav 
   #menus .menus_item
     &:hover > a
-      color var(--anzhiyu-white)
-      background var(--anzhiyu-white-op)
+      color var(--liaisonstation-white)
+      background var(--liaisonstation-white-op)
       transition 0.3s
 
 .post .nav-fixed #nav 
   #menus .menus_item
     &:hover
       > a.site-page
-        color var(--anzhiyu-white)
-        background var(--anzhiyu-main)
+        color var(--liaisonstation-white)
+        background var(--liaisonstation-main)
         transition 0.3s
-        box-shadow var(--anzhiyu-shadow-main)
+        box-shadow var(--liaisonstation-shadow-main)
   #blog_name #site-name,
   #blog_name .back-home-button,
   #nav-right .nav-button a,
   #nav-right #toggle-menu
     &:hover
-      color var(--anzhiyu-white)
-      background var(--anzhiyu-main)
+      color var(--liaisonstation-white)
+      background var(--liaisonstation-main)
       transition 0.3s
-      box-shadow var(--anzhiyu-shadow-main)
+      box-shadow var(--liaisonstation-shadow-main)
 
 #page-header.nav-fixed #nav #page-name
   background none
@@ -344,7 +344,7 @@
   transition 0.3s
 
 #page-header.nav-fixed #nav #page-name:hover
-  color var(--anzhiyu-main)
+  color var(--liaisonstation-main)
 @media screen and (min-width: 900px)
   #page-header.nav-fixed #nav #page-name::after
     opacity 0
@@ -357,14 +357,14 @@
     top 50%
     transform translateY(-50%)
     margin auto
-    color var(--anzhiyu-white) !important
+    color var(--liaisonstation-white) !important
     font-weight 700
     line-height 2
 @media screen and (min-width: 1200px)
   #page-header.nav-fixed #nav #page-name:hover:after
     opacity 1
   #page-header.nav-fixed #nav #page-name:hover
-    background var(--anzhiyu-main)
+    background var(--liaisonstation-main)
 
 #page-header #nav #page-name
   display inline
@@ -416,8 +416,8 @@
   font-size 1.3em
 
 .back-home-button:hover
-  background var(--anzhiyu-main)
-  color var(--anzhiyu-white) !important
+  background var(--liaisonstation-main)
+  color var(--liaisonstation-white) !important
 
 .back-home-button
   display flex
@@ -445,13 +445,13 @@
   transform: scale(.8);
   transform-origin: top left;
   left: 0rem;
-  background-color: var(--anzhiyu-maskbgdeep);
+  background-color: var(--liaisonstation-maskbgdeep);
   border-radius: 12px;
   border: var(--style-border);
   flex-direction: column;
   font-size: 12px;
-  color: var(--anzhiyu-secondtext);
-  box-shadow: var(--anzhiyu-shadow-border);
+  color: var(--liaisonstation-secondtext);
+  box-shadow: var(--liaisonstation-shadow-border);
   transition: .1s;
   opacity: 0;
   pointer-events: none;
@@ -485,7 +485,7 @@
   margin 0 0 8px
 
 .back-home-button .back-menu-list-group:hover .back-menu-list-title
-  color var(--anzhiyu-main)
+  color var(--liaisonstation-main)
 
 .back-home-button .back-menu-list-groups:hover
   border var(--style-border-hover)
@@ -503,7 +503,7 @@
 .back-menu-list-groups .back-menu-list .back-menu-item .back-menu-item-text
   font-size var(--global-font-size)
   margin-left 0.5rem
-  color var(--anzhiyu-fontcolor)
+  color var(--liaisonstation-fontcolor)
   white-space nowrap
   +maxWidth768()
     font-size: 14px;
@@ -515,7 +515,7 @@
   width 24px
   height 24px
   border-radius 24px
-  background var(--anzhiyu-secondbg)
+  background var(--liaisonstation-secondbg)
 
 #page-header #nav .back-home-button
   cursor pointer
@@ -528,7 +528,7 @@
   color var(--font-color)
 
 .back-home-button .back-menu-list .back-menu-item:hover .back-menu-item-text
-  color var(--anzhiyu-white)
+  color var(--liaisonstation-white)
 
 .back-menu-item-icon.loading img
   width 25px
@@ -552,12 +552,12 @@
   display none
 
 #nav .nav-button a:hover
-  color var(--anzhiyu-white) !important
+  color var(--liaisonstation-white) !important
 
 #menus > div.menus_items a
   font-weight bold
 
-#menus .menus_item .menus_item_child .site-page.child.faa-parent.animated-hover .anzhiyu-icon-fan.faa-tada
+#menus .menus_item .menus_item_child .site-page.child.faa-parent.animated-hover .liaisonstation-icon-fan.faa-tada
   animation rotate 1.6s linear infinite
 
 #nav-right
@@ -609,7 +609,7 @@
 
 #page-header #nav #nav-right .nav-button a:hover i,
 #page-header #nav #nav-left .nav-button a:hover i
-  color var(--anzhiyu-white)
+  color var(--liaisonstation-white)
   transition background 0.35s ease-in-out, color 0.2s ease-in-out
 
 [data-theme="dark"] #page-header #nav #nav-right .nav-button a i,
@@ -673,11 +673,11 @@
   font-weight 700
 
 #page-header #nav #nav-right .nav-button:hover a.totopbtn
-  background var(--anzhiyu-main)
+  background var(--liaisonstation-main)
 
 #nav-totop:hover .totopbtn i
   opacity 1
-  color var(--anzhiyu-white)
+  color var(--liaisonstation-white)
   transition 0.3s
 
 #nav-totop .totopbtn i
@@ -720,7 +720,7 @@
 
 @media screen and (min-width: 900px)
   #nav .back-home-button:hover
-    box-shadow var(--anzhiyu-shadow-main)
+    box-shadow var(--liaisonstation-shadow-main)
 
 @media screen and (max-width: 768px)
   .mask-name-container
@@ -731,13 +731,13 @@
     margin-bottom 10px
   #nav
     border-bottom none
-    background var(--anzhiyu-background)
+    background var(--liaisonstation-background)
   #page-header #nav #nav-right div
     margin-left .5rem
 
 @media screen and (min-width: 768px)
   .menus_item:hover > a.site-page
-    color var(--anzhiyu-white) !important
-    background var(--anzhiyu-main)
+    color var(--liaisonstation-white) !important
+    background var(--liaisonstation-main)
     transition 0.3s
-    box-shadow var(--anzhiyu-shadow-main)
+    box-shadow var(--liaisonstation-shadow-main)

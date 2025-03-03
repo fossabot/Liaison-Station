@@ -22,11 +22,11 @@
 
     .unvisited-post 
       display: flex;
-      color: var(--anzhiyu-secondtext);
+      color: var(--liaisonstation-secondtext);
       font-size: .75rem;;
       position: relative;
       &:visited
-        color: var(--anzhiyu-card-bg);
+        color: var(--liaisonstation-card-bg);
     .recent-post-info
       margin-top: 0px;
       position: relative;
@@ -37,13 +37,13 @@
         width: 100%;
         .article-categories-original
           display: flex;
-          color: var(--anzhiyu-secondtext);
+          color: var(--liaisonstation-secondtext);
           font-size: .75rem;;
           position: relative;
           margin-right: 8px;
         .newPost 
           display: flex;
-          color: var(--anzhiyu-secondtext);
+          color: var(--liaisonstation-secondtext);
           font-size: .75rem;;
           position: relative;
           margin-right: 8px;
@@ -53,7 +53,7 @@
         line-height: 30px;
         margin-top: 0;
         font-weight: 700;
-        color: var(--anzhiyu-fontcolor);
+        color: var(--liaisonstation-fontcolor);
         margin-bottom: 0;
         width: 100%;
         transition: .3s;
@@ -134,7 +134,7 @@
           color: $text-hover
 
       & > .article-meta-wrap
-        color: var(--anzhiyu-fontcolor);
+        color: var(--liaisonstation-fontcolor);
         font-size: .7rem;
         position: absolute;
         padding: 0 32px;
@@ -165,7 +165,7 @@
             text-overflow: ellipsis;
 
         & > .post-meta-date
-          color: var(--anzhiyu-fontcolor);
+          color: var(--liaisonstation-fontcolor);
           font-size: .875rem;
           white-space: nowrap;
           if hexo-config("post_meta.page.date_type") == 'both'
@@ -259,7 +259,7 @@ if hexo-config('article_double_row') == true
     #recent-posts > .recent-post-item >.recent-post-info > .article-title
       line-height: 30px;
       font-weight: bold;
-      color: var(--anzhiyu-fontcolor);
+      color: var(--liaisonstation-fontcolor);
       width: 100%;
       transition: .3s;
       font-size: 1.2rem;
@@ -323,7 +323,7 @@ if hexo-config('article_double_row') == true
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   line-height: 1.4;
-  color: var(--anzhiyu-secondtext);
+  color: var(--liaisonstation-secondtext);
   margin-top: 0.5rem;
   font-size: 14px;
   opacity 0
@@ -331,8 +331,8 @@ if hexo-config('article_double_row') == true
 
 #popup-window
   min-width: 300px;
-  background: var(--anzhiyu-maskbgdeep);
-  color: var(--anzhiyu-fontcolor);
+  background: var(--liaisonstation-maskbgdeep);
+  color: var(--liaisonstation-fontcolor);
   padding: 8px 16px;
   display: flex;
   flex-direction: column;
@@ -355,28 +355,28 @@ if hexo-config('article_double_row') == true
     pointer-events: all
     cursor pointer
   &.no-url:hover
-    background: var(--anzhiyu-maskbgdeep);
-    color: var(--anzhiyu-fontcolor);
+    background: var(--liaisonstation-maskbgdeep);
+    color: var(--liaisonstation-fontcolor);
     border: var(--style-border);
     cursor: pointer
   &.no-url
     .popup-window-content .popup-link
       display: none
   &:hover
-    background: var(--anzhiyu-main)
-    color: var(--anzhiyu-white)
+    background: var(--liaisonstation-main)
+    color: var(--liaisonstation-white)
     border: var(--style-border-hover);
     .popup-window-content .popup-link i
-      color: var(--anzhiyu-white)
+      color: var(--liaisonstation-white)
   &.popup-hide
     opacity: 0;
     animation: barrageOut .6s cubic-bezier(.42,0,.3,1.11);
   .popup-window-title
     font-size: 12px;
     font-weight: 700;
-    color: var(--anzhiyu-card-bg);
+    color: var(--liaisonstation-card-bg);
     margin-right: 8px;
-    background: var(--anzhiyu-fontcolor);
+    background: var(--liaisonstation-fontcolor);
     line-height: 1;
     padding: 4px;
     border-radius: 4px;

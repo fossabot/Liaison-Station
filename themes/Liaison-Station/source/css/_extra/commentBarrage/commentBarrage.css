@@ -23,9 +23,9 @@
   max-height: 150px;
   margin: 4px;
   padding: 8px 14px;
-  background: var(--anzhiyu-maskbgdeep);
+  background: var(--liaisonstation-maskbgdeep);
   border-radius: 8px;
-  color: var(--anzhiyu-fontcolor);
+  color: var(--liaisonstation-fontcolor);
   animation: barrageIn 0.6s cubic-bezier(0.42, 0, 0.3, 1.11);
   transition: 0.3s;
   display: flex;
@@ -35,30 +35,30 @@
   -webkit-backdrop-filter: blur(20px);
   transform: translateZ(0);
   position: fixed;
-  box-shadow: var(--anzhiyu-shadow-border);
+  box-shadow: var(--liaisonstation-shadow-border);
 }
 .comment-barrage-item:hover {
   border: var(--style-border-hover);
-  box-shadow: var(--anzhiyu-shadow-main);
+  box-shadow: var(--liaisonstation-shadow-main);
 }
 .comment-barrage-item.out {
   opacity: 0;
   animation: barrageOut 0.6s cubic-bezier(0.42, 0, 0.3, 1.11);
 }
 .comment-barrage-item a.barrageContent:hover {
-  color: var(--anzhiyu-main);
+  color: var(--liaisonstation-main);
 }
 .comment-barrage-item.hovered {
   opacity: 0;
 }
 .comment-barrage-item .comment-barrage-close {
-  color: var(--anzhiyu-secondtext);
+  color: var(--liaisonstation-secondtext);
   cursor: pointer;
   line-height: 1;
   padding: 4px;
 }
 .comment-barrage-item .comment-barrage-close:hover {
-  color: var(--anzhiyu-main);
+  color: var(--liaisonstation-main);
 }
 .comment-barrage-item pre {
   display: none;
@@ -80,15 +80,15 @@
   padding-bottom: 6px;
 }
 .comment-barrage-item .barrageHead .barrageTitle {
-  color: var(--anzhiyu-card-bg);
+  color: var(--liaisonstation-card-bg);
   margin-right: 8px;
-  background: var(--anzhiyu-fontcolor);
+  background: var(--liaisonstation-fontcolor);
   line-height: 1;
   padding: 4px;
   border-radius: 4px;
 }
 .comment-barrage-item .barrageHead .barrageTitle.barrageBloggerTitle {
-  background: var(--anzhiyu-orange);
+  background: var(--liaisonstation-orange);
 }
 .comment-barrage-item .barrageAvatar {
   width: 16px;
@@ -97,7 +97,7 @@
   margin-left: auto;
   margin-right: 8px;
   border-radius: 50%;
-  background: var(--anzhiyu-secondbg);
+  background: var(--liaisonstation-secondbg);
 }
 .comment-barrage-item .barrageContent {
   font-size: 14px !important;

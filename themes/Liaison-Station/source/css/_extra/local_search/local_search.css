@@ -19,7 +19,7 @@
 #local-search .search-dialog .local-search__hit-item .search-left img {
   object-fit: cover;
   width: 100%;
-  background: var(--anzhiyu-secondbg);
+  background: var(--liaisonstation-secondbg);
   border-radius: 8px;
 }
 #local-search .search-dialog .local-search__hit-item .search-result {
@@ -37,6 +37,6 @@
   display: inline;
 }
 #local-search .search-dialog .local-search__hit-item .tag-list:hover {
-  background: var(--anzhiyu-main);
-  color: var(--anzhiyu-white);
+  background: var(--liaisonstation-main);
+  color: var(--liaisonstation-white);
 }
