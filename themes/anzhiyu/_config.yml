@@ -33,7 +33,7 @@ nav:
           icon: /img/favicon.ico
     - title: 项目
       item:
-        - name: 安知鱼图床
+        - name: 博客
           link: 
           icon: https://image.anheyu.com/favicon.ico
 
