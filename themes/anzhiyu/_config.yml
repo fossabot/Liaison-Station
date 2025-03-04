@@ -90,12 +90,12 @@ author_status:
 
 # Algolia search
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 6
   tags:
-    # - 前端
-    # - Hexo
+     - 前端
+     - Hexo
 
 # Docsearch
 # Apply and Option Docs: see https://docsearch.algolia.com/
