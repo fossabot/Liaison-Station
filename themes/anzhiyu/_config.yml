@@ -360,7 +360,7 @@ waline:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
+  envId: https://twikoo.zhang-wen-tao.com
   region:
   visitor: false
   option:
