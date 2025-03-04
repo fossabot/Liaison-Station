@@ -7,8 +7,9 @@
  
 "use strict"; 
  
-const { stripHTML, escapeHTML, prettyUrls } = require("hexo-util"); 
-const crypto = require("crypto"); 
+const { stripHTML, escapeHTML, prettyUrls } = require("hexo-util");
+const crypto = require("crypto");
+const sanitizeHtml = require("sanitize-html");
  
 hexo.extend.helper.register('page_description', function () { 
   const { config, page } = this 
@@ -39,7 +40,10 @@ hexo.extend.helper.register("get_page_fill_description", function () {
       // 去掉 a 标签及其内容 
       const text = heading.replace(/<a[^>]*>.*?<\/a>/g, ""); 
       // 去除特殊符号 &,:,; 等 
-      return text.replace(/<\/?[^>]+>|&|:|;|quot;|，|,|“|”|"|'|#/g, ""); 
+      return sanitizeHtml(text, {
+        allowedTags: [],
+        allowedAttributes: {}
+      });
     }); 
  
     // 排除 div.post-ai-description 元素中的内容 
