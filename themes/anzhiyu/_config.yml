@@ -33,7 +33,7 @@ nav:
           icon: /img/favicon.ico
     - title: 项目
       item:
-        - name: 博客
+        - name: 博客-项目
           link: 
           icon: https://image.anheyu.com/favicon.ico
 
