@@ -1,3 +1,5 @@
+import DOMPurify from 'dompurify';
+
 const anzhiyu = {
   debounce: (func, wait = 0, immediate = false) => {
     let timeout;
@@ -849,9 +851,9 @@ const anzhiyu = {
     const userServer = "netease";
     const anMusicPageMeting = document.getElementById("anMusic-page-meting");
     if (urlParams.get("id") && urlParams.get("server")) {
-      const id = urlParams.get("id");
-      const server = urlParams.get("server");
-      anMusicPageMeting.innerHTML = `<meting-js id="${id}" server=${server} type="playlist" type="playlist" mutex="true" preload="auto" theme="var(--anzhiyu-main)" order="list" list-max-height="calc(100vh - 169px)!important"></meting-js>`;
+      const id = DOMPurify.sanitize(urlParams.get("id"));
+      const server = DOMPurify.sanitize(urlParams.get("server"));
+      anMusicPageMeting.innerHTML = `<meting-js id="${id}" server="${server}" type="playlist" type="playlist" mutex="true" preload="auto" theme="var(--anzhiyu-main)" order="list" list-max-height="calc(100vh - 169px)!important"></meting-js>`;
     } else {
       anMusicPageMeting.innerHTML = `<meting-js id="${userId}" server="${userServer}" type="playlist" mutex="true" preload="auto" theme="var(--anzhiyu-main)" order="list" list-max-height="calc(100vh - 169px)!important"></meting-js>`;
     }
