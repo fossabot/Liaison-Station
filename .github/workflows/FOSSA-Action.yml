@@ -1,0 +1,92 @@
+name: 'FOSSA Action'
+
+# Ensures that this is only run once, either when pushing
+# directly to main OR when pushing to a PR against main.
+on:
+  pull_request:
+    branches:
+      - Liaison-Station
+  push:
+    branches:
+      - Liaison-Station
+
+jobs:
+  fossa-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+
+      - name: Install npm packages
+        run: yarn --frozen-lockfile
+
+      - name: Build
+        run: yarn build
+
+      - name: Run FOSSA scan in debug mode and upload build data
+        uses: ./
+        with:
+          api-key: ${{secrets.fossaApiKey}}
+          debug: true
+
+      - name: Upload FOSSA debug bundle as a build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: fossa.debug.json.gz
+          path: ./fossa.debug.json.gz
+
+      - name: Run FOSSA container scan and upload build data
+        uses: ./
+        with:
+          api-key: ${{secrets.fossaApiKey}}
+          container: alpine:latest
+
+      - name: Run FOSSA scan with branch
+        uses: ./
+        with:
+          api-key: ${{secrets.fossaApiKey}}
+          branch: develop
+          project: custom-test-project
+
+      - name: Run FOSSA test with a --project and --branch
+        uses: ./
+        with:
+          api-key: ${{secrets.fossaApiKey}}
+          branch: develop
+          project: custom-test-project
+
+      - name: Run FOSSA test
+        uses: ./
+        with:
+          api-key: ${{secrets.fossaApiKey}}
+          run-tests: true
+
+      - name: Run FOSSA test with --diff
+        uses: ./
+        with:
+          api-key: ${{secrets.fossaApiKey}}
+          run-tests: ${{ github.event_name == 'pull_request' }}
+          test-diff-revision: ${{ github.event.pull_request.base.sha }}
+
+      - name: Run FOSSA test with container
+        uses: ./
+        with:
+          api-key: ${{secrets.fossaApiKey}}
+          container: alpine:latest
+          run-tests: true
+
+      - name: Generate FOSSA report
+        id: example-generate-report
+        uses: ./
+        with:
+          api-key: ${{secrets.fossaApiKey}}
+          generate-report: json
+
+      - name: Demonstrate report output
+        run: |
+          echo '${{ steps.example-generate-report.outputs.report }}' | jq
