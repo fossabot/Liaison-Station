@@ -12,8 +12,8 @@
       - 脚踏实地行动派 🏃
       - 团队小组发动机 🧱
       - 壮汉人狠话不多 💢
-  name: 陈志伟
-  description: 是一名 前端工程师、学生、独立开发者、博主
+  name: 张文涛
+  description: 是一名 全栈工程师、学生、独立开发者、博主
   aboutsiteTips:
     tips: 追求
     title1: 源于
@@ -44,16 +44,16 @@
     cover: https://bu.dusays.com/2023/05/01/644f4b037b930.jpg
   map:
     title: 我现在住在
-    StrengthenTitle: 中国，长沙市
+    StrengthenTitle: 中国，大同市
     background: https://bu.dusays.com/2023/07/05/64a4c61cb20ef.jpg
     backgroundDark: https://bu.dusays.com/2023/07/05/64a4c63495ac5.jpg
   selfInfo:
     selfInfoTips1: 生于
-    selfInfoContentYear: 2002
-    selfInfoTips2: 湖南信息学院
+    selfInfoContentYear: 2008
+    selfInfoTips2: 大同市第二十中学校
     selfInfoContent2: 软件工程
     selfInfoTips3: 现在职业
-    selfInfoContent3: 大三学生👨‍🎓
+    selfInfoContent3: 网管👨‍🎓
   personalities:
     author_name: 执政官
     personality_type: ESFJ-A
