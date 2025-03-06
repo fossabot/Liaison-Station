@@ -101,8 +101,11 @@ theme: anzhiyu
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
-
+  type: git
+  repo: https://github.com/ZhangWentao-Github/Liaison-Station.git
+  branch: gh-pages
+  message: Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}
+  
 # 追番插件
 # https://github.com/HCLonely/hexo-bilibili-bangumi
 bangumi: # 追番设置
