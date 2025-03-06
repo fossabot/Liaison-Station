@@ -173,7 +173,7 @@ var peopleConfig = {
 img.onload = init;
 img.src = peopleConfig.src;
 
-let peoplecanvasEl = document.getElementById("peoplecanvas");
+let peoplecanvasEl = document.getElementById("peoplecanvas"); // 保留此声明
 let ctx = peoplecanvasEl ? peoplecanvasEl.getContext("2d") : undefined;
 let stage = {
   width: 0,
