@@ -413,13 +413,6 @@ hexo.extend.filter.register(
       google_analytics: null,
       cloudflare_analytics: null,
       microsoft_clarity: null,
-      google_adsense: {
-        enable: false,
-        auto_ads: true,
-        js: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
-        client: null,
-        enable_page_level_ads: true,
-      },
       site_verification: null,
       index_site_info_top: null,
       index_top_img_height: null,
