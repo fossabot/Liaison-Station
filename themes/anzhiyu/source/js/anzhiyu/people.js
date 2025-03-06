@@ -1,4 +1,5 @@
 "use strict";
+
 function _toConsumableArray(e) {
   return _arrayWithoutHoles(e) || _iterableToArray(e) || _unsupportedIterableToArray(e) || _nonIterableSpread();
 }
@@ -55,6 +56,7 @@ function _defineProperties(e, r) {
 function _createClass(e, r, t) {
   return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), e;
 }
+
 var peopleConfig = {
     src: GLOBAL_CONFIG.peoplecanvas.img,
     rows: 15,
@@ -167,105 +169,109 @@ var peopleConfig = {
     );
   })(),
   img = document.createElement("img");
-(img.onload = init), (img.src = peopleConfig.src);
-let peoplecanvasEl = document.getElementById("peoplecanvas");
 
-let ctx = peoplecanvasEl ? peoplecanvasEl.getContext("2d") : undefined,
-  stage = {
-    width: 0,
-    height: 0,
-  },
-  allPeeps = [],
-  availablePeeps = [],
-  crowd = [];
+img.onload = init;
+img.src = peopleConfig.src;
+
+let peoplecanvasEl = document.getElementById("peoplecanvas");
+let ctx = peoplecanvasEl ? peoplecanvasEl.getContext("2d") : undefined;
+let stage = {
+  width: 0,
+  height: 0,
+};
+let allPeeps = [];
+let availablePeeps = [];
+let crowd = [];
 
 function init() {
   if (!peoplecanvasEl) return;
-  createPeeps(), resize(), gsap.ticker.add(render), window.addEventListener("resize", resize);
+  createPeeps();
+  resize();
+  gsap.ticker.add(render);
+  window.addEventListener("resize", resize);
 }
-document.addEventListener("pjax:success", e => {
+
+document.addEventListener("pjax:success", (e) => {
   peoplecanvasEl = document.getElementById("peoplecanvas");
   if (peoplecanvasEl) {
-    (ctx = peoplecanvasEl ? peoplecanvasEl.getContext("2d") : undefined), window.removeEventListener("resize", resize);
+    ctx = peoplecanvasEl ? peoplecanvasEl.getContext("2d") : undefined;
+    window.removeEventListener("resize", resize);
     gsap.ticker.remove(render);
     setTimeout(() => {
       if (!peoplecanvasEl) return;
-      resize(), gsap.ticker.add(render), window.addEventListener("resize", resize);
+      resize();
+      gsap.ticker.add(render);
+      window.addEventListener("resize", resize);
     }, 300);
   }
 });
 
 function createPeeps() {
-  for (
-    var e = peopleConfig.rows,
-      r = peopleConfig.cols,
-      t = e * r,
-      a = img.naturalWidth / e,
-      n = img.naturalHeight / r,
-      o = 0;
-    o < t;
-    o++
-  )
+  const e = peopleConfig.rows;
+  const r = peopleConfig.cols;
+  const t = e * r;
+  const a = img.naturalWidth / e;
+  const n = img.naturalHeight / r;
+  for (let o = 0; o < t; o++) {
     allPeeps.push(
       new Peep({
         image: img,
         rect: [(o % e) * a, ((o / e) | 0) * n, a, n],
       })
     );
+  }
 }
 
 function resize() {
   if (peoplecanvasEl && peoplecanvasEl.clientWidth != 0) {
-    (stage.width = peoplecanvasEl.clientWidth),
-      (stage.height = peoplecanvasEl.clientHeight),
-      (peoplecanvasEl.width = stage.width * devicePixelRatio),
-      (peoplecanvasEl.height = stage.height * devicePixelRatio),
-      crowd.forEach(function (e) {
-        e.walk.kill();
-      }),
-      (crowd.length = 0),
-      (availablePeeps.length = 0),
-      availablePeeps.push.apply(availablePeeps, allPeeps),
-      initCrowd();
+    stage.width = peoplecanvasEl.clientWidth;
+    stage.height = peoplecanvasEl.clientHeight;
+    peoplecanvasEl.width = stage.width * devicePixelRatio;
+    peoplecanvasEl.height = stage.height * devicePixelRatio;
+    crowd.forEach((e) => {
+      e.walk.kill();
+    });
+    crowd.length = 0;
+    availablePeeps.length = 0;
+    availablePeeps.push(...allPeeps);
+    initCrowd();
   }
 }
 
 function initCrowd() {
-  for (; availablePeeps.length; ) addPeepToCrowd().walk.progress(Math.random());
+  while (availablePeeps.length) addPeepToCrowd().walk.progress(Math.random());
 }
 
 function addPeepToCrowd() {
-  var e = removeRandomFromArray(availablePeeps),
-    r = getRandomFromArray(walks)({
+  const e = removeRandomFromArray(availablePeeps);
+  const r = getRandomFromArray(walks)({
+    peep: e,
+    props: resetPeep({
       peep: e,
-      props: resetPeep({
-        peep: e,
-        stage: stage,
-      }),
-    }).eventCallback("onComplete", function () {
-      removePeepFromCrowd(e), addPeepToCrowd();
-    });
-  return (
-    (e.walk = r),
-    crowd.push(e),
-    crowd.sort(function (e, r) {
-      return e.anchorY - r.anchorY;
+      stage: stage,
     }),
-    e
-  );
+  }).eventCallback("onComplete", () => {
+    removePeepFromCrowd(e);
+    addPeepToCrowd();
+  });
+  e.walk = r;
+  crowd.push(e);
+  crowd.sort((e, r) => e.anchorY - r.anchorY);
+  return e;
 }
 
 function removePeepFromCrowd(e) {
-  removeItemFromArray(crowd, e), availablePeeps.push(e);
+  removeItemFromArray(crowd, e);
+  availablePeeps.push(e);
 }
 
 function render() {
   if (!peoplecanvasEl) return;
-  (peoplecanvasEl.width = peoplecanvasEl.width),
-    ctx.save(),
-    ctx.scale(devicePixelRatio, devicePixelRatio),
-    crowd.forEach(function (e) {
-      e.render(ctx);
-    }),
-    ctx.restore();
+  peoplecanvasEl.width = peoplecanvasEl.width;
+  ctx.save();
+  ctx.scale(devicePixelRatio, devicePixelRatio);
+  crowd.forEach((e) => {
+    e.render(ctx);
+  });
+  ctx.restore();
 }
